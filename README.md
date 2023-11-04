@@ -1,3 +1,5 @@
+1rem=16px
+
    <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           explicabo mollitia, animi maxime architecto pariatur cum cumque
