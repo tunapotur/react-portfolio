@@ -1,0 +1,57 @@
+{
+  "person": {
+    "id": 1,
+    "fullName": "Ahmet Tuna Potur",
+    "occupation": "ICT teacher & engineer",
+    "email": "tunapotur@yahoo.com",
+    "whoAmI": "In 1996-1999, when I was in high school, I worked for an information technology company. Thus, I entered the field of information technologies professionally at a very early age. Afterwards, I completed my education as a Computer Teacher(B.Sc.). and Computer Engineer(M.Sc.). I have worked both in the private sector and in the public sector.\\nDuring my years in the private sector, I had significant overseas experience as a software developer. I worked in many countries, especially in Russia. I currently work as a specialist teacher at the Ministry of National Education. Teaching, software development and database management are my important skills.",
+    "address": "39750 Zafer Dist Büklüm St Lüleburgaz Kırklareli",
+    "dateOfBirth": "1981-03-06",
+    "dateOfPlace": "Lüleburgaz/Kırklareli",
+    "gender": "Male",
+    "driveLicense": "B",
+    "github": "https://github.com/tunapotur",
+    "stackoverflow": "https://stackoverflow.com/users/10060431/ahmet-tuna-potur",
+    "linkedin": "https://www.linkedin.com/in/tunapotur/",
+    "twitter": "https://twitter.com/tuna_potur",
+    "cv": ""
+  },
+  "education": [
+    {
+      "id": 1,
+      "department": "Computer Engineering",
+      "university": "Trakya University",
+      "graduation": "Bachelor of Computer Science (B.Sc.)",
+      "startYear": "2019",
+      "endYear": "2020",
+      "personId": 1
+    },
+    {
+      "id": 2,
+      "department": "Computer Engineering",
+      "university": "Beykent University",
+      "graduation": "Master of Computer Science (M.Sc.)",
+      "startYear": "2005",
+      "endYear": "2008",
+      "personId": 1
+    },
+    {
+      "id": 3,
+      "department": "Technical Computer Teacher",
+      "university": "Kocaeli University",
+      "graduation": "Bachelor of Education (B.Sc.)",
+      "startYear": "2000",
+      "endYear": "2004",
+      "personId": 1
+    },
+    {
+      "id": 3,
+      "department": "High School",
+      "university": "Lüleburgaz Anatolian Commercial High Cchool",
+      "graduation": "High School Degree",
+      "startYear": "1995",
+      "endYear": "1999",
+      "personId": 1
+    }
+  ]
+}

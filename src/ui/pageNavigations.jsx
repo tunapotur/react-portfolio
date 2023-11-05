@@ -8,8 +8,8 @@ function StyledNavLink({ linkTo, linkText }) {
         className={({ isActive, isPending }) =>
           [
             isPending ? 'pending' : '',
-            isActive ? 'font-semibold text-amber-700' : '',
-            'transition-all hover:font-semibold hover:text-amber-700 hover:transition-all',
+            isActive ? 'text-amber-700' : '',
+            'transition-colors hover:text-amber-700',
           ].join(' ')
         }
       >
@@ -21,7 +21,7 @@ function StyledNavLink({ linkTo, linkText }) {
 
 function PageNavigations() {
   return (
-    <ul className="leading-5">
+    <ul>
       <StyledNavLink linkTo="/" linkText="Home" />
       <StyledNavLink linkTo="/about" linkText="About" />
       <StyledNavLink linkTo="/education" linkText="Education" />
