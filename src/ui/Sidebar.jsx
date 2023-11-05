@@ -1,5 +1,5 @@
 import { BsDownload } from 'react-icons/bs';
-import PageNavigations from './pageNavigations';
+import PageNavigations from './PageNavigations';
 
 function Sidebar() {
   return (

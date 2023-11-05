@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 
 import Sidebar from './Sidebar';
-import Main from './Main';
+import Main from './MainLayout';
 
 function AppLayout() {
   return (
