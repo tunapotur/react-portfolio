@@ -3,18 +3,18 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import AppLayout from './ui/AppLayout';
-import Home from './pages/home';
-import About from './pages/about';
-import Education from './pages/education';
-import WorkExperience from './pages/workExperience';
-import MySampleProjects from './pages/mySampleProjects';
-import LanguageAndSkills from './pages/languageAndSkills';
-import Achievements from './pages/achievements';
-import Certificates from './pages/certificates';
-import UdemyCertificates from './pages/udemyCertificates';
-import References from './pages/references';
-import PersonelInfoAndContact from './pages/personelInfoAndContact';
-import PageNotFound from './pages/pageNotFound';
+import Home from './pages/Home';
+import About from './pages/About';
+import Education from './pages/Education';
+import WorkExperience from './pages/WorkExperience';
+import MySampleProjects from './pages/MySampleProjects';
+import LanguageAndSkills from './pages/LanguageAndSkills';
+import Achievements from './pages/Achievements';
+import Certificates from './pages/Certificates';
+import UdemyCertificates from './pages/UdemyCertificates';
+import References from './pages/References';
+import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
+import PageNotFound from './pages/PageNotFound';
 
 const queryClient = new QueryClient({
   defaultOptions: {

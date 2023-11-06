@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
+import Pagination from '../ui/Pagination';
 
 function Home() {
   const { isPending, error, data } = useQuery({
@@ -32,14 +32,8 @@ function Home() {
           className="mt-10 h-72 rounded-lg"
         />
       </div>
-      <div className="mt-auto flex w-full justify-between px-5">
-        <button>
-          <FaAngleLeft className="h-10 w-10 fill-slate-400 transition-colors hover:fill-slate-800" />
-        </button>
-        <button>
-          <FaAngleRight className="h-10 w-10 fill-slate-400 transition-colors hover:fill-slate-800" />
-        </button>
-      </div>
+
+      <Pagination left={''} right={'about'} />
     </>
   );
 }
