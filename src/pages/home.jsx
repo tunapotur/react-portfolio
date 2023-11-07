@@ -1,18 +1,12 @@
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-
+import { usePersonalInfo } from '../hooks/usePersonalInfo';
 import Pagination from '../ui/Pagination';
 
 function Home() {
-  const { isPending, error, data } = useQuery({
-    queryKey: ['personalInfo'],
-    queryFn: () =>
-      axios.get('http://localhost:9000/person').then((res) => res.data),
-  });
+  const { isPending, isError, error, data } = usePersonalInfo();
 
   if (isPending) return 'loading...';
 
-  if (error) return 'An error has occurred:' + error.message;
+  if (isError) return <span>An error has occurred:: {error.message}</span>;
 
   return (
     <>

@@ -4,7 +4,10 @@
     "fullName": "Ahmet Tuna Potur",
     "occupation": "ICT teacher & engineer",
     "email": "tunapotur@yahoo.com",
-    "whoAmI": "In 1996-1999, when I was in high school, I worked for an information technology company. Thus, I entered the field of information technologies professionally at a very early age. Afterwards, I completed my education as a Computer Teacher(B.Sc.). and Computer Engineer(M.Sc.). I have worked both in the private sector and in the public sector.\\nDuring my years in the private sector, I had significant overseas experience as a software developer. I worked in many countries, especially in Russia. I currently work as a specialist teacher at the Ministry of National Education. Teaching, software development and database management are my important skills.",
+    "whoAmI": [
+      "In 1996-1999, when I was in high school, I worked for an information technology company. Thus, I entered the field of information technologies professionally at a very early age. Afterwards, I completed my education as a Computer Teacher(B.Sc.). and Computer Engineer(M.Sc.). I have worked both in the private sector and in the public sector.",
+      "During my years in the private sector, I had significant overseas experience as a software developer. I worked in many countries, especially in Russia. I currently work as a specialist teacher at the Ministry of National Education. Teaching, software development and database management are my important skills."
+    ],
     "address": "39750 Zafer Dist Büklüm St Lüleburgaz Kırklareli",
     "dateOfBirth": "1981-03-06",
     "dateOfPlace": "Lüleburgaz/Kırklareli",
