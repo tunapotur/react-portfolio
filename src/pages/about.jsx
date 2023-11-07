@@ -8,7 +8,7 @@ function About() {
 
   if (isPending) return 'loading...';
 
-  if (isError) return <span>An error has occurred:: {error.message}</span>;
+  if (isError) return <span>An error has occurred: {error.message}</span>;
 
   function paragraph(el, key) {
     return <p key={key}>{el}</p>;
@@ -16,10 +16,16 @@ function About() {
 
   return (
     <>
-      <div className="flex flex-col items-center">
-        <h1>About</h1>
-        <div>{data.whoAmI.map((el) => paragraph(el, uuidv4()))}</div>
+      <div className="content-container">
+        <h1 className="content-header">About Me</h1>
+
+        <div className="readable-background flex flex-col space-y-5 text-justify text-xl leading-relaxed">
+          {data.aboutMe.map((el) => paragraph(el, uuidv4()))}
+        </div>
+
+        <h2 className="ml-auto mt-12 text-2xl font-medium">{data.fullName}</h2>
       </div>
+
       <Pagination left={'home'} right={'education'} />
     </>
   );

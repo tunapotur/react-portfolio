@@ -8,7 +8,7 @@ function Pagination({ left, right }) {
     'h-10 w-10 transform fill-slate-400 transition hover:fill-slate-800 active:scale-75';
 
   return (
-    <div className="mt-auto flex w-full px-5">
+    <div className="mt-auto flex w-full pt-10">
       {left && (
         <Link to={`/${left}`}>
           <FaAngleLeft className={iconStyle} />

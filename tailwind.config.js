@@ -14,14 +14,3 @@ export default {
   },
   plugins: [require('tailwindcss-hero-patterns')],
 };
-
-/**
- * 
- *     fontFamily: {
-      sans: 'Roboto Mono, monospace',
-    },
-
-     * font-family: 'Montserrat', sans-serif;
- * font-family: 'Nunito Sans', sans-serif;
- * font-family: 'Open Sans', sans-serif;
- */
