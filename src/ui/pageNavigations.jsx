@@ -22,7 +22,7 @@ function StyledNavLink({ linkTo, linkText }) {
 function PageNavigations() {
   return (
     <ul>
-      <StyledNavLink linkTo="/" linkText="Home" />
+      <StyledNavLink linkTo="/home" linkText="Home" />
       <StyledNavLink linkTo="/about" linkText="About" />
       <StyledNavLink linkTo="/education" linkText="Education" />
       <StyledNavLink linkTo="/workexperience" linkText="Work Experience" />
