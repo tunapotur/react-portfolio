@@ -117,5 +117,26 @@
       "explanation": "During my high school education, I worked part-time during the school season and full-time during the summer vacation.",
       "personId": 1
     }
-  }
+  },
+
+  "mySampleProjects": [
+    {
+      "id": 0,
+      "header": "React - My Resume Web Page",
+      "www": "",
+      "github": "https://github.com/tunapotur/react-portfolio",
+      "lib": "https://react.dev/",
+      "explanation": "I developed this webpage to share my CV using React and Supabase. Please use the buttons on the right-hand side to access the site and source code.",
+      "personId": 1
+    },
+    {
+      "id": 1,
+      "header": "Nextjs- Successes Web Page",
+      "www": "",
+      "github": "https://github.com/tunapotur/Basarilarim",
+      "lib": "https://nextjs.org/",
+      "explanation": "I developed this webpage to share students successes using Nextjs and Supabase. Please use the buttons on the right-hand side to access the site and source code.",
+      "personId": 1
+    }
+  ]
 }
