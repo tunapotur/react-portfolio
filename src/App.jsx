@@ -6,7 +6,7 @@ import AppLayout from './ui/AppLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Education from './pages/Education';
-import WorkExperience from './pages/WorkExperience';
+import WorkExperience from './pages/workExperience';
 import MySampleProjects from './pages/MySampleProjects';
 import LanguageAndSkills from './pages/LanguageAndSkills';
 import Achievements from './pages/Achievements';

@@ -95,12 +95,14 @@
 
     "internship": [
       {
+        "id": 0,
         "starYear": 2002,
         "endYear": 2003,
         "company": "Gebze Institute of Technology, Department of Computer Engineering",
         "personId": 1
       },
       {
+        "id": 1,
         "starYear": 2001,
         "endYear": 2002,
         "company": "TÜBİTAK, Marmara Research Center Information Technologies Research Institute",
