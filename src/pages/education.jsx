@@ -10,10 +10,10 @@ function Education() {
 
   return (
     <>
-      <div className="content-container">
+      <div className="content-container w-full">
         <h1 className="content-header">Education</h1>
 
-        <div className="flex flex-col space-y-5">
+        <div className="flex w-full flex-col space-y-7">
           {data.map((el) => (
             <EducationCart key={el.id} data={el} />
           ))}
@@ -26,13 +26,19 @@ function Education() {
 }
 
 function EducationCart({ data }) {
+  const row_item = 'flex flex-row justify-between space-x-2';
   return (
-    <div className="readable-background">
-      <h2>{data.department}</h2>
-      <div>{data.university}</div>
-      <div>{data.graduation}</div>
-      <div>
-        <span>{data.startYear}</span> - <span>{data.endYear}</span>
+    <div className="readable-background flex flex-col space-y-3 border border-slate-800 p-4">
+      <div className={row_item}>
+        <h2 className="font-semibold">{data.department}</h2>
+        <div className="text-right">{data.university}</div>
+      </div>
+
+      <div className={row_item}>
+        <div className="italic">{data.graduation}</div>
+        <div>
+          <span>{data.startYear}</span> - <span>{data.endYear}</span>
+        </div>
       </div>
     </div>
   );

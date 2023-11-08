@@ -10,7 +10,7 @@
   }
 
   .content-header {
-    @apply mb-7 text-2xl font-semibold;
+    @apply mb-16 text-2xl font-semibold;
   }
 
   .readable-background {

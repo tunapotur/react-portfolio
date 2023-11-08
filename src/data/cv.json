@@ -49,13 +49,71 @@
       "personId": 1
     },
     {
-      "id": 3,
-      "department": "High School",
-      "university": "Lüleburgaz Anatolian Commercial High Cchool",
+      "id": 4,
+      "department": "Computers, Accounting, Tourism, English",
+      "university": "Lüleburgaz Commercial High School",
       "graduation": "High School Degree",
       "startYear": "1995",
       "endYear": "1999",
       "personId": 1
     }
-  ]
+  ],
+
+  "workExperience": {
+    "work": [
+      {
+        "id": 0,
+        "header": "Teacher-Information and Communication Technology(ICT)",
+        "company": "Ministry of National Education",
+        "address": "Lüleburgaz / Kırklareli Ramazan Yaman Science High School",
+        "startDate": "September 2011",
+        "endDate": "Current",
+        "explanation": "I teach web programming and basic programming, guide to the school management and teachers on information technologies, take part in the city-wide ceremonies of schools, providing technical support and IT consultancy for these ceremonies and I am responsible for the smart boards (presentation computer with touch screen) of the schools where I work.",
+        "personId": 1
+      },
+      {
+        "id": 1,
+        "header": "Software Development and Training Specialist",
+        "company": "ENKA Construction and Industry Inc.",
+        "address": "İstanbul",
+        "startDate": "March 2006",
+        "endDate": "February 2011",
+        "explanation": "ENKA is a construction company operating in many countries. This company uses human resources software developed by its own organization. This software was used for keeping employee records, performance, health and safety monitoring, salary calculation and hourly labor cost calculation. My role in the team responsible for this software; Evaluation of software related requests, coding and testing of requests, determination of the necessary information about the laws of the country where the business is located and integration into the software, selection of personnel to use the program, user training and preparation of consolidated reports requested by management.",
+        "personId": 1
+      },
+      {
+        "id": 2,
+        "header": "Teacher-Information and Communication Technology(ICT)",
+        "company": "Ministry of National Education",
+        "address": "Vize / Kırklareli Occupational and Technical Education Center",
+        "startDate": "October 2004",
+        "endDate": "February 2006",
+        "explanation": "I taught programming, electronics and other vocational technical courses. and worked as an Information Technologies Teacher at the Adult Education Center.",
+        "personId": 1
+      }
+    ],
+
+    "internship": [
+      {
+        "starYear": 2002,
+        "endYear": 2003,
+        "company": "Gebze Institute of Technology, Department of Computer Engineering",
+        "personId": 1
+      },
+      {
+        "starYear": 2001,
+        "endYear": 2002,
+        "company": "TÜBİTAK, Marmara Research Center Information Technologies Research Institute",
+        "personId": 1
+      }
+    ],
+
+    "partTimeJob": {
+      "starYear": 2001,
+      "endYear": 2002,
+      "company": "Barış Computer Lüleburgaz",
+      "explanation": "During my high school education, I worked part-time during the school season and full-time during the summer vacation.",
+      "personId": 1
+    }
+  }
 }
