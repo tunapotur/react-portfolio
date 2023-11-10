@@ -1,8 +1,8 @@
-import { useWorkExperience } from '../hooks/useWorkExperience';
+import useGetData from '../hooks/useGetData';
 import Pagination from '../ui/Pagination';
 
 function WorkExperience() {
-  const { isPending, isError, error, data } = useWorkExperience();
+  const { isPending, isError, error, data } = useGetData('workExperience');
 
   if (isPending) return 'loading...';
 

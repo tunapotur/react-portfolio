@@ -1,8 +1,8 @@
-import { useEducations } from '../hooks/useEducations';
+import useGetData from '../hooks/useGetData';
 import Pagination from '../ui/Pagination';
 
 function Education() {
-  const { isPending, isError, error, data } = useEducations();
+  const { isPending, isError, error, data } = useGetData('education');
 
   if (isPending) return 'loading...';
 

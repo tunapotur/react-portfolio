@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { usePersonalInfo } from '../hooks/usePersonalInfo';
+import useGetData from '../hooks/useGetData';
 import Pagination from '../ui/Pagination';
 
 function About() {
-  const { isPending, isError, error, data } = usePersonalInfo();
+  const { isPending, isError, error, data } = useGetData('person');
 
   if (isPending) return 'loading...';
 

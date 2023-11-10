@@ -1,4 +1,4 @@
-import { useGetData } from '../hooks/useGetData';
+import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
 import Pagination from '../ui/Pagination';
 

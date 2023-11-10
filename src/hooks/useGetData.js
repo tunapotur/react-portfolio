@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-export function useGetData(source) {
+function useGetData(source) {
   const { isPending, isError, error, data } = useQuery({
     queryKey: [source],
     queryFn: () =>
@@ -10,3 +10,5 @@ export function useGetData(source) {
 
   return { isPending, isError, error, data };
 }
+
+export default useGetData;

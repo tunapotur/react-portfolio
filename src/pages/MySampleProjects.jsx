@@ -1,4 +1,4 @@
-import { useGetData } from '../hooks/useGetData';
+import useGetData from '../hooks/useGetData';
 import Pagination from '../ui/Pagination';
 
 import { FaLink } from 'react-icons/fa';

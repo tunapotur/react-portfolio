@@ -1,4 +1,4 @@
-import { useGetData } from '../hooks/useGetData';
+import useGetData  from '../hooks/useGetData';
 import Pagination from '../ui/Pagination';
 
 import { BsCheckLg } from 'react-icons/bs';

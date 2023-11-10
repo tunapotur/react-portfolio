@@ -1,8 +1,9 @@
-import { usePersonalInfo } from '../hooks/usePersonalInfo';
+import useGetData from '../hooks/useGetData';
+
 import Pagination from '../ui/Pagination';
 
 function PersonelInfoAndContact() {
-  const { isPending, isError, error, data } = usePersonalInfo();
+  const { isPending, isError, error, data } = useGetData('person');
 
   if (isPending) return 'loading...';
 
