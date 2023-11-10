@@ -1,5 +1,5 @@
 import useGetData from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function Home() {
   const { isPending, isError, error, data } = useGetData('person');
@@ -27,7 +27,7 @@ function Home() {
         />
       </div>
 
-      <Pagination left={''} right={'about'} />
+      <PaginationAuto />
     </>
   );
 }

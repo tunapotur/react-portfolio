@@ -1,6 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function Achievements() {
   const { isPending, isError, error, data } = useGetData('achievements');
@@ -19,7 +19,7 @@ function Achievements() {
         </div>
       </div>
 
-      <Pagination left={'languageandskills'} right={'certificates'} />
+      <PaginationAuto />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import useGetData from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 import { FaLink } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
@@ -22,7 +22,7 @@ function MySampleProjects() {
           ))}
         </div>
       </div>
-      <Pagination left={'workexperience'} right={'languageandskills'} />
+      <PaginationAuto />
     </>
   );
 }

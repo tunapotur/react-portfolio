@@ -1,5 +1,5 @@
 import useGetData  from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 import { BsCheckLg } from 'react-icons/bs';
 
@@ -22,7 +22,7 @@ function LanguageAndSkills() {
         <LanguageOrSkillsConten data={data.skills} header={'Skills'} />
       </div>
 
-      <Pagination left={'mysampleprojects'} right={'achievements'} />
+      <PaginationAuto />
     </>
   );
 }

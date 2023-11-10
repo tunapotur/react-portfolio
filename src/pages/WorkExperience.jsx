@@ -1,5 +1,5 @@
 import useGetData from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function WorkExperience() {
   const { isPending, isError, error, data } = useGetData('workExperience');
@@ -36,7 +36,7 @@ function WorkExperience() {
         </div>
       </div>
 
-      <Pagination left={'education'} right={'mysampleprojects'} />
+      <PaginationAuto />
     </>
   );
 }

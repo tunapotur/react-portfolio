@@ -1,6 +1,6 @@
 import useGetData from '../hooks/useGetData';
 
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function PersonelInfoAndContact() {
   const { isPending, isError, error, data } = useGetData('person');
@@ -59,7 +59,8 @@ function PersonelInfoAndContact() {
           </div>
         </div>
       </div>
-      <Pagination left={'references'} />
+
+      <PaginationAuto />
     </>
   );
 }

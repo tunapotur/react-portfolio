@@ -1,5 +1,5 @@
 import useGetData from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function References() {
   const { isPending, isError, error, data } = useGetData('references');
@@ -19,7 +19,7 @@ function References() {
         </div>
       </div>
 
-      <Pagination left={'udemycertificates'} right={'personelinfoandcontact'} />
+      <PaginationAuto />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 import useGetData from '../hooks/useGetData';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function About() {
   const { isPending, isError, error, data } = useGetData('person');
@@ -26,7 +26,7 @@ function About() {
         <h2 className="ml-auto mt-12 text-2xl font-medium">{data.fullName}</h2>
       </div>
 
-      <Pagination left={'home'} right={'education'} />
+      <PaginationAuto />
     </>
   );
 }

@@ -1,6 +1,6 @@
-import useGetData  from '../hooks/useGetData';
+import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
-import Pagination from '../ui/Pagination';
+import PaginationAuto from '../ui/PaginationAuto';
 
 function UdemyCertificates() {
   const { isPending, isError, error, data } = useGetData('udemyCertificates');
@@ -18,7 +18,7 @@ function UdemyCertificates() {
           ))}
         </div>
       </div>
-      <Pagination left={'certificates'} right={'references'} />
+      <PaginationAuto />
     </>
   );
 }
