@@ -166,37 +166,43 @@
       "id": "0",
       "header": "Outstanding Achievement award",
       "explanation": "Awarded by the Ministry of National Education for being awarded with Certificate of Achievement three times. ",
-      "date": "30/03/2023"
+      "date": "30/03/2023",
+      "personId": 1
     },
     {
       "id": "1",
       "header": "Achievement Award",
       "explanation": "Awarded by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
-      "date": "30/03/2023"
+      "date": "30/03/2023",
+      "personId": 1
     },
     {
       "id": "2",
       "header": "Achievement Award",
       "explanation": "Awarded by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
-      "date": "27/12/2022"
+      "date": "27/12/2022",
+      "personId": 1
     },
     {
       "id": "3",
       "header": "Achievement Award",
       "explanation": "Awarded by the Ministry of National Education for my efforts in providing face-to-face education to our students during the Covid-19 process in the 2021-2022 academic year.",
-      "date": "01/06/2022"
+      "date": "01/06/2022",
+      "personId": 1
     },
     {
       "id": "4",
       "header": "Achievement Award",
       "explanation": "Awarded by the Ministry of National Education for my efforts in providing face-to-face education to our students during the Covid-19 process in the 2021-2022 academic year.",
-      "date": "17/01/2022"
+      "date": "17/01/2022",
+      "personId": 1
     },
     {
       "id": "5",
       "header": "Certificate of Appreciation",
       "explanation": "For my contributions to the 24 November Teachers' Day Celebration program, I was awarded this certificate by the District Governor.",
-      "date": "12/01/2012"
+      "date": "12/01/2012",
+      "personId": 1
     }
   ],
 
@@ -205,31 +211,36 @@
       "id": "0",
       "header": "Expert Teacher Certificate",
       "explanation": "Ministry of National Education",
-      "date": "16/12/2022"
+      "date": "16/12/2022",
+      "personId": 1
     },
     {
       "id": "1",
       "header": "Project Cycle Management (PCM) Training Program Participation Certificate",
       "explanation": "Thrace Development Agency",
-      "date": "06/12/2017"
+      "date": "06/12/2017",
+      "personId": 1
     },
     {
       "id": "2",
       "header": "Driver Examination Officer",
       "explanation": "Kırklareli-Lüleburgaz Adult Education Center",
-      "date": "30/05/2016"
+      "date": "30/05/2016",
+      "personId": 1
     },
     {
       "id": "3",
       "header": "Occupational Health and Safety Training Certificate",
       "explanation": "Lüleburgaz District Directorate of National Education",
-      "date": "05/04/2016"
+      "date": "05/04/2016",
+      "personId": 1
     },
     {
       "id": "4",
       "header": "ISO 9001:2000 Internal Auditor Training Certificate",
       "explanation": "Mova Consulting and Training Center",
-      "date": "05/09/2007"
+      "date": "05/09/2007",
+      "personId": 1
     }
   ],
 
@@ -238,31 +249,61 @@
       "id": "0",
       "header": "Mastering TypeScript ",
       "explanation": "Colt Steele 10.5 total hours",
-      "date": "04/03/2023"
+      "date": "04/03/2023",
+      "personId": 1
     },
     {
       "id": "1",
       "header": "Full Stack Food Ordering Project with React(Next.js) ",
       "explanation": "Emin Başbayan 23.5 total hours",
-      "date": "04/02/2023"
+      "date": "04/02/2023",
+      "personId": 1
     },
     {
       "id": "2",
       "header": "React – The Complete Guide(incl Hooks, React Router, Redux)",
       "explanation": "Maximilian Schwarzmüller 49.5 total hours",
-      "date": "04/01/2023"
+      "date": "04/01/2023",
+      "personId": 1
     },
     {
       "id": "3",
       "header": "Build Responsive Real – World Websites with HTML and CSS",
       "explanation": "Jonas Schmedtmann 37.5 total hours",
-      "date": "08/07/2022"
+      "date": "08/07/2022",
+      "personId": 1
     },
     {
       "id": "4",
       "header": "Advanced CSS and SASS(SCSS): Flexbox, Grid, Animations and More!",
       "explanation": "Jonas Schmedtmann 28 total hours",
-      "date": "04/02/2019"
+      "date": "04/02/2019",
+      "personId": 1
+    }
+  ],
+
+  "References": [
+    {
+      "id": "0",
+      "fullName": "xxxxxx xxxxxx",
+      "company": "Scientific and Technical Research Council of Turkey (TÜBİTAK), RUTE",
+      "vocation": "Senior Principal Researcher",
+      "email": "",
+      "phone1": "",
+      "phone2": "",
+      "personId": 1,
+      "info": "For privacy reasons, Contact information will be given to people who contact me personally."
+    },
+    {
+      "id": "1",
+      "fullName": "xxxxxx xxxxxx",
+      "company": "ENKA Construction and Industry Inc.",
+      "vocation": "IT Manager",
+      "email": "",
+      "phone1": "",
+      "phone2": "",
+      "personId": 1,
+      "info": "For privacy reasons, Contact information will be given to people who contact me personally."
     }
   ]
 }
