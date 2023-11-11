@@ -22,7 +22,7 @@ function MySampleProjects() {
 
 function MySampleProjectsUi({ data }) {
   return (
-    <div className="flex w-full flex-col space-y-7">
+    <div className="content-data">
       {data.map((el) => (
         <SampleProjectCart key={el.id} data={el} />
       ))}

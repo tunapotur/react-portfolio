@@ -1,26 +1,28 @@
 import useGetData from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
+import PageUi from '../ui/PageUi';
 
 function References() {
   const { isPending, isError, error, data } = useGetData('references');
 
-  if (isPending) return 'loading...';
-
-  if (isError) return <span>An error has occurred: {error.message}</span>;
   return (
-    <>
-      <div className="content-container w-full">
-        <h1 className="content-header">References</h1>
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'References'}
+    >
+      <ReferencesUi data={data} />
+    </PageUi>
+  );
+}
 
-        <div className="flex w-full flex-col space-y-7">
-          {data.map((el) => (
-            <ReferencesCart key={el.id} data={el} />
-          ))}
-        </div>
-      </div>
-
-      <PaginationAuto />
-    </>
+function ReferencesUi({ data }) {
+  return (
+    <div className="content-data">
+      {data.map((el) => (
+        <ReferencesCart key={el.id} data={el} />
+      ))}
+    </div>
   );
 }
 

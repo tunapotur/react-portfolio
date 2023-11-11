@@ -9,12 +9,44 @@
     @apply flex w-full flex-col items-center;
   }
 
+  .content-container-28 {
+    @apply flex  w-[28rem] flex-col items-center;
+  }
+
   .content-header {
     @apply mb-16 text-2xl font-semibold;
   }
 
+  .content-data {
+    @apply flex w-full flex-col space-y-7;
+  }
+
   .readable-background {
     @apply rounded bg-stone-100;
+  }
+
+  /* https://codepen.io/JoeHastings/pen/gPrPMo?editors=1100 */
+  p.bubble {
+    @apply relative mx-[2.5rem] my-auto w-[16rem] rounded-[2rem] border-4 border-slate-800 p-5 text-center font-open_sans text-lg font-medium italic leading-6;
+  }
+
+  p.thought {
+    @apply w-80 rounded-full p-6;
+  }
+
+  p.bubble:before,
+  p.bubble:after {
+    content: ' ';
+    @apply absolute h-0 w-0;
+  }
+
+  p.thought:before,
+  p.thought:after {
+    @apply -bottom-9 left-3 h-9 w-9 rounded-[1.75rem] border-4 border-slate-800;
+  }
+
+  p.thought:after {
+    @apply -bottom-14 left-2 h-5 w-5 rounded-[1rem];
   }
 
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */

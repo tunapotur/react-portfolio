@@ -1,6 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import rootList from '../data/rootList';
 
+function PageNavigations() {
+  return (
+    <ul>
+      {rootList.map((el) => (
+        <StyledNavLink key={el.id} linkTo={el.path} linkText={el.text} />
+      ))}
+    </ul>
+  );
+}
+
 function StyledNavLink({ linkTo, linkText }) {
   return (
     <li className="mb-4">
@@ -17,16 +27,6 @@ function StyledNavLink({ linkTo, linkText }) {
         <span>{linkText}</span>
       </NavLink>
     </li>
-  );
-}
-
-function PageNavigations() {
-  return (
-    <ul>
-      {rootList.map((el) => (
-        <StyledNavLink key={el.id} linkTo={el.path} linkText={el.text} />
-      ))}
-    </ul>
   );
 }
 

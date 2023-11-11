@@ -4,7 +4,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
   return (
     <>
       <div className="content-container">
-        <h1 className="content-header">{pageHeader}</h1>
+        {pageHeader && <h1 className="content-header">{pageHeader}</h1>}
 
         {isPending && 'loading...'}
 

@@ -21,7 +21,7 @@ function About() {
 function AboutUi({ data }) {
   return (
     <>
-      <div className="readable-background flex flex-col space-y-5 text-justify text-xl leading-relaxed">
+      <div className="readable-background flex flex-col space-y-7 text-justify text-xl leading-relaxed">
         {data.aboutMe.map((el) => (
           <p key={uuidv4()}>{el}</p>
         ))}

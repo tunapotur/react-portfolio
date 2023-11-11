@@ -23,7 +23,7 @@ function WorkExperience() {
 function WorkExperienceUi({ data }) {
   return (
     <>
-      <div className="flex w-full flex-col space-y-7">
+      <div className="content-data">
         {data.work.map((el) => (
           <WorkExperienceCart key={el.id} data={el} />
         ))}
@@ -32,7 +32,7 @@ function WorkExperienceUi({ data }) {
       <h2 className="mb-3 mt-12 self-start text-xl font-semibold">
         Internship
       </h2>
-      <div className="flex w-full flex-col space-y-3">
+      <div className="content-data">
         {data.internship.map((el) => (
           <InternshipPartTimeCart key={el.id} data={el} />
         ))}
@@ -41,7 +41,7 @@ function WorkExperienceUi({ data }) {
       <h2 className="mb-3 mt-6 self-start text-xl font-semibold">
         Part-time Jobs
       </h2>
-      <div className="flex w-full flex-col space-y-3">
+      <div className="content-data">
         <InternshipPartTimeCart data={data.partTimeJob} />
       </div>
     </>

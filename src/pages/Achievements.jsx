@@ -20,7 +20,7 @@ function Achievements() {
 
 function AchievementsUi({ data }) {
   return (
-    <div className="flex w-full flex-col space-y-7">
+    <div className="content-data">
       {data.map((el) => (
         <CertificateAchievementCart key={el.id} data={el} />
       ))}
