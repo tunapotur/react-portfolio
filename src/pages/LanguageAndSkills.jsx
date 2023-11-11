@@ -1,29 +1,33 @@
-import useGetData  from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
+import useGetData from '../hooks/useGetData';
+import PageUi from '../ui/PageUi';
 
 import { BsCheckLg } from 'react-icons/bs';
 
 function LanguageAndSkills() {
   const { isPending, isError, error, data } = useGetData('languageAndSkills');
 
-  if (isPending) return 'loading...';
-
-  if (isError) return <span>An error has occurred: {error.message}</span>;
   return (
-    <>
-      <div className="content-container w-[28rem] items-center">
-        <h1 className="content-header">Foreign Language &amp; Skills</h1>
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'Foreign Languages & Skills'}
+    >
+      <LanguageAndSkillsUi data={data} />
+    </PageUi>
+  );
+}
 
-        <LanguageOrSkillsConten
-          data={data.foreignLanguage}
-          header={'Internship'}
-        />
+function LanguageAndSkillsUi({ data }) {
+  return (
+    <div className="content-container w-[28rem] items-center">
+      <LanguageOrSkillsConten
+        data={data.foreignLanguage}
+        header={'Foreign Languages'}
+      />
 
-        <LanguageOrSkillsConten data={data.skills} header={'Skills'} />
-      </div>
-
-      <PaginationAuto />
-    </>
+      <LanguageOrSkillsConten data={data.skills} header={'Skills'} />
+    </div>
   );
 }
 

@@ -1,27 +1,28 @@
 import useGetData from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
+import PageUi from '../ui/PageUi';
 
 function Education() {
   const { isPending, isError, error, data } = useGetData('education');
 
-  if (isPending) return 'loading...';
-
-  if (isError) return <span>An error has occurred: {error.message}</span>;
-
   return (
-    <>
-      <div className="content-container w-full">
-        <h1 className="content-header">Education</h1>
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'Education'}
+    >
+      <EducationPageUi data={data} />
+    </PageUi>
+  );
+}
 
-        <div className="flex w-full flex-col space-y-7">
-          {data.map((el) => (
-            <EducationCart key={el.id} data={el} />
-          ))}
-        </div>
-      </div>
-
-      <PaginationAuto />
-    </>
+function EducationPageUi({ data }) {
+  return (
+    <div className="flex w-full flex-col space-y-7">
+      {data.map((el) => (
+        <EducationCart key={el.id} data={el} />
+      ))}
+    </div>
   );
 }
 

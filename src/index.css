@@ -6,7 +6,7 @@
 
 @layer components {
   .content-container {
-    @apply flex flex-col items-center;
+    @apply flex w-full flex-col items-center;
   }
 
   .content-header {

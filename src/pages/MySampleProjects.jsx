@@ -1,5 +1,5 @@
+import PageUi from '../ui/PageUi';
 import useGetData from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
 
 import { FaLink } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
@@ -8,22 +8,25 @@ import { IoLibrary } from 'react-icons/io5';
 function MySampleProjects() {
   const { isPending, isError, error, data } = useGetData('mySampleProjects');
 
-  if (isPending) return 'loading...';
-
-  if (isError) return <span>An error has occurred: {error.message}</span>;
-
   return (
-    <>
-      <div className="content-container w-full">
-        <h1 className="content-header">My Sample Projects</h1>
-        <div className="flex w-full flex-col space-y-7">
-          {data.map((el) => (
-            <SampleProjectCart key={el.id} data={el} />
-          ))}
-        </div>
-      </div>
-      <PaginationAuto />
-    </>
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'My Sample Projects'}
+    >
+      <MySampleProjectsUi data={data} />
+    </PageUi>
+  );
+}
+
+function MySampleProjectsUi({ data }) {
+  return (
+    <div className="flex w-full flex-col space-y-7">
+      {data.map((el) => (
+        <SampleProjectCart key={el.id} data={el} />
+      ))}
+    </div>
   );
 }
 

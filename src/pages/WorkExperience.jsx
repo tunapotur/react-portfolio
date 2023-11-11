@@ -1,5 +1,5 @@
 import useGetData from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
+import PageUi from '../ui/PageUi';
 
 function WorkExperience() {
   const { isPending, isError, error, data } = useGetData('workExperience');
@@ -9,34 +9,41 @@ function WorkExperience() {
   if (isError) return <span>An error has occurred: {error.message}</span>;
 
   return (
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'Work Experience'}
+    >
+      <WorkExperienceUi data={data} />
+    </PageUi>
+  );
+}
+
+function WorkExperienceUi({ data }) {
+  return (
     <>
-      <div className="content-container w-full">
-        <h1 className="content-header">Work Experience</h1>
-
-        <div className="flex w-full flex-col space-y-7">
-          {data.work.map((el) => (
-            <WorkExperienceCart key={el.id} data={el} />
-          ))}
-        </div>
-
-        <h2 className="mb-3 mt-12 self-start text-xl font-semibold">
-          Internship
-        </h2>
-        <div className="flex w-full flex-col space-y-3">
-          {data.internship.map((el) => (
-            <InternshipPartTimeCart key={el.id} data={el} />
-          ))}
-        </div>
-
-        <h2 className="mb-3 mt-6 self-start text-xl font-semibold">
-          Part-time Jobs
-        </h2>
-        <div className="flex w-full flex-col space-y-3">
-          <InternshipPartTimeCart data={data.partTimeJob} />
-        </div>
+      <div className="flex w-full flex-col space-y-7">
+        {data.work.map((el) => (
+          <WorkExperienceCart key={el.id} data={el} />
+        ))}
       </div>
 
-      <PaginationAuto />
+      <h2 className="mb-3 mt-12 self-start text-xl font-semibold">
+        Internship
+      </h2>
+      <div className="flex w-full flex-col space-y-3">
+        {data.internship.map((el) => (
+          <InternshipPartTimeCart key={el.id} data={el} />
+        ))}
+      </div>
+
+      <h2 className="mb-3 mt-6 self-start text-xl font-semibold">
+        Part-time Jobs
+      </h2>
+      <div className="flex w-full flex-col space-y-3">
+        <InternshipPartTimeCart data={data.partTimeJob} />
+      </div>
     </>
   );
 }

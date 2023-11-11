@@ -1,32 +1,33 @@
 import { v4 as uuidv4 } from 'uuid';
 
 import useGetData from '../hooks/useGetData';
-import PaginationAuto from '../ui/PaginationAuto';
+import PageUi from '../ui/PageUi';
 
 function About() {
   const { isPending, isError, error, data } = useGetData('person');
 
-  if (isPending) return 'loading...';
+  return (
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'About Me'}
+    >
+      <AboutUi data={data} />
+    </PageUi>
+  );
+}
 
-  if (isError) return <span>An error has occurred: {error.message}</span>;
-
-  function paragraph(el, key) {
-    return <p key={key}>{el}</p>;
-  }
-
+function AboutUi({ data }) {
   return (
     <>
-      <div className="content-container">
-        <h1 className="content-header">About Me</h1>
-
-        <div className="readable-background flex flex-col space-y-5 text-justify text-xl leading-relaxed">
-          {data.aboutMe.map((el) => paragraph(el, uuidv4()))}
-        </div>
-
-        <h2 className="ml-auto mt-12 text-2xl font-medium">{data.fullName}</h2>
+      <div className="readable-background flex flex-col space-y-5 text-justify text-xl leading-relaxed">
+        {data.aboutMe.map((el) => (
+          <p key={uuidv4()}>{el}</p>
+        ))}
       </div>
 
-      <PaginationAuto />
+      <h2 className="ml-auto mt-12 text-2xl font-medium">{data.fullName}</h2>
     </>
   );
 }
