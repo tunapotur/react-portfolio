@@ -1,11 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-function useGetData(source) {
+function useGetData(sourceName) {
   const { isPending, isError, error, data } = useQuery({
-    queryKey: [source],
+    queryKey: [sourceName],
     queryFn: () =>
-      axios.get(`${import.meta.env.VITE_DB}/${source}`).then((res) => res.data),
+      axios
+        .get(`${import.meta.env.VITE_DB}/${sourceName}`)
+        .then((res) => res.data),
   });
 
   return { isPending, isError, error, data };

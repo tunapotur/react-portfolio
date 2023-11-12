@@ -35,7 +35,7 @@ function LanguageOrSkillsConten({ data, header }) {
   return (
     <div className="mb-12 flex flex-col justify-center">
       <h2 className="mb-4 self-center text-xl font-semibold">{header}</h2>
-      <div className="readable-background w-full border border-slate-800 p-4">
+      <div className="readable-background border-color w-full border p-4">
         <ul className="flex flex-col space-y-3">
           {data.map((el) => (
             <li

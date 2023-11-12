@@ -4,10 +4,6 @@ import PageUi from '../ui/PageUi';
 function WorkExperience() {
   const { isPending, isError, error, data } = useGetData('workExperience');
 
-  if (isPending) return 'loading...';
-
-  if (isError) return <span>An error has occurred: {error.message}</span>;
-
   return (
     <PageUi
       isPending={isPending}
@@ -50,7 +46,7 @@ function WorkExperienceUi({ data }) {
 
 function WorkExperienceCart({ data }) {
   return (
-    <div className="readable-background flex flex-col space-y-1 border border-slate-800 p-4">
+    <div className="readable-background border-color flex flex-col space-y-1 border p-4">
       <div className={'flex flex-row justify-between space-x-2'}>
         <div>
           <h3 className="font-semibold">{data.header}</h3>
@@ -71,7 +67,7 @@ function WorkExperienceCart({ data }) {
 
 function InternshipPartTimeCart({ data }) {
   return (
-    <div className="readable-background flex flex-col space-y-1 border border-slate-600 p-2">
+    <div className="readable-background border-color flex flex-col space-y-1 border p-2">
       <div>
         {data.starYear} - {data.endYear} {data.company}
       </div>

@@ -22,7 +22,11 @@
   }
 
   .readable-background {
-    @apply rounded bg-stone-100;
+    @apply rounded bg-stone-100/40;
+  }
+
+  .border-color {
+    @apply border-slate-400;
   }
 
   /* https://codepen.io/JoeHastings/pen/gPrPMo?editors=1100 */
@@ -51,9 +55,9 @@
 
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
   .loader {
-    width: 45px;
+    width: 4rem;
     aspect-ratio: 0.75;
-    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    --c: no-repeat linear-gradient(theme(colors.amber.700) 0 0);
     background:
       var(--c) 0% 50%,
       var(--c) 50% 50%,

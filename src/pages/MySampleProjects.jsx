@@ -34,7 +34,7 @@ function SampleProjectCart({ data }) {
   const iconSize = 'h-7 w-7';
 
   return (
-    <div className="readable-background flex flex-row space-x-4 border border-slate-800 p-4">
+    <div className="readable-background border-color flex flex-row space-x-4 border p-4">
       <div className={'flex w-11/12 flex-col space-y-2  text-justify'}>
         <h2 className="font-semibold">{data.header}</h2>
         <div>{data.explanation}</div>

@@ -29,7 +29,7 @@ function EducationPageUi({ data }) {
 function EducationCart({ data }) {
   const row_item = 'flex flex-row justify-between space-x-2';
   return (
-    <div className="readable-background flex flex-col space-y-3 border border-slate-800 p-4">
+    <div className="readable-background border-color flex flex-col space-y-3 border p-4">
       <div className={row_item}>
         <h2 className="font-semibold">{data.department}</h2>
         <div className="text-right">{data.university}</div>

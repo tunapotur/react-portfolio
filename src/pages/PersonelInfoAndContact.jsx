@@ -19,7 +19,7 @@ function PersonelInfoAndContact() {
 function PersonelInfoAndContactUi({ data }) {
   return (
     <div className="content-data">
-      <div className="readable-background flex flex-col space-y-1 border border-slate-800 p-4">
+      <div className="readable-background border-color flex flex-col space-y-1 border p-4">
         <div className="mb-5 flex flex-col space-y-3">
           <div className="flex flex-row">
             <div className="w-1/3 font-semibold">Address</div>

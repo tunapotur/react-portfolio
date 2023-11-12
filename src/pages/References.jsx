@@ -28,7 +28,7 @@ function ReferencesUi({ data }) {
 
 function ReferencesCart({ data }) {
   return (
-    <div className="readable-background flex flex-col space-y-1 border border-slate-800 p-4">
+    <div className="readable-background border-color flex flex-col space-y-1 border p-4">
       <h3 className="font-semibold">{data.fullName}</h3>
       <div>{data.company}</div>
       <div>{data.vocation}</div>
