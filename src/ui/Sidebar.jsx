@@ -16,7 +16,7 @@ function Sidebar() {
       <img
         src={userImage}
         alt="user navbar photo"
-        className="image-dark mt-8 h-36 rounded-full"
+        className="image-dark mt-2 h-36 rounded-full"
       />
 
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
