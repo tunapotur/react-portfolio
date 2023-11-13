@@ -10,7 +10,7 @@ function Pagination() {
   // const queryClient = useQueryClient();
 
   const iconStyle =
-    'h-10 w-10 transform fill-slate-600/40 transition hover:fill-slate-800 active:scale-75';
+    'h-10 w-10 transform fill-slate-600/40 transition hover:fill-slate-800 active:scale-75 dark:fill-slate-400/40 dark:hover:fill-slate-300';
 
   const leftMove =
     rootIndexOfArray === endOfRootListIndex || rootIndexOfArray > 0

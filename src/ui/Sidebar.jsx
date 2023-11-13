@@ -1,13 +1,22 @@
 import { BsDownload } from 'react-icons/bs';
 import PageNavigations from './PageNavigations';
+import DarkModeToggle from './DarkModeToggle';
+
+import { useDarkMode } from '../context/DarkModeContext';
 
 function Sidebar() {
+  const { isDarkMode } = useDarkMode();
+  const userImage = isDarkMode
+    ? '../navbar-user-image-small-dark.png'
+    : '../navbar-user-image-small-light.png';
+
   return (
-    <nav className="border-color flex h-full max-h-screen w-1/4 flex-grow flex-col items-center overflow-y-auto rounded-l-md border-y border-l bg-slate-200 px-5 pb-1 pt-5 text-center">
+    <nav className="border-color flex h-full max-h-screen w-1/4 flex-grow flex-col items-center overflow-y-auto rounded-l-md border-y border-l bg-slate-200/50 px-5 pb-1 pt-5 text-center dark:bg-slate-900/70">
+      <DarkModeToggle />
       <img
-        src="../navbar-user-image.jpg"
+        src={userImage}
         alt="user navbar photo"
-        className="mt-10 h-36 rounded-full"
+        className="image-dark mt-8 h-36 rounded-full"
       />
 
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
@@ -20,7 +29,7 @@ function Sidebar() {
 
       <PageNavigations />
 
-      <div className="mb-2 mt-auto text-xs text-slate-600">
+      <div className="mb-2 mt-auto text-xs text-slate-600 dark:text-slate-400">
         <div className="border-color mb-2 flex items-center justify-around border-[1px] px-3 py-2">
           <span className="pr-2">Download CV</span>
           <BsDownload />
