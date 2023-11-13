@@ -6,7 +6,7 @@ import SpeechBubble from '../ui/SpeechBubble';
 function PageNotFound() {
   const navigate = useNavigate();
   return (
-    <div className="flex h-screen w-screen items-center justify-center antialiased heropattern-circuitboard-slate-200/50">
+    <div className="flex h-screen w-screen items-center justify-center antialiased bg-heropattern">
       <div className="flex h-fit items-center">
         <div className="flex flex-col items-center">
           <div className="text-[8rem] font-bold italic tracking-tighter text-slate-700">
