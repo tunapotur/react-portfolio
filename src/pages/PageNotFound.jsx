@@ -27,7 +27,11 @@ function PageNotFound() {
         </div>
 
         <div className="relative">
-          <SpeechBubble />
+          <SpeechBubble
+            speek={
+              'Why did you wake me up? I need to sleep. Please click the go back button.'
+            }
+          />
           <img
             className="image-dark h-[32rem] drop-shadow-md"
             src="../behlul.png"
