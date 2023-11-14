@@ -31,7 +31,7 @@ function HomeUi({ data }) {
       <img
         src="../main-page-user.jpg"
         alt="user navbar photo"
-        className="image-dark mt-10 h-72 rounded-lg"
+        className="image-dark mt-10 h-72 rounded-md"
       />
     </div>
   );

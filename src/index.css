@@ -23,6 +23,10 @@
     @apply flex w-full flex-col space-y-7;
   }
 
+  .navbar-background {
+    @apply bg-slate-200/50 dark:bg-slate-900/70;
+  }
+
   .readable-background {
     @apply rounded bg-stone-100/40 dark:bg-zinc-950/30;
   }

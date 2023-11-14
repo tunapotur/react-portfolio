@@ -11,7 +11,7 @@ function Sidebar() {
     : '../navbar-user-image-small-light.png';
 
   return (
-    <nav className="border-color flex h-full max-h-screen w-1/4 flex-grow flex-col items-center overflow-y-auto rounded-l-md border-y border-l bg-slate-200/50 px-5 pb-1 pt-5 text-center dark:bg-slate-900/70">
+    <nav className="border-color navbar-background absolute flex h-full w-[25%] flex-grow flex-col items-center overflow-y-auto border-r px-5 pb-1 pt-5 text-center">
       <DarkModeToggle />
       <img
         src={userImage}

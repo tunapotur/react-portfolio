@@ -1,4 +1,5 @@
 import { useDarkMode } from '../context/DarkModeContext';
+
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 function DarkModeToggle() {
@@ -8,7 +9,7 @@ function DarkModeToggle() {
 
   return (
     <DarkModeSwitch
-      style={{ alignSelf: 'flex-end' }}
+      style={{ alignSelf: 'flex-start' }}
       checked={isDarkMode}
       onChange={toggleDarkMode}
       size={24}
