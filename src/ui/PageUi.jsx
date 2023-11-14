@@ -1,6 +1,6 @@
-import { ImSpinner2 } from 'react-icons/im';
 import PaginationAuto from './PaginationAuto';
 import ErrorCart from '../ui/ErrorCart';
+import Loader from './Loader';
 
 function PageUi({ isPending, isError, error, pageHeader, children }) {
   return (
@@ -8,9 +8,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
       <div className="content-container">
         {pageHeader && <h1 className="content-header">{pageHeader}</h1>}
 
-        {isPending && (
-          <ImSpinner2 className="h-24 w-24 animate-spin fill-amber-600/40" />
-        )}
+        {isPending && <Loader />}
 
         {isError && <ErrorCart message={error.message} />}
 
