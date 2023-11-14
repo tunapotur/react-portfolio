@@ -8,11 +8,7 @@
 
 @layer components {
   .content-container {
-    @apply flex w-full flex-col items-center;
-  }
-
-  .content-container-28 {
-    @apply flex  w-[28rem] flex-col items-center;
+    @apply flex flex-col items-center;
   }
 
   .content-header {
@@ -21,6 +17,10 @@
 
   .content-data {
     @apply flex w-full flex-col space-y-7;
+  }
+
+  .content-data-28rem {
+    @apply flex  w-[28rem] flex-col items-center;
   }
 
   .navbar-background {
@@ -37,6 +37,10 @@
 
   .bg-heropattern {
     @apply heropattern-circuitboard-slate-200/50 dark:heropattern-circuitboard-slate-800/50;
+  }
+
+  .translate-animation {
+    @apply transition-all duration-500;
   }
 
   .image-dark {

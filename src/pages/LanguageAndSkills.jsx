@@ -20,7 +20,7 @@ function LanguageAndSkills() {
 
 function LanguageAndSkillsUi({ data }) {
   return (
-    <div className="content-container-28">
+    <div className="content-data-28rem">
       <LanguageOrSkillsConten
         data={data.foreignLanguage}
         header={'Foreign Languages'}

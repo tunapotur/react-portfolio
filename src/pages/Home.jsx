@@ -18,7 +18,7 @@ function Home() {
 
 function HomeUi({ data }) {
   return (
-    <div className="content-container-28 text-center">
+    <div className="content-data-28rem text-center">
       <h3 className="text-3xl">Hi!</h3>
       <h1 className="mt-5 text-4xl font-bold">
         My name is <span>{data.fullName}</span>

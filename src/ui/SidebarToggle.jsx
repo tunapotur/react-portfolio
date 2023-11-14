@@ -7,11 +7,13 @@ function SidebarToggle() {
 
   return (
     <button
-      className="border-color navbar-background absolute left-[25%] top-10 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r"
+      className={`border-color navbar-background translate-animation absolute top-10 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r ${
+        isSidebarOpen ? 'left-[16rem]' : 'left-0'
+      }`}
       onClick={toggleSidebarOpen}
     >
       <FaAngleLeft
-        className={`h-8 w-8 fill-slate-800 transition-transform duration-300 ${
+        className={`translate-animation h-8 w-8 fill-slate-800 ${
           !isSidebarOpen && 'rotate-180'
         }`}
       />
