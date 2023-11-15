@@ -1,4 +1,5 @@
 import useGetData from '../hooks/useGetData';
+import Loader from '../ui/Loader';
 import PageUi from '../ui/PageUi';
 
 function Home() {
@@ -33,6 +34,10 @@ function HomeUi({ data }) {
         alt="user navbar photo"
         className="image-dark mt-10 h-72 rounded-md"
       />
+
+      <div className="border-color mt-10 border">
+        <Loader />
+      </div>
     </div>
   );
 }

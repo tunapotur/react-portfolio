@@ -67,8 +67,63 @@
     @apply -bottom-14 left-2 h-5 w-5 rounded-[1rem];
   }
 
+  .loader-dots-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1.6rem;
+
+    color: var(--color-medium);
+    font-size: 1.4rem;
+  }
+
+  /*
+  @apply flex flex-col items-center gap-[1.6rem] text-[color:var(--color-medium)] text-[1.4rem] mt-16;
+*/
+
+  /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+  .loader-dots {
+    width: 50px;
+    height: 24px;
+    background:
+      radial-gradient(circle closest-side, currentColor 90%, #0000) 0% 50%,
+      radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+      radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+    background-size: calc(100% / 3) 12px;
+    background-repeat: no-repeat;
+    animation: loader-dots 1s infinite linear;
+  }
+
+  @keyframes loader-dots {
+    20% {
+      background-position:
+        0% 0%,
+        50% 50%,
+        100% 50%;
+    }
+    40% {
+      background-position:
+        0% 100%,
+        50% 0%,
+        100% 50%;
+    }
+    60% {
+      background-position:
+        0% 50%,
+        50% 100%,
+        100% 0%;
+    }
+    80% {
+      background-position:
+        0% 50%,
+        50% 50%,
+        100% 100%;
+    }
+  }
+
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
-  .loader {
+  .loaderBars {
     width: 4rem;
     aspect-ratio: 0.75;
     --c: no-repeat linear-gradient(theme(colors.amber.700) 0 0);
@@ -77,10 +132,10 @@
       var(--c) 50% 50%,
       var(--c) 100% 50%;
     background-size: 20% 50%;
-    animation: loading 1s infinite linear;
+    animation: loadingBars 1s infinite linear;
   }
 
-  @keyframes loading {
+  @keyframes loadingBars {
     20% {
       background-position:
         0% 0%,
