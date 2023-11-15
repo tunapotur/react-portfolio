@@ -7,10 +7,6 @@
 @tailwind utilities;
 
 @layer components {
-  .content-header {
-    @apply mb-16 text-2xl font-semibold;
-  }
-
   .content-data {
     @apply flex w-full flex-col space-y-7;
   }
@@ -68,31 +64,20 @@
   }
 
   .loader-dots-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-    gap: 1.6rem;
-
-    color: var(--color-medium);
-    font-size: 1.4rem;
+    @apply flex flex-col items-center gap-[1rem] text-[1.4rem] italic text-slate-600/75 dark:text-slate-400/75;
   }
-
-  /*
-  @apply flex flex-col items-center gap-[1.6rem] text-[color:var(--color-medium)] text-[1.4rem] mt-16;
-*/
 
   /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
   .loader-dots {
-    width: 50px;
-    height: 24px;
+    width: 4rem;
+    height: 2rem;
     background:
       radial-gradient(circle closest-side, currentColor 90%, #0000) 0% 50%,
       radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
       radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
-    background-size: calc(100% / 3) 12px;
+    background-size: calc(100% / 3) 0.8rem;
     background-repeat: no-repeat;
-    animation: loader-dots 1s infinite linear;
+    animation: loader-dots 800ms infinite linear;
   }
 
   @keyframes loader-dots {

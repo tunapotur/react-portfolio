@@ -6,7 +6,7 @@ function Loader() {
   return (
     <div className="loader-dots-container">
       <div className="loader-dots"></div>
-      <p>Loading data...</p>
+      <p>Loading content...</p>
     </div>
   );
 }

@@ -17,6 +17,7 @@ import References from './pages/References';
 import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
 import { SidebarControlProvider } from './context/SidebarControlContext';
+import EmptyPage from './pages/EmptyPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -53,6 +54,7 @@ function App() {
                   element={<UdemyCertificates />}
                 />
                 <Route path="references" element={<References />} />
+                <Route path="empty" element={<EmptyPage />} />
                 <Route
                   path="personelinfoandcontact"
                   element={<PersonelInfoAndContact />}
