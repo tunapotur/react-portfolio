@@ -7,10 +7,6 @@
 @tailwind utilities;
 
 @layer components {
-  .content-container {
-    @apply flex flex-col items-center;
-  }
-
   .content-header {
     @apply mb-16 text-2xl font-semibold;
   }

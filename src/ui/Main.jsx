@@ -5,8 +5,8 @@ function Main({ children }) {
 
   return (
     <main
-      className={`translate-animation flex w-[48rem] flex-col items-center overflow-y-auto px-[3rem] pb-10 pt-24 ${
-        isSidebarOpen ? 'ml-[16rem]' : 'mx-[8rem]'
+      className={`translate-animation flex w-full flex-col items-center overflow-y-auto overflow-x-hidden ${
+        isSidebarOpen ? 'ml-[16rem]' : ''
       }`}
     >
       {children}

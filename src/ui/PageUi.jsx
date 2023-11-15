@@ -5,7 +5,7 @@ import Loader from './Loader';
 function PageUi({ isPending, isError, error, pageHeader, children }) {
   return (
     <>
-      <div className="content-container">
+      <div className="flex h-full w-[48rem] flex-col items-center px-12 pt-12">
         {pageHeader && <h1 className="content-header">{pageHeader}</h1>}
 
         {isPending && <Loader />}
@@ -13,9 +13,9 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
         {isError && <ErrorCart message={error.message} />}
 
         {!isPending && !isError && <>{children}</>}
-      </div>
 
-      <PaginationAuto />
+        <PaginationAuto />
+      </div>
     </>
   );
 }

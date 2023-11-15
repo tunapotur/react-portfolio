@@ -33,7 +33,7 @@ function Pagination() {
     }); */
 
   return (
-    <div className="mt-auto flex w-full pt-10">
+    <div className="mt-auto flex w-full pb-5 pt-10">
       {leftMove && (
         <Link to={'/' + leftMove.pathName}>
           <FaAngleLeft className={iconStyle} />
