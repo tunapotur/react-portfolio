@@ -13,7 +13,7 @@ function SidebarToggle() {
       onClick={toggleSidebarOpen}
     >
       <FaAngleLeft
-        className={`translate-animation h-8 w-8 fill-slate-800 ${
+        className={`translate-animation h-8 w-8 fill-slate-800 dark:fill-slate-300 ${
           !isSidebarOpen && 'rotate-180'
         }`}
       />
