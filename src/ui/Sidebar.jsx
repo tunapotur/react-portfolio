@@ -15,7 +15,7 @@ function Sidebar() {
 
   return (
     <nav
-      className={`border-color navbar-background translate-animation absolute flex h-full w-[16rem] flex-grow flex-col items-center border-r px-5 pb-1 pt-5 text-center ${
+      className={`border-color navbar-background translate-animation absolute flex h-full w-[16rem] flex-grow flex-col items-center overflow-y-auto border-r px-5 pb-1 pt-5 text-center ${
         !isSidebarOpen && '-translate-x-full'
       }`}
     >
