@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { DarkModeProvider } from './context/DarkModeContext';
+import { SidebarControlProvider } from './context/SidebarControlContext';
 
 import AppLayout from './ui/AppLayout';
 import Home from './pages/Home';
@@ -16,8 +17,6 @@ import UdemyCertificates from './pages/UdemyCertificates';
 import References from './pages/References';
 import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
-import { SidebarControlProvider } from './context/SidebarControlContext';
-import EmptyPage from './pages/EmptyPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -54,7 +53,6 @@ function App() {
                   element={<UdemyCertificates />}
                 />
                 <Route path="references" element={<References />} />
-                <Route path="empty" element={<EmptyPage />} />
                 <Route
                   path="personelinfoandcontact"
                   element={<PersonelInfoAndContact />}

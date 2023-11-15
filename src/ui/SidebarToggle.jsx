@@ -7,7 +7,7 @@ function SidebarToggle() {
 
   return (
     <button
-      className={`border-color navbar-background translate-animation absolute top-10 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r ${
+      className={`border-color navbar-background translate-animation absolute right-12 top-10 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r ${
         isSidebarOpen ? 'left-[16rem]' : 'left-0'
       }`}
       onClick={toggleSidebarOpen}
