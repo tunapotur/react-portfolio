@@ -64,10 +64,6 @@
     @apply -bottom-14 left-2 h-5 w-5 rounded-[1rem];
   }
 
-  .loader-dots-container {
-    @apply flex flex-col items-center gap-[1rem] text-[1.4rem] italic text-slate-600/75 dark:text-slate-400/75;
-  }
-
   /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
   .loader-dots {
     width: 4rem;

@@ -31,6 +31,7 @@ function LanguageAndSkillsUi({ data }) {
   );
 }
 
+// TODO noktalar ve yazı aynı çizgide değil
 function LanguageOrSkillsConten({ data, header }) {
   return (
     <div className="mb-12 flex flex-col justify-center">
