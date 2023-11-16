@@ -13,7 +13,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
   return (
     <>
       <div
-        className={`flex h-full flex-col items-center bg-red-300 px-12 pt-12 ${
+        className={`flex h-full flex-col items-center px-12 pt-12 ${
           isMdScreen ? 'w-[48rem]' : 'px-4'
         }`}
       >
@@ -46,10 +46,6 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
               {isXl2Screen && <p>5min 1536px 2X Large Screen</p>}
             </div>
 
-            <div className="relative mt-5 h-[8rem] w-[20rem] overflow-hidden bg-red-800">
-              <div className="absolute left-0 top-0 z-10 w-[16rem] -translate-x-[50%] bg-yellow-500"></div>{' '}
-              <div className="absolute start-0 top-0 z-0 h-[6rem] w-[18rem] bg-black"></div>
-            </div>
             <PaginationAuto />
           </>
         )}

@@ -42,19 +42,17 @@ function SidebarContent() {
 
   return (
     <nav
-      className={`border-color navbar-background translate-animation flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 pt-5 text-center ${
+      className={`border-color navbar-background translate-animation flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 text-center ${
         !isSidebarOpen && '-translate-x-full'
       }`}
     >
       <DarkModeToggle />
-
       <img
         src={userImage}
         alt="user navbar photo"
         className="image-dark mt-2 h-36 rounded-full"
       />
 
-      {/* TODO bunu datan getir */}
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
         Ahmet Tuna Potur
       </h3>
@@ -69,6 +67,7 @@ function SidebarContent() {
         ))}
       </ul>
 
+      {/* TODO  cv dosyası eklenecek */}
       <div className="mb-2 mt-auto text-xs text-slate-600 dark:text-slate-400">
         <div className="border-color mb-2 flex items-center justify-around border-[1px] px-3 py-2">
           <span className="pr-2">Download CV</span>
@@ -128,14 +127,16 @@ function DarkModeToggle() {
   const slate300 = '#cbd5e1';
 
   return (
-    <DarkModeSwitch
-      style={{ alignSelf: 'flex-start' }}
-      checked={isDarkMode}
-      onChange={toggleDarkMode}
-      size={24}
-      moonColor={slate300}
-      sunColor={amber600}
-    />
+    <div className="mt-3 self-start">
+      <DarkModeSwitch
+        style={{}}
+        checked={isDarkMode}
+        onChange={toggleDarkMode}
+        size={24}
+        moonColor={slate300}
+        sunColor={amber600}
+      />
+    </div>
   );
 }
 

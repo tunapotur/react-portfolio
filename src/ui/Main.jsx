@@ -7,7 +7,7 @@ function Main({ children }) {
 
   return (
     <main
-      className={`translate-animation flex h-full w-full justify-center overflow-y-auto overflow-x-hidden bg-lime-500/50 ${
+      className={`translate-animation flex h-full w-full justify-center overflow-y-auto overflow-x-hidden ${
         isLgScreen && isSidebarOpen ? 'ml-[16rem]' : ''
       }`}
     >
