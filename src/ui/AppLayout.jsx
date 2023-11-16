@@ -9,16 +9,25 @@ function AppLayout() {
 
   return (
     <div className={`h-screen ${isLgScreen && 'py-4'}`}>
-      <div
-        className={`bg-heropattern relative flex h-full flex-row overflow-hidden  ${
-          isLgScreen && 'border-color mx-auto w-[64rem] rounded border'
-        }`}
-      >
+      <ContentWrapper>
         <Sidebar />
         <Main>
           <Outlet />
         </Main>
-      </div>
+      </ContentWrapper>
+    </div>
+  );
+}
+
+function ContentWrapper({ children }) {
+  const { isLgScreen } = useScreenBreakpoints();
+  return (
+    <div
+      className={`bg-heropattern relative flex h-full flex-row items-center justify-center overflow-hidden ${
+        isLgScreen && 'border-color mx-auto w-[64rem] rounded border'
+      }`}
+    >
+      {children}
     </div>
   );
 }

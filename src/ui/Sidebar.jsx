@@ -14,17 +14,18 @@ function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
   const { isLgScreen } = useScreenBreakpoints();
   const ref = useDetectClickOutside({ onTriggered: closeSidebar });
+  const sidebarStyle = 'absolute top-0 left-0 z-50 h-full';
 
   if (!isLgScreen)
     return (
-      <div className="relative" ref={ref}>
+      <div className={sidebarStyle} ref={ref}>
         <SidebarToggle />
         <SidebarContent />
       </div>
     );
 
   return (
-    <div>
+    <div className={sidebarStyle}>
       <SidebarToggle />
       <SidebarContent />
     </div>
@@ -41,7 +42,7 @@ function SidebarContent() {
 
   return (
     <nav
-      className={`border-color navbar-background translate-animation absolute z-50 flex h-full w-[16rem] flex-grow flex-col items-center overflow-y-auto border-r px-5 pb-1 pt-5 text-center ${
+      className={`border-color navbar-background translate-animation flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 pt-5 text-center ${
         !isSidebarOpen && '-translate-x-full'
       }`}
     >

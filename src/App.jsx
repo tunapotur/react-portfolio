@@ -34,7 +34,10 @@ function App() {
       <ScreenBreakpointsProvider>
         <SidebarControlProvider>
           <QueryClientProvider client={queryClient}>
-            <ReactQueryDevtools initialIsOpen={false} />
+            <ReactQueryDevtools
+              initialIsOpen={false}
+              buttonPosition={'top-right'}
+            />
             <BrowserRouter>
               <Routes>
                 <Route element={<AppLayout />}>
