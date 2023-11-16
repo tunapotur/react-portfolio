@@ -7,7 +7,7 @@ function Main({ children }) {
 
   return (
     <main
-      className={`translate-animation flex h-full w-full justify-center overflow-y-auto overflow-x-hidden ${
+      className={`translate-animation flex h-full w-full justify-center overflow-y-auto ${
         isLgScreen && isSidebarOpen ? 'ml-[16rem]' : ''
       }`}
     >
@@ -15,5 +15,7 @@ function Main({ children }) {
     </main>
   );
 }
+
+// overflow-x-hidden is deleted
 
 export default Main;

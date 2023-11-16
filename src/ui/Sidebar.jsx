@@ -14,7 +14,11 @@ function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
   const { isLgScreen } = useScreenBreakpoints();
   const ref = useDetectClickOutside({ onTriggered: closeSidebar });
-  const sidebarStyle = 'absolute top-0 left-0 z-50 h-full';
+  const { isSidebarOpen } = useSidebarOpen();
+
+  const sidebarStyle = `translate-animation absolute top-0 left-0 z-50 h-full bg-yellow-400 ${
+    !isSidebarOpen && '-translate-x-full'
+  }`;
 
   if (!isLgScreen)
     return (
@@ -34,7 +38,6 @@ function Sidebar() {
 
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
-  const { isSidebarOpen } = useSidebarOpen();
 
   const userImage = isDarkMode
     ? '../navbar-user-image-small-dark.png'
@@ -42,9 +45,7 @@ function SidebarContent() {
 
   return (
     <nav
-      className={`border-color navbar-background translate-animation flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 text-center ${
-        !isSidebarOpen && '-translate-x-full'
-      }`}
+      className={`border-color navbar-background flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 text-center`}
     >
       <DarkModeToggle />
       <img
@@ -107,9 +108,7 @@ function SidebarToggle() {
 
   return (
     <button
-      className={`border-color navbar-background translate-animation absolute right-12 top-10 z-40 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r ${
-        isSidebarOpen ? 'left-[16rem]' : 'left-0'
-      }`}
+      className="border-color navbar-background translate-animation absolute left-[16rem] right-12 top-10 z-40 flex h-10 w-[2.25rem] items-center justify-center rounded-r-lg border-y border-r"
       onClick={toggleSidebarOpen}
     >
       <FaAngleLeft
