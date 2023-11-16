@@ -1,9 +1,11 @@
 import { createContext, useContext, useState } from 'react';
+import { useScreenBreakpoints } from './ScreenBreakpointsContext';
 
 const SidebarControlContext = createContext();
 
 function SidebarControlProvider({ children }) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const { isLgScreen } = useScreenBreakpoints();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(isLgScreen);
 
   function toggleSidebarOpen() {
     setIsSidebarOpen((isOpen) => !isOpen);

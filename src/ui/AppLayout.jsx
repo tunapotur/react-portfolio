@@ -1,22 +1,20 @@
 import { Outlet } from 'react-router-dom';
-import { useDetectClickOutside } from 'react-detect-click-outside';
+import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
 
-import { useSidebarOpen } from '../context/SidebarControlContext';
-
-import SidebarToggle from './SidebarToggle';
 import Sidebar from './Sidebar';
 import Main from './Main';
 
 function AppLayout() {
-  const { closeSidebar } = useSidebarOpen();
-  const ref = useDetectClickOutside({ onTriggered: closeSidebar });
+  const { isLgScreen } = useScreenBreakpoints();
+
   return (
-    <div className="h-screen py-4">
-      <div className="bg-heropattern border-color relative mx-auto flex h-full w-[64rem] flex-row overflow-hidden rounded border">
-        <div ref={ref}>
-          <SidebarToggle />
-          <Sidebar />
-        </div>
+    <div className={`h-screen ${isLgScreen && 'py-4'}`}>
+      <div
+        className={`bg-heropattern relative flex h-full flex-row overflow-hidden  ${
+          isLgScreen && 'border-color mx-auto w-[64rem] rounded border'
+        }`}
+      >
+        <Sidebar />
         <Main>
           <Outlet />
         </Main>

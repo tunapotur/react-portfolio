@@ -17,6 +17,7 @@ import UdemyCertificates from './pages/UdemyCertificates';
 import References from './pages/References';
 import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
+import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,39 +31,44 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <DarkModeProvider>
-      <SidebarControlProvider>
-        <QueryClientProvider client={queryClient}>
-          <ReactQueryDevtools initialIsOpen={false} />
-          <BrowserRouter>
-            <Routes>
-              <Route element={<AppLayout />}>
-                <Route index element={<Navigate replace to="home" />} />
-                <Route path="home" element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="education" element={<Education />} />
-                <Route path="workexperience" element={<WorkExperience />} />
-                <Route path="mysampleprojects" element={<MySampleProjects />} />
-                <Route
-                  path="languageandskills"
-                  element={<LanguageAndSkills />}
-                />
-                <Route path="achievements" element={<Achievements />} />
-                <Route path="certificates" element={<Certificates />} />
-                <Route
-                  path="udemycertificates"
-                  element={<UdemyCertificates />}
-                />
-                <Route path="references" element={<References />} />
-                <Route
-                  path="personelinfoandcontact"
-                  element={<PersonelInfoAndContact />}
-                />
-              </Route>
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </QueryClientProvider>
-      </SidebarControlProvider>
+      <ScreenBreakpointsProvider>
+        <SidebarControlProvider>
+          <QueryClientProvider client={queryClient}>
+            <ReactQueryDevtools initialIsOpen={false} />
+            <BrowserRouter>
+              <Routes>
+                <Route element={<AppLayout />}>
+                  <Route index element={<Navigate replace to="home" />} />
+                  <Route path="home" element={<Home />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="education" element={<Education />} />
+                  <Route path="workexperience" element={<WorkExperience />} />
+                  <Route
+                    path="mysampleprojects"
+                    element={<MySampleProjects />}
+                  />
+                  <Route
+                    path="languageandskills"
+                    element={<LanguageAndSkills />}
+                  />
+                  <Route path="achievements" element={<Achievements />} />
+                  <Route path="certificates" element={<Certificates />} />
+                  <Route
+                    path="udemycertificates"
+                    element={<UdemyCertificates />}
+                  />
+                  <Route path="references" element={<References />} />
+                  <Route
+                    path="personelinfoandcontact"
+                    element={<PersonelInfoAndContact />}
+                  />
+                </Route>
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </QueryClientProvider>
+        </SidebarControlProvider>
+      </ScreenBreakpointsProvider>
     </DarkModeProvider>
   );
 }

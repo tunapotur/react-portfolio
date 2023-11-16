@@ -1,13 +1,37 @@
-import { useDarkMode } from '../context/DarkModeContext';
+import { NavLink } from 'react-router-dom';
+import { useDetectClickOutside } from 'react-detect-click-outside';
 import { useSidebarOpen } from '../context/SidebarControlContext';
+import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
+import { useDarkMode } from '../context/DarkModeContext';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import { BsDownload } from 'react-icons/bs';
+import { FaAngleLeft } from 'react-icons/fa6';
 
-import DarkModeToggle from './DarkModeToggle';
-import { NavLink } from 'react-router-dom';
 import rootList from '../data/rootList';
 
 function Sidebar() {
+  const { closeSidebar } = useSidebarOpen();
+  const { isLgScreen } = useScreenBreakpoints();
+  const ref = useDetectClickOutside({ onTriggered: closeSidebar });
+
+  if (!isLgScreen)
+    return (
+      <div className="relative" ref={ref}>
+        <SidebarToggle />
+        <SidebarContent />
+      </div>
+    );
+
+  return (
+    <div>
+      <SidebarToggle />
+      <SidebarContent />
+    </div>
+  );
+}
+
+function SidebarContent() {
   const { isDarkMode } = useDarkMode();
   const { isSidebarOpen } = useSidebarOpen();
 
@@ -29,6 +53,7 @@ function Sidebar() {
         className="image-dark mt-2 h-36 rounded-full"
       />
 
+      {/* TODO bunu datan getir */}
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
         Ahmet Tuna Potur
       </h3>
@@ -74,6 +99,42 @@ function StyledNavLink({ linkTo, linkText }) {
         <span>{linkText}</span>
       </NavLink>
     </li>
+  );
+}
+
+function SidebarToggle() {
+  const { isSidebarOpen, toggleSidebarOpen } = useSidebarOpen();
+
+  return (
+    <button
+      className={`border-color navbar-background translate-animation absolute right-12 top-10 z-40 flex h-10 w-9 items-center justify-center rounded-r-lg border-y border-r ${
+        isSidebarOpen ? 'left-[16rem]' : 'left-0'
+      }`}
+      onClick={toggleSidebarOpen}
+    >
+      <FaAngleLeft
+        className={`translate-animation h-8 w-8 fill-slate-800 dark:fill-slate-300 ${
+          !isSidebarOpen && 'rotate-180'
+        }`}
+      />
+    </button>
+  );
+}
+
+function DarkModeToggle() {
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const amber600 = '#d97706';
+  const slate300 = '#cbd5e1';
+
+  return (
+    <DarkModeSwitch
+      style={{ alignSelf: 'flex-start' }}
+      checked={isDarkMode}
+      onChange={toggleDarkMode}
+      size={24}
+      moonColor={slate300}
+      sunColor={amber600}
+    />
   );
 }
 
