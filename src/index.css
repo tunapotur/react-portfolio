@@ -8,7 +8,7 @@
 
 @layer components {
   .content-data {
-    @apply flex w-full flex-col items-center space-y-4 sm:space-y-6;
+    @apply flex w-full flex-col items-center space-y-4 text-left sm:space-y-6 sm:text-justify;
   }
 
   .navbar-background {

@@ -35,12 +35,16 @@ function SampleProjectCart({ data }) {
 
   return (
     <div className="readable-background border-color flex flex-row space-x-4 border p-4">
-      <div className={'flex w-11/12 flex-col space-y-2  text-justify'}>
-        <h2 className="font-semibold">{data.header}</h2>
-        <div>{data.explanation}</div>
+      <div
+        className={'flex w-10/12 flex-col space-y-2 text-justify  sm:w-11/12'}
+      >
+        <h2 className="text-left font-semibold">{data.header}</h2>
+        <div className="">{data.explanation}</div>
       </div>
 
-      <div className={'flex w-1/12 flex-col items-center justify-around'}>
+      <div
+        className={'flex w-2/12 flex-col items-center justify-around sm:w-1/12'}
+      >
         <IconLink href={data.www}>
           <FaLink className={iconSize} />
         </IconLink>

@@ -20,7 +20,7 @@ function Home() {
 function HomeUi({ data }) {
   return (
     <div className="content-narrow">
-      <h3 className="mt-[5rem] text-3xl sm:mt-0">Hi!</h3>
+      <h3 className="text-3xl">Hi!</h3>
       <h1 className="mt-5 text-2xl font-bold sm:text-4xl">
         My name is <span>{data.fullName}</span>
       </h1>

@@ -51,7 +51,7 @@ function SidebarContent() {
       <img
         src={userImage}
         alt="user navbar photo"
-        className="image-dark mt-2 h-36 rounded-full"
+        className="image-dark h-36 rounded-full"
       />
 
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
@@ -108,7 +108,7 @@ function SidebarToggle() {
 
   return (
     <button
-      className="border-color navbar-background translate-animation absolute left-[16rem] right-12 top-10 z-40 flex h-10 w-[2.25rem] items-center justify-center rounded-r-lg border-y border-r"
+      className="border-color navbar-background absolute left-[16rem] right-12 top-10 z-40 flex h-10 w-[2.25rem] items-center justify-center rounded-r-lg border-y border-r"
       onClick={toggleSidebarOpen}
     >
       <FaAngleLeft
@@ -126,7 +126,7 @@ function DarkModeToggle() {
   const slate300 = '#cbd5e1';
 
   return (
-    <div className="mt-3 self-start">
+    <div className="ml-[-0.25rem] mt-[1rem] self-start">
       <DarkModeSwitch
         style={{}}
         checked={isDarkMode}

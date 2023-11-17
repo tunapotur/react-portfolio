@@ -39,7 +39,7 @@ function EducationCart({ data }) {
       <div className={row_item}>
         <div className="italic">{data.graduation}</div>
         <div className="text-left sm:text-right">
-          <span>{data.startYear}</span> - <span>{data.endYear}</span>
+          {`${data.startYear} -  ${data.endYear}`}
         </div>
       </div>
     </div>

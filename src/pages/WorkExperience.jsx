@@ -25,9 +25,7 @@ function WorkExperienceUi({ data }) {
         ))}
       </div>
 
-      <h2 className="mb-3 mt-12 self-start text-xl font-semibold">
-        Internship
-      </h2>
+      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">Internship</h2>
       <div className="content-data">
         {data.internship.map((el) => (
           <InternshipPartTimeCart key={el.id} data={el} />
@@ -46,28 +44,23 @@ function WorkExperienceUi({ data }) {
 
 function WorkExperienceCart({ data }) {
   return (
-    <div className="readable-background border-color flex flex-col space-y-1 border p-4">
-      <div className={'flex flex-row justify-between space-x-2'}>
-        <div>
-          <h3 className="font-semibold">{data.header}</h3>
-          <div className="italic">{data.company}</div>
-          <div className="italic">{data.address}</div>
-        </div>
-
+    <div className="readable-background border-color flex flex-col border p-4">
+      <div className={'flex flex-row justify-between space-x-2 text-left'}>
+        <h3 className="font-semibold">{data.header}</h3>
         <div className="text-right text-sm">
-          <div>{data.startDate}</div>
-          <div>{data.endDate}</div>
+          {`${data.startDate} -  ${data.endDate}`}
         </div>
       </div>
 
-      <div>{data.explanation}</div>
+      <div className="text-left text-sm italic leading-tight">{`${data.company}. ${data.address}`}</div>
+      <div className="mt-1">{data.explanation}</div>
     </div>
   );
 }
 
 function InternshipPartTimeCart({ data }) {
   return (
-    <div className="readable-background border-color flex flex-col space-y-1 border p-2">
+    <div className="readable-background border-color flex flex-col space-y-1 border p-2 text-left">
       <div>
         {data.starYear} - {data.endYear} {data.company}
       </div>
