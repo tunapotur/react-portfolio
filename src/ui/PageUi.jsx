@@ -7,16 +7,13 @@ import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
 function PageUi({ isPending, isError, error, pageHeader, children }) {
   const style = 'flex h-[50%] flex-col items-center justify-center';
 
+  // TODO silinecek
   const { isSmScreen, isMdScreen, isLgScreen, isXgScreen, isXl2Screen } =
     useScreenBreakpoints();
 
   return (
     <>
-      <div
-        className={`flex h-full flex-col items-center px-12 pt-12 ${
-          isMdScreen ? 'w-[48rem]' : 'px-4'
-        }`}
-      >
+      <div className="flex h-full flex-col items-center px-4 pt-12 sm:px-12 md:w-[48rem]">
         {pageHeader && (
           <h1 className="@apply mb-16 text-2xl font-semibold">{pageHeader}</h1>
         )}

@@ -19,13 +19,13 @@ function Home() {
 
 function HomeUi({ data }) {
   return (
-    <div className="content-data-28rem text-center">
-      <h3 className="text-3xl">Hi!</h3>
-      <h1 className="mt-5 text-4xl font-bold">
+    <div className="content-narrow">
+      <h3 className="mt-[5rem] text-3xl sm:mt-0">Hi!</h3>
+      <h1 className="mt-5 text-2xl font-bold sm:text-4xl">
         My name is <span>{data.fullName}</span>
       </h1>
-      <h2 className="text-xl">{data.occupation}</h2>
-      <p className="mt-5 text-lg">
+      <h2 className="text-lg sm:text-xl">{data.occupation}</h2>
+      <p className="mt-5 text-base sm:text-lg">
         This is my portfolio website where you can review my carrier and sample
         project
       </p>

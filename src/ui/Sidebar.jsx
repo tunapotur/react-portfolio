@@ -16,7 +16,7 @@ function Sidebar() {
   const ref = useDetectClickOutside({ onTriggered: closeSidebar });
   const { isSidebarOpen } = useSidebarOpen();
 
-  const sidebarStyle = `translate-animation absolute top-0 left-0 z-50 h-full bg-yellow-400 ${
+  const sidebarStyle = `translate-animation absolute top-0 left-0 z-50 h-full ${
     !isSidebarOpen && '-translate-x-full'
   }`;
 

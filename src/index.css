@@ -11,13 +11,13 @@
     @apply flex w-full flex-col space-y-7;
   }
 
-  .content-data-28rem {
-    @apply flex  w-[28rem] flex-col items-center;
-  }
-
   .navbar-background {
     /*@apply bg-slate-200/50 dark:bg-slate-900/70;*/
     @apply bg-slate-200 dark:bg-slate-900;
+  }
+
+  .content-narrow {
+    @apply flex flex-col items-center text-center sm:w-[28rem];
   }
 
   .readable-background {
