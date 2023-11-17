@@ -27,17 +27,18 @@ function EducationPageUi({ data }) {
 }
 
 function EducationCart({ data }) {
-  const row_item = 'flex flex-row justify-between space-x-2';
+  const row_item =
+    'flex flex-col sm:flex-row justify-between sm:space-x-4 space-x-0 leading-tight sm:leading-normal';
   return (
-    <div className="readable-background border-color flex flex-col space-y-3 border p-4">
+    <div className="readable-background border-color flex w-[16rem] flex-col space-y-1 border px-3 py-2 sm:w-[30rem] sm:space-y-2 sm:px-4 sm:py-3">
       <div className={row_item}>
         <h2 className="font-semibold">{data.department}</h2>
-        <div className="text-right">{data.university}</div>
+        <div className="text-left sm:text-right">{data.university}</div>
       </div>
 
       <div className={row_item}>
         <div className="italic">{data.graduation}</div>
-        <div>
+        <div className="text-left sm:text-right">
           <span>{data.startYear}</span> - <span>{data.endYear}</span>
         </div>
       </div>

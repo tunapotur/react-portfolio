@@ -21,13 +21,15 @@ function About() {
 function AboutUi({ data }) {
   return (
     <>
-      <div className="readable-background flex flex-col space-y-7 text-justify text-xl leading-relaxed">
+      <div className="readable-background flex flex-col space-y-7 px-6 text-left text-lg leading-relaxed sm:px-0 sm:text-justify sm:text-xl">
         {data.aboutMe.map((el) => (
           <p key={uuidv4()}>{el}</p>
         ))}
       </div>
 
-      <h2 className="ml-auto mt-12 text-2xl font-medium">{data.fullName}</h2>
+      <h2 className="ml-auto mr-12 mt-12 text-xl font-medium sm:mr-0 sm:text-2xl">
+        {data.fullName}
+      </h2>
     </>
   );
 }
