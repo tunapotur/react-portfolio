@@ -6,4 +6,3 @@
   - Belki bu sayfanın girişine bir toplam sertifika, başarı sayısı gibi bir şey konabilir
 - React Query staleTime neydi bakılacak.
 - Yön tuşları ile ileri geri sayfa gidişi yapılacak
-- Education darlaşınca yön tuşları da darlaşıyor düzelticek

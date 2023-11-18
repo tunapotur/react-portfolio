@@ -12,7 +12,6 @@
   }
 
   .navbar-background {
-    /*@apply bg-slate-200/50 dark:bg-slate-900/70;*/
     @apply bg-slate-200 dark:bg-slate-900;
   }
 
