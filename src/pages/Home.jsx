@@ -34,6 +34,9 @@ function HomeUi({ data }) {
         alt="user navbar photo"
         className="image-dark mt-10 h-72 rounded-md"
       />
+      <p className="mt-[3rem] text-sm font-thin italic leading-tight text-slate-400 dark:text-slate-500">
+        You could use the left, and right arrow keys to navigate pages.
+      </p>
     </div>
   );
 }
