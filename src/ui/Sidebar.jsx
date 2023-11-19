@@ -93,7 +93,7 @@ function StyledNavLink({ linkTo, linkText }) {
           [
             isPending ? 'loading...' : '',
             isActive ? 'text-amber-700 dark:text-amber-500' : '',
-            'transition-colors hover:text-amber-700 hover:dark:text-amber-500',
+            'link',
           ].join(' ')
         }
       >

@@ -39,6 +39,10 @@
     @apply dark:opacity-90 dark:grayscale-[10%];
   }
 
+  .link {
+    @apply transition-colors hover:text-amber-700 hover:dark:text-amber-500;
+  }
+
   /* https://codepen.io/JoeHastings/pen/gPrPMo?editors=1100 */
   p.bubble {
     @apply relative mx-[2.5rem] my-auto w-[16rem] rounded-[2rem] border-4 border-slate-800 p-5 text-center font-open_sans text-lg font-medium italic leading-6 dark:border-slate-400;
