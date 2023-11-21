@@ -2,6 +2,7 @@ import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
 import GeneralListUi from '../ui/GeneralListUi';
 
+// TODO work experience alanı önceden tek veriden çalışıyordu şimdi 3 farklı veriyi alıp yüklemek gerek
 function WorkExperience() {
   const { isPending, isError, error, data } = useGetData('workExperience');
 
@@ -12,7 +13,7 @@ function WorkExperience() {
       error={error}
       pageHeader={'Work Experience'}
     >
-      <WorkExperienceUi data={data} />
+      <WorkExperienceUi data={data?.filter((item) => item.language === 'en')} />
     </PageUi>
   );
 }
@@ -21,7 +22,7 @@ function WorkExperienceUi({ data }) {
   return (
     <>
       <GeneralListUi
-        data={data.work}
+        data={data.workExperience}
         render={(work) => <WorkExperienceCart key={work.id} data={work} />}
       />
 
@@ -53,7 +54,7 @@ function WorkExperienceCart({ data }) {
         </div>
       </div>
 
-      <div className="text-left text-sm italic leading-tight">{`${data.company}. ${data.address}`}</div>
+      <div className="text-left text-sm italic leading-tight">{`${data.company}.`}</div>
       <div className="mt-1">{data.explanation}</div>
     </div>
   );
@@ -63,7 +64,7 @@ function InternshipPartTimeCart({ data }) {
   return (
     <div className="readable-background border-color flex flex-col space-y-1 border p-2 text-left">
       <div>
-        {data.starYear} - {data.endYear} {data.company}
+        {data.startDate} - {data.endDate} {data.company}
       </div>
       {data.explanation && <div>{data.explanation}</div>}
     </div>

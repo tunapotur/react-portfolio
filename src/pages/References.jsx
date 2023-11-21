@@ -13,7 +13,7 @@ function References() {
       pageHeader={'References'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(reference) => (
           <ReferencesCart key={reference.id} data={reference} />
         )}
@@ -25,7 +25,7 @@ function References() {
 function ReferencesCart({ data }) {
   return (
     <div className="readable-background border-color flex flex-col space-y-1 border p-4">
-      <h3 className="font-semibold">{data.fullName}</h3>
+      <h3 className="font-semibold">{data.name}</h3>
       <div>{data.company}</div>
       <div>{data.vocation}</div>
       <div>{data.info}</div>

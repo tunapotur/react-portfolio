@@ -7,7 +7,8 @@ import { SiGithub, SiStackoverflow, SiLinkedin } from 'react-icons/si';
 import { FaXTwitter } from 'react-icons/fa6';
 
 function PersonelInfoAndContact() {
-  const { isPending, isError, error, data } = useGetData('person');
+  const { isPending, isError, error, data } = useGetData('personalInfo');
+  const filteredData = data?.filter((item) => item.language === 'en')[0];
 
   return (
     <PageUi
@@ -16,7 +17,7 @@ function PersonelInfoAndContact() {
       error={error}
       pageHeader={'Personal Information & Contact'}
     >
-      <PersonelInfoAndContactUi data={data} />
+      <PersonelInfoAndContactUi data={filteredData} />
     </PageUi>
   );
 }
@@ -29,7 +30,7 @@ function PersonelInfoAndContactUi({ data }) {
           <Info header={'Address'} data={data.address} />
           <Info header={'Date of Birth'} data={data.dateOfBirth} />
           <Info header={'Gender'} data={data.gender} />
-          <Info header={'Drive License'} data={data.driveLicense} />
+          <Info header={'Drive License'} data={data.driverLicense} />
         </div>
 
         <div className="flex flex-col space-y-2">
@@ -38,7 +39,7 @@ function PersonelInfoAndContactUi({ data }) {
           </div>
 
           <div className="flex flex-row flex-wrap items-center justify-around gap-3">
-            <SocialMediaLink link={data.github}>
+            <SocialMediaLink link={data.gitHub}>
               <SiGithub />
             </SocialMediaLink>
             <SocialMediaLink link={data.stackoverflow}>

@@ -10,6 +10,7 @@
     {
       "id": "60629568",
       "name": "Ahmet Tuna POTUR",
+      "occupation": "ICT teacher & engineer",
       "aboutMe": "I started my career in the field of information technologies by working for an IT company during my high school years. I completed my university education as a Computer Engineer (M.Sc.) and Computer Teacher (B.Sc.). During my time as a software developer, I gained international work experience by working in many countries. I still work as an expert teacher.",
       "coverLetter": "To whom it may concern, I am applying for the position that your organization needs because I think I have the necessary knowledge, skills, and experience. In 1996-1999, when I was in high school, I worked for an information technology company. Thus, I entered the field of information technologies professionally at a very early age. Afterwards, I completed my education as a Computer Teacher(B.Sc.). and Computer Engineer(M.Sc.). As you will see in my CV, I have worked both in the private sector and in the public sector. During my years in the private sector, I had significant overseas experience as a software developer. I worked in many countries, especially in Russia. I currently work as a specialist teacher at the Ministry of National Education. Teaching, software development and database management are my important skills. I would love to meet you to discuss your expectations and other details about my skills. Thank you for your consideration. Sincerely yours.",
       "address": "Zafer Mah. Büklüm Cad. Gencer Kent Sitesi No:73 A Blok Kat 2 Daire 9 Lüleburgaz / Kırklareli",
@@ -52,8 +53,9 @@
   ],
   "references": [
     {
+      "id": 5664954,
       "name": "xxxxxx xxxxxx",
-      "mission": "IT Manager",
+      "vocation": "IT Manager",
       "company": "ENKA Construction and Industry Inc.",
       "officePhone": "",
       "gsm": "",
@@ -63,8 +65,9 @@
       "fk_userId": "1"
     },
     {
+      "id": 73133436,
       "name": "xxxxxx xxxxxx",
-      "mission": "Senior Principal Researcher",
+      "vocation": "Senior Principal Researcher",
       "company": "Scientific and Technical Research Council of Turkey (TÜBİTAK), RUTE",
       "officePhone": "",
       "gsm": "",
@@ -74,8 +77,9 @@
       "fk_userId": "1"
     },
     {
+      "id": 9569159,
       "name": "xxxxxx xxxxxx",
-      "mission": "Bilgi İşlem Müdürü",
+      "vocation": "Bilgi İşlem Müdürü",
       "company": "ENKA İnşaat ve Sanayi A.Ş.",
       "officePhone": "",
       "gsm": "",
@@ -85,8 +89,9 @@
       "fk_userId": "1"
     },
     {
+      "id": 46333674,
       "name": "xxxxxx xxxxxx",
-      "mission": "Kıdemli Başuzman Araştırmacı",
+      "vocation": "Kıdemli Başuzman Araştırmacı",
       "company": "Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK), RUTE",
       "officePhone": "xxxxxx xxxxxx",
       "gsm": "xxxxxx xxxxxx",
@@ -561,8 +566,8 @@
   "certificates": [
     {
       "id": "79078514",
-      "name": "Expert Teacher Certificate",
-      "place": "Ministry of National Education",
+      "header": "Expert Teacher Certificate",
+      "explanation": "Ministry of National Education",
       "date": "16.12.2022",
       "language": "en",
       "priority": "1",
@@ -570,8 +575,8 @@
     },
     {
       "id": "97465542",
-      "name": "Project Cycle Management (PCM) Training Program Participation Certificate",
-      "place": "Thrace Development Agency",
+      "header": "Project Cycle Management (PCM) Training Program Participation Certificate",
+      "explanation": "Thrace Development Agency",
       "date": "6.12.2017",
       "language": "en",
       "priority": "2",
@@ -579,8 +584,8 @@
     },
     {
       "id": "70056616",
-      "name": "Driver Examination Officer",
-      "place": "Kırklareli-Lüleburgaz Adult Education Center",
+      "header": "Driver Examination Officer",
+      "explanation": "Kırklareli-Lüleburgaz Adult Education Center",
       "date": "30.05.2016",
       "language": "en",
       "priority": "3",
@@ -588,8 +593,8 @@
     },
     {
       "id": "67649696",
-      "name": "Occupational Health and Safety Training Certificate",
-      "place": "Lüleburgaz District Directorate of National Education",
+      "header": "Occupational Health and Safety Training Certificate",
+      "explanation": "Lüleburgaz District Directorate of National Education",
       "date": "5.04.2016",
       "language": "en",
       "priority": "4",
@@ -597,8 +602,8 @@
     },
     {
       "id": "92698668",
-      "name": "Project Cycle Management (PCM) Training Program Participation Certificate",
-      "place": "Trakya Development Agency",
+      "header": "Project Cycle Management (PCM) Training Program Participation Certificate",
+      "explanation": "Trakya Development Agency",
       "date": "7.01.2013",
       "language": "en",
       "priority": "",
@@ -606,8 +611,8 @@
     },
     {
       "id": "75747602",
-      "name": "ISO 9001:2000 Internal Auditor Training Certificate",
-      "place": "Mova Consulting and Training Center",
+      "header": "ISO 9001:2000 Internal Auditor Training Certificate",
+      "explanation": "Mova Consulting and Training Center",
       "date": "5.09.2007",
       "language": "en",
       "priority": "5",
@@ -615,8 +620,8 @@
     },
     {
       "id": "17640797",
-      "name": "Electronic Vocational Area Workplace Opening Certificate",
-      "place": "Lüleburgaz Vocational Training Center",
+      "header": "Electronic Vocational Area Workplace Opening Certificate",
+      "explanation": "Lüleburgaz Vocational Training Center",
       "date": "18.09.2004",
       "language": "en",
       "priority": "",
@@ -624,8 +629,8 @@
     },
     {
       "id": "57981529",
-      "name": "Computer Vocational Training Programs Course Certificate",
-      "place": "Kırklareli-Lüleburgaz Adult Education Center",
+      "header": "Computer Vocational Training Programs Course Certificate",
+      "explanation": "Kırklareli-Lüleburgaz Adult Education Center",
       "date": "15.09.1997",
       "language": "en",
       "priority": "",
@@ -633,8 +638,8 @@
     },
     {
       "id": "27901006",
-      "name": "Uzman Öğretmen Sertifikası",
-      "place": "Milli Eğitim Bakanlığı",
+      "header": "Uzman Öğretmen Sertifikası",
+      "explanation": "Milli Eğitim Bakanlığı",
       "date": "16.12.2022",
       "language": "tr",
       "priority": "1",
@@ -642,8 +647,8 @@
     },
     {
       "id": "86350056",
-      "name": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
-      "place": "Trakya Kalkınma Ajansı",
+      "header": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
+      "explanation": "Trakya Kalkınma Ajansı",
       "date": "6.12.2017",
       "language": "tr",
       "priority": "2",
@@ -651,8 +656,8 @@
     },
     {
       "id": "26314934",
-      "name": "Motorlu Taşıt Sürücüleri Direksiyon Eğitimi Sınav Sorumlusu",
-      "place": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
+      "header": "Motorlu Taşıt Sürücüleri Direksiyon Eğitimi Sınav Sorumlusu",
+      "explanation": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
       "date": "30.05.2016",
       "language": "tr",
       "priority": "3",
@@ -660,8 +665,8 @@
     },
     {
       "id": "73067161",
-      "name": "İş Sağlığı ve Güvenliği Eğitim Sertifikası",
-      "place": "Lüleburgaz İlçe Milli Eğitim Müdürlüğü",
+      "header": "İş Sağlığı ve Güvenliği Eğitim Sertifikası",
+      "explanation": "Lüleburgaz İlçe Milli Eğitim Müdürlüğü",
       "date": "5.04.2016",
       "language": "tr",
       "priority": "4",
@@ -669,8 +674,8 @@
     },
     {
       "id": "95729384",
-      "name": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
-      "place": "Trakya Kalkınma Ajansı",
+      "header": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
+      "explanation": "Trakya Kalkınma Ajansı",
       "date": "7.01.2013",
       "language": "tr",
       "priority": "",
@@ -678,8 +683,8 @@
     },
     {
       "id": "88547729",
-      "name": "ISO 9001:2000 İç Denetçi Eğitimi Sertifikası",
-      "place": "Mova Danışmanlık ve Eğitim Merkezi",
+      "header": "ISO 9001:2000 İç Denetçi Eğitimi Sertifikası",
+      "explanation": "Mova Danışmanlık ve Eğitim Merkezi",
       "date": "5.09.2007",
       "language": "tr",
       "priority": "5",
@@ -687,8 +692,8 @@
     },
     {
       "id": "69211290",
-      "name": "Elektronik Meslek Alanı İş Yeri Açma Belgesi",
-      "place": "Lüleburgaz Mesleki Eğitim Merkezi",
+      "header": "Elektronik Meslek Alanı İş Yeri Açma Belgesi",
+      "explanation": "Lüleburgaz Mesleki Eğitim Merkezi",
       "date": "18.09.2004",
       "language": "tr",
       "priority": "",
@@ -696,8 +701,8 @@
     },
     {
       "id": "40397483",
-      "name": "Bilgisayar Meslek Dalı Eğitim Programları Kurs Sertifikası",
-      "place": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
+      "header": "Bilgisayar Meslek Dalı Eğitim Programları Kurs Sertifikası",
+      "explanation": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
       "date": "15.09.1997",
       "language": "tr",
       "priority": "",
@@ -710,7 +715,7 @@
       "header": "Mastering TypeScript",
       "explanation": "Colt Steele",
       "totalHours": "10,5",
-      "endDate": "4.03.2023",
+      "date": "4.03.2023",
       "language": "en",
       "priority": "1",
       "fk_userId": "1"
@@ -720,7 +725,7 @@
       "header": "Full Stack Food Ordering Project with React(Next.js)",
       "explanation": "Emin Başbayan",
       "totalHours": "23,5",
-      "endDate": "4.02.2023",
+      "date": "4.02.2023",
       "language": "en",
       "priority": "2",
       "fk_userId": "1"
@@ -730,7 +735,7 @@
       "header": "React – The Complete Guide(incl Hooks, React Router, Redux)",
       "explanation": "Maximilian Schwarzmüller",
       "totalHours": "49,5",
-      "endDate": "4.01.2023",
+      "date": "4.01.2023",
       "language": "en",
       "priority": "3",
       "fk_userId": "1"
@@ -740,7 +745,7 @@
       "header": "The Git & Github Bootcamp",
       "explanation": "Colt Steele",
       "totalHours": "17,2",
-      "endDate": "15.07.2022",
+      "date": "15.07.2022",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -750,7 +755,7 @@
       "header": "Build Responsive Real – World Websites with HTML and CSS",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "37,5",
-      "endDate": "8.07.2022",
+      "date": "8.07.2022",
       "language": "en",
       "priority": "4",
       "fk_userId": "1"
@@ -760,7 +765,7 @@
       "header": "Build Dynamic Websites with JavaScript Part 2",
       "explanation": "Clyde Matthew",
       "totalHours": "9,5",
-      "endDate": "6.02.2021",
+      "date": "6.02.2021",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -770,7 +775,7 @@
       "header": "Build Dynamic Websites with JavaScript Part 1",
       "explanation": "Clyde Matthew",
       "totalHours": "5,5",
-      "endDate": "1.02.2021",
+      "date": "1.02.2021",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -780,7 +785,7 @@
       "header": "Figma Training Kit from Start to Finish",
       "explanation": "Ramazan Güler",
       "totalHours": "24,2",
-      "endDate": "12.10.2020",
+      "date": "12.10.2020",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -790,7 +795,7 @@
       "header": "Node.js, Express, MongoDB & More: The Complete Bootcamp",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "42,4",
-      "endDate": "9.09.2020",
+      "date": "9.09.2020",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -800,7 +805,7 @@
       "header": "The Complete JavaScript Course: From Zero to Expert!",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "68,5",
-      "endDate": "11.08.2019",
+      "date": "11.08.2019",
       "language": "en",
       "priority": "5",
       "fk_userId": "1"
@@ -810,7 +815,7 @@
       "header": "Advanced CSS and SASS(SCSS): Flexbox, Grid, Animations and More!",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "28,3",
-      "endDate": "4.02.2019",
+      "date": "4.02.2019",
       "language": "en",
       "priority": "6",
       "fk_userId": "1"
@@ -820,7 +825,7 @@
       "header": "Python Advanced Programming from Scratch",
       "explanation": "Mustafa Murat Coşkun",
       "totalHours": "42,4",
-      "endDate": "14.03.2018",
+      "date": "14.03.2018",
       "language": "en",
       "priority": "",
       "fk_userId": "1"
@@ -830,7 +835,7 @@
       "header": "Mastering TypeScript",
       "explanation": "Colt Steele",
       "totalHours": "10,5",
-      "endDate": "4.03.2023",
+      "date": "4.03.2023",
       "language": "tr",
       "priority": "1",
       "fk_userId": "1"
@@ -840,7 +845,7 @@
       "header": "React(Next.js) ile Full Stack Yemek Sipariş Projesi",
       "explanation": "Emin Başbayan",
       "totalHours": "23,5",
-      "endDate": "4.02.2023",
+      "date": "4.02.2023",
       "language": "tr",
       "priority": "2",
       "fk_userId": "1"
@@ -850,7 +855,7 @@
       "header": "React – The Complete Guide(incl Hooks, React Router, Redux)",
       "explanation": "Maximilian Schwarzmüller",
       "totalHours": "49,5",
-      "endDate": "4.01.2023",
+      "date": "4.01.2023",
       "language": "tr",
       "priority": "3",
       "fk_userId": "1"
@@ -860,7 +865,7 @@
       "header": "The Git & Github Bootcamp",
       "explanation": "Colt Steele",
       "totalHours": "17,2",
-      "endDate": "15.07.2022",
+      "date": "15.07.2022",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -870,7 +875,7 @@
       "header": "Build Responsive Real – World Websites with HTML and CSS",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "37,5",
-      "endDate": "8.07.2022",
+      "date": "8.07.2022",
       "language": "tr",
       "priority": "4",
       "fk_userId": "1"
@@ -880,7 +885,7 @@
       "header": "Build Dynamic Websites with JavaScript Part 2",
       "explanation": "Clyde Matthew",
       "totalHours": "9,5",
-      "endDate": "6.02.2021",
+      "date": "6.02.2021",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -890,7 +895,7 @@
       "header": "Build Dynamic Websites with JavaScript Part 1",
       "explanation": "Clyde Matthew",
       "totalHours": "5,5",
-      "endDate": "1.02.2021",
+      "date": "1.02.2021",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -900,7 +905,7 @@
       "header": "Baştan Sona Uygulamalı Figma Eğitim Seti",
       "explanation": "Ramazan Güler",
       "totalHours": "24,2",
-      "endDate": "12.10.2020",
+      "date": "12.10.2020",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -910,7 +915,7 @@
       "header": "Node.js, Express, MongoDB & More: The Complete Bootcamp",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "42,4",
-      "endDate": "9.09.2020",
+      "date": "9.09.2020",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -920,7 +925,7 @@
       "header": "The Complete JavaScript Course: From Zero to Expert!",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "68,5",
-      "endDate": "11.08.2019",
+      "date": "11.08.2019",
       "language": "tr",
       "priority": "5",
       "fk_userId": "1"
@@ -930,7 +935,7 @@
       "header": "Advanced CSS and SASS(SCSS): Flexbox, Grid, Animations and More!",
       "explanation": "Jonas Schmedtmann",
       "totalHours": "28,3",
-      "endDate": "4.02.2019",
+      "date": "4.02.2019",
       "language": "tr",
       "priority": "6",
       "fk_userId": "1"
@@ -940,7 +945,7 @@
       "header": "Python Sıfırdan İleri Seviye Programlama",
       "explanation": "Mustafa Murat Coşkun",
       "totalHours": "42,4",
-      "endDate": "14.03.2018",
+      "date": "14.03.2018",
       "language": "tr",
       "priority": "",
       "fk_userId": "1"
@@ -1256,6 +1261,7 @@
   ],
   "achievements": [
     {
+      "id": "97364623",
       "header": "Certificate of Outstanding Achievement",
       "explanation": "I have been awarded this certificate by the Ministry of National Education because I have been awarded three times with the Certificate of Achievement for my work.",
       "date": "30.03.2023",
@@ -1263,6 +1269,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "10141458",
       "header": "Certificate of Achievement",
       "explanation": "I have been awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
       "date": "30.03.2023",
@@ -1270,6 +1277,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "33110881",
       "header": "Certificate of Achievement",
       "explanation": "I was awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
       "date": "27.12.2022",
@@ -1277,6 +1285,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "79659969",
       "header": "Certificate of Achievement",
       "explanation": "You have been awarded this certificate by the Minister of National Education for your efforts in the face-to-face education of our students during the Covid-19 process in the second semester of the 2021-2022 academic year.",
       "date": "1.06.2022",
@@ -1284,6 +1293,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "91286131",
       "header": "Certificate of Achievement",
       "explanation": "In the 2021-2022 academic year, I was awarded this certificate by the Minister of National Education for my efforts to ensure that formal education institutions continue face-to-face education and training for five days a week without interruption.",
       "date": "17.01.2022",
@@ -1291,6 +1301,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "67870727",
       "header": "Certificate of Appreciation",
       "explanation": "24 November Teachers' Day Celebration program for my contributions to the District Governor I was entitled to receive this certificate.",
       "date": "12.01.2012",
@@ -1298,6 +1309,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "17150595",
       "header": "Üstün Başarı Belgesi",
       "explanation": "Çalışmalarımdan dolayı üç defa Başarı Belgesi ile ödüllendirilmemden dolayı Milli Eğitim Bakanlığı tarafından bu belgeyi almaya hak kazandım.",
       "date": "30.03.2023",
@@ -1305,6 +1317,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "52522053",
       "header": "Başarı Belgesi",
       "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
       "date": "30.03.2023",
@@ -1312,6 +1325,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "1725466",
       "header": "Başarı Belgesi",
       "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
       "date": "27.12.2022",
@@ -1319,6 +1333,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "95342464",
       "header": "Başarı Belgesi",
       "explanation": "2021-2022 Eğitim-Öğretim yılı II. Döneminde Covid-19 sürecinde, öğrencilerimizin yüz yüze eğitim görmelerinde göstermiş olduğum çalışmalardan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandın.",
       "date": "1.06.2022",
@@ -1326,6 +1341,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "36227677",
       "header": "Başarı Belgesi",
       "explanation": "2021-2022 Eğitim-Öğretim yılında, yüz yüze eğitim ve öğretim sürecinde örgün eğitim kurumlarının, kesintisiz haftada beş gün eğitim ve öğretime yüz yüze devam etmesinde çabalarımdan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandım.",
       "date": "17.01.2022",
@@ -1333,6 +1349,7 @@
       "fk_userId": "1"
     },
     {
+      "id": "24547576",
       "header": "Teşekkür Belgesi",
       "explanation": "24 Kasım Öğretmenler Günü Kutlama programına katkılarımdan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
       "date": "12.01.2012",

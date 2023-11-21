@@ -7,7 +7,7 @@ import { SiGithub } from 'react-icons/si';
 import { IoLibrary } from 'react-icons/io5';
 
 function MySampleProjects() {
-  const { isPending, isError, error, data } = useGetData('mySampleProjects');
+  const { isPending, isError, error, data } = useGetData('sampleProjects');
 
   return (
     <PageUi
@@ -17,7 +17,7 @@ function MySampleProjects() {
       pageHeader={'My Sample Projects'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(project) => (
           <SampleProjectCart key={project.id} data={project} />
         )}
@@ -34,14 +34,14 @@ function SampleProjectCart({ data }) {
       <div
         className={'flex w-10/12 flex-col space-y-2 text-justify  sm:w-11/12'}
       >
-        <h2 className="text-left font-semibold">{data.header}</h2>
+        <h2 className="text-left font-semibold">{data.name}</h2>
         <div className="">{data.explanation}</div>
       </div>
 
       <div
         className={'flex w-2/12 flex-col items-center justify-around sm:w-1/12'}
       >
-        <IconLink href={data.www}>
+        <IconLink href={data.webPage}>
           <FaLink className={iconSize} />
         </IconLink>
 

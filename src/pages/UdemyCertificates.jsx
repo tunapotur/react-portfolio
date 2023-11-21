@@ -4,6 +4,7 @@ import GeneralListUi from '../ui/GeneralListUi';
 
 import PageUi from '../ui/PageUi';
 
+// TODO: öncelik olan veriler için sort özelliği getirilecek
 function UdemyCertificates() {
   const { isPending, isError, error, data } = useGetData('udemyCertificates');
 
@@ -15,7 +16,7 @@ function UdemyCertificates() {
       pageHeader={'Udemy Certificates'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(udemyCertificate) => (
           <CertificateAchievementCart
             key={udemyCertificate.id}
