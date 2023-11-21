@@ -3,6 +3,7 @@ import PageUi from '../ui/PageUi';
 
 import { BsCheckLg } from 'react-icons/bs';
 
+// TODO work experience alanı önceden tek veriden çalışıyordu şimdi 3 farklı veriyi alıp yüklemek gerek
 function LanguageAndSkills() {
   const { isPending, isError, error, data } = useGetData('languageAndSkills');
 

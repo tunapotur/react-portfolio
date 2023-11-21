@@ -1,0 +1,1442 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "ahmet tuna potur",
+      "email": "tunapotur@yahoo.com"
+    }
+  ],
+  "personalInfo": [
+    {
+      "id": "60629568",
+      "name": "Ahmet Tuna POTUR",
+      "occupation": "ICT teacher & engineer",
+      "aboutMe": "I started my career in the field of information technologies by working for an IT company during my high school years. I completed my university education as a Computer Engineer (M.Sc.) and Computer Teacher (B.Sc.). During my time as a software developer, I gained international work experience by working in many countries. I still work as an expert teacher.",
+      "coverLetter": "To whom it may concern, I am applying for the position that your organization needs because I think I have the necessary knowledge, skills, and experience. In 1996-1999, when I was in high school, I worked for an information technology company. Thus, I entered the field of information technologies professionally at a very early age. Afterwards, I completed my education as a Computer Teacher(B.Sc.). and Computer Engineer(M.Sc.). As you will see in my CV, I have worked both in the private sector and in the public sector. During my years in the private sector, I had significant overseas experience as a software developer. I worked in many countries, especially in Russia. I currently work as a specialist teacher at the Ministry of National Education. Teaching, software development and database management are my important skills. I would love to meet you to discuss your expectations and other details about my skills. Thank you for your consideration. Sincerely yours.",
+      "address": "Zafer Mah. Büklüm Cad. Gencer Kent Sitesi No:73 A Blok Kat 2 Daire 9 Lüleburgaz / Kırklareli",
+      "gsm": "+90 535 519 60 90 ",
+      "email": "tunapotur@yahoo.com",
+      "dateOfBirth": "6.03.1981",
+      "placeOfBirth": "Lüleburgaz / Kırklareli",
+      "driverLicense": "B",
+      "gender": "Male",
+      "lastMission": "Teacher",
+      "lastWorkplace": "Turkish Ministry of National Education",
+      "gitHub": "https://github.com/tunapotur",
+      "twitter": "https://twitter.com/tuna_potur",
+      "stackoverflow": "https://stackoverflow.com/users/10060431/ahmet-tuna-potur",
+      "linkedin": "https://www.linkedin.com/in/tunapotur/",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "52009810",
+      "name": "Ahmet Tuna POTUR",
+      "aboutMe": "Bilişim teknolojileri alanındaki kariyerime Lise yıllarında bir bilişim firmasında çalışarak başladım. Üniversite eğitimimi Yüksek Bilgisayar Mühendisi ve Bilgisayar Öğretmeni olarak tamamladım. Yazılım geliştirici olarak görev aldığım dönemde birçok ülkede çalışarak uluslararası iş deneyimi edindim. Halen uzman öğretmen olarak çalışmaktayım.",
+      "coverLetter": "Sayın Yetkili, Kurumunuzun ihtiyacı olan pozisyona gerekli bilgi, beceri ve tecrübeye sahip olduğumu düşündüğümden başvuruyorum. 1996-1999 yıllarında lisede okuyorken bir bilişim teknolojileri firmasında çalıştım. Böylece çok erken bir yaşta bilişim teknolojileri alanına profesyonel olarak giriş yaptım. Sonrasında eğitimimi Bilgisayar Öğretmeni ve Yüksek Bilgisayar Mühendisi olarak tamamladım. Özgeçmişimde göreceğiniz gibi hem özel sektörde hem de devlet kadrosunda çalıştım. Özel sektör yıllarımda yazılım geliştirici olarak önemli düzeyde yurt dışı deneyimim oldu. Başta Rusya olmak üzeri birçok ülkede görev yaptım. Halen uzman öğretmen olarak Milli Eğitim Bakanlığında görev yapmaktayım. Öğretmenlik, yazılım geliştirme ve veri tabanı yönetimi önemli becerilerimdir. Sizin beklentileriniz ve benim becerilerimle ilgili diğer detayları konuşmak üzere sizinle tanışmayı çok isterim. İlginize teşekkür ederim. Saygılarımla.",
+      "address": "Zafer Mah. Büklüm Cad. Gencer Kent Sitesi No:73 A Blok Kat 2 Daire 9 Lüleburgaz / Kırklareli",
+      "gsm": "+90 535 519 60 90 ",
+      "email": "tunapotur@yahoo.com",
+      "dateOfBirth": "6.03.1981",
+      "placeOfBirth": "Lüleburgaz / Kırklareli",
+      "driverLicense": "B",
+      "gender": "Erkek",
+      "lastMission": "Öğretmen",
+      "lastWorkplace": "Milli Eğitim Bakanlığı",
+      "gitHub": "https://github.com/tunapotur",
+      "twitter": "https://twitter.com/tuna_potur",
+      "stackoverflow": "https://stackoverflow.com/users/10060431/ahmet-tuna-potur",
+      "linkedin": "https://www.linkedin.com/in/tunapotur/",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "references": [
+    {
+      "id": 5664954,
+      "name": "xxxxxx xxxxxx",
+      "vocation": "IT Manager",
+      "company": "ENKA Construction and Industry Inc.",
+      "officePhone": "",
+      "gsm": "",
+      "email": "",
+      "info": "For privacy reasons, Contact information will be given to people who contact me personally.",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": 73133436,
+      "name": "xxxxxx xxxxxx",
+      "vocation": "Senior Principal Researcher",
+      "company": "Scientific and Technical Research Council of Turkey (TÜBİTAK), RUTE",
+      "officePhone": "",
+      "gsm": "",
+      "email": "",
+      "info": "For privacy reasons, Contact information will be given to people who contact me personally.",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": 9569159,
+      "name": "xxxxxx xxxxxx",
+      "vocation": "Bilgi İşlem Müdürü",
+      "company": "ENKA İnşaat ve Sanayi A.Ş.",
+      "officePhone": "",
+      "gsm": "",
+      "email": "",
+      "info": "Gizlilik nedeniyle, İletişim bilgileri benimle kişisel olarak iletişime geçen kişilere verilecektir.",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": 46333674,
+      "name": "xxxxxx xxxxxx",
+      "vocation": "Kıdemli Başuzman Araştırmacı",
+      "company": "Türkiye Bilimsel ve Teknik Araştırma Kurumu (TÜBİTAK), RUTE",
+      "officePhone": "xxxxxx xxxxxx",
+      "gsm": "xxxxxx xxxxxx",
+      "email": "xxxxxx xxxxxx",
+      "info": "Gizlilik nedeniyle, İletişim bilgileri benimle kişisel olarak iletişime geçen kişilere verilecektir.",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "workExperience": [
+    {
+      "id": "38893406",
+      "header": "Teacher-Information and Communication Technology(ICT)",
+      "company": "Ministry of National Education. Lüleburgaz / Kırklareli Ramazan Yaman Science High School",
+      "explanation": "I teach web programming and basic programming, guide to the school management and teachers on information technologies, take part in the city-wide ceremonies of schools, providing technical support and IT consultancy for these ceremonies and I am responsible for the smart boards (presentation computer with touch screen) of the schools where I work.",
+      "startDate": "September 2011",
+      "endDate": "Current",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "50027580",
+      "header": "Software Development and Training Specialist",
+      "company": "ENKA Construction and Industry Inc.. İstanbul",
+      "explanation": "ENKA is a construction company operating in many countries. This company uses human resources software developed by its own organization. This software was used for keeping employee records, performance, health and safety monitoring, salary calculation and hourly labor cost calculation. My role in the team responsible for this software; Evaluation of software related requests, coding and testing of requests, determination of the necessary information about the laws of the country where the business is located and integration into the software, selection of personnel to use the program, user training and preparation of consolidated reports requested by management.",
+      "startDate": "March 2006",
+      "endDate": "February 2011",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "46295961",
+      "header": "Teacher-Information and Communication Technology(ICT)",
+      "company": "Ministry of National Education. Vize / Kırklareli Occupational and Technical Education Center",
+      "explanation": "I taught programming, electronics and other vocational technical courses. and worked as an Information Technologies Teacher at the Adult Education Center.",
+      "startDate": "October 2004",
+      "endDate": "February 2006",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "55259211",
+      "header": "Öğretmen – Bilişim Teknolojileri",
+      "company": "Milli Eğitim Bakanlığı, Lüleburgaz Ramazan Yaman Fen Lisesi",
+      "explanation": "Web programlama ve temel programlama dersleri veriyorum. Okul yönetimine ve öğretmenlerine bilişim teknolojileri konusunda rehberlik yapıyorum. Okulların şehir çapında yapılan törenlerinde görev alıyorum. Bu törenlere teknik destek veriyorum ve bilişim danışmanlığını yapıyorum. Çalıştığım okulların akıllı tahtalarından (dokunmatik ekranı bulunan sunum bilgisayarı) sorumluyum.",
+      "startDate": "2011 Eylül",
+      "endDate": "Halen",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "61307429",
+      "header": "Yazılım Geliştirme ve Eğitim Uzmanı",
+      "company": "ENKA İnşaat ve Sanayi A.Ş.",
+      "explanation": "ENKA birçok ülkede faaliyet gösteren bir inşaat firmasıdır. Bu firma kendi bünyesinde hazırlanan insan kaynakları yazılımı kullanılıyor. Bu yazılım; çalışanların kayıtlarını tutma, performans, sağlık ve iş güvenliği takibini, maaş hesabı ve saatlik işçi maliyet hesabı gibi işlemleri yapıyordu. Bu yazılımdan sorumlu ekibin içinde benim görevim; yazılım ile ilgili taleplerin değerlendirilmesi, taleplerin kodlaması ve testi, işletmenin bulunduğu ülkenin yasaları hakkında gerekli bilgilerin tespiti ve yazılıma entegrasyonu, programı kullanacak personelin seçimi, kullanıcı eğitimi ve yönetim tarafından talep edilen konsolide raporların hazırlanmasıydı.",
+      "startDate": "2006 Mart",
+      "endDate": "Şub.11",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "39467303",
+      "header": "Öğretmen – Bilişim Teknolojileri",
+      "company": "Milli Eğitim Bakanlığı, Vize Mesleki ve Teknik Eğitim Merkezi",
+      "explanation": "Programlama, elektronik ve diğer mesleki teknik dersleri verdim. Halk Eğitim merkezinde Bilişim Teknolojileri Öğretmeni olarak çalıştım.",
+      "startDate": "2004 Ekim",
+      "endDate": "2006 Şubat ",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "internship": [
+    {
+      "id": "51590612",
+      "explanation": "Gebze Institute of Technology, Department of Computer Engineering",
+      "startDate": "2002",
+      "endDate": "2003",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "21826152",
+      "explanation": "TÜBİTAK, Marmara Research Center Information Technologies Research Institute",
+      "startDate": "2001",
+      "endDate": "2002",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "51688712",
+      "explanation": "Gebze Yüksek Teknoloji Enstitüsü, Bilgisayar Mühendisliği Bölümü",
+      "startDate": "2002",
+      "endDate": "2003",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "99571670",
+      "explanation": "TÜBİTAK, Marmara Araştırma Merkezi Bilişim Teknolojileri Araştırma Enstitüsü",
+      "startDate": "2001",
+      "endDate": "2002",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "partTimeJobs": [
+    {
+      "id": "62548425",
+      "company": "Barış Computer Lüleburgaz ",
+      "explanation": "During my high school education, I worked part-time during the school season and full-time during the summer vacation",
+      "startDate": "1996",
+      "endDate": "1999",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "89129491",
+      "company": "Barış Bilgisayar Lüleburgaz ",
+      "explanation": "Lise öğrenimim sırasında okul döneminde yarı zamanlı, yaz tatilinde ise tam zamanlı olarak çalıştım.",
+      "startDate": "1996",
+      "endDate": "1999",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "sampleProjects": [
+    {
+      "id": "91257917",
+      "name": "React - My Resume Web Page",
+      "explanation": "I developed this webpage to share my CV using React and Supabase. Please use the buttons on the right-hand side to access the site and source code.",
+      "gitHub": "https://github.com/tunapotur/react-portfolio",
+      "lib": "https://react.dev/",
+      "webPage": "",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67512854",
+      "name": "Nextjs- Successes Web Page",
+      "explanation": "I developed this webpage to share students successes using Nextjs and Supabase. Please use the buttons on the right-hand side to access the site and source code.",
+      "gitHub": "https://github.com/tunapotur/Basarilarim",
+      "lib": "https://nextjs.org/",
+      "webPage": "",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "72498594",
+      "name": "React – Benim Özgeçmiş Web Sayfam",
+      "explanation": "Bu web sayfasını kendi özgeçmişimi paylaşmak için React kullanarak programladım. Yan tarafta bulunan linklere tıklayarak kaynak koda erişebilirsiniz.",
+      "gitHub": "https://github.com/tunapotur/react-portfolio",
+      "lib": "https://react.dev/",
+      "webPage": "",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "46110621",
+      "name": "Nextjs – Başarılarım Web Sayfası",
+      "explanation": "Bu web sayfasını öğrencilerin başarıların paylaşmaları için Nextjs ve Supabase kullanarak programladım. Yan tarafta bulunan linklere tıklayarak kaynak koda erişebilirsiniz.",
+      "gitHub": "https://github.com/tunapotur/Basarilarim",
+      "lib": "https://nextjs.org/",
+      "webPage": "",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "skills": [
+    {
+      "id": "80123278",
+      "explanation": "Interpersonal communication skills",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "28817025",
+      "explanation": "Collaboration and teamwork",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "18904589",
+      "explanation": "Software development",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "37165121",
+      "explanation": "Javascript, Html, Css/Scss, Python, Sql",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "63606562",
+      "explanation": "Creativity",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "81725185",
+      "explanation": "Leadership",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "57637612",
+      "explanation": "Lesson planning",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "29925164",
+      "explanation": "Instructional skills",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "3964769",
+      "explanation": "Kişilerarası iletişim becerileri",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "18223500",
+      "explanation": "İşbirliği ve ekip çalışması",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "72154888",
+      "explanation": "Yazılım geliştirme",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "24083504",
+      "explanation": "Javascript, Html, Css/Scss, Python, Sql",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "56695746",
+      "explanation": "Yaratıcılık",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "26453052",
+      "explanation": "Liderlik",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "13462512",
+      "explanation": "Ders planlaması",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "44050265",
+      "explanation": "Öğretim becerileri",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "computerSkills": [
+    {
+      "id": "77494048",
+      "group": "Software Languages",
+      "skills": "Javascript, Html, Css / Scss, Sql",
+      "level": "Advanced",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "13891072",
+      "group": "Software Languages",
+      "skills": "React, Next, TypeScript, MongoDB, Python, Java, C#, C",
+      "level": "Average",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "82023942",
+      "group": "Office and Content Creation Software",
+      "skills": "Ms Word, Excel, Power Point, Visio, Access, Libre Office, diagrams.net",
+      "level": "Advanced",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "46460672",
+      "group": "Office and Content Creation Software",
+      "skills": "Photoshop, Figma, Gimp, Canva, Balsamiq",
+      "level": "Average",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "37090581",
+      "group": "Programlama Dilleri",
+      "skills": "Javascript, Html, Css / Scss, Sql",
+      "level": "İleri Seviye",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "77274453",
+      "group": "Programlama Dilleri",
+      "skills": "React, Next, TypeScript, MongoDB, Python, Java, C#, C",
+      "level": "Orta Seviye",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "8924936",
+      "group": "Ofis ve İçerik Hazırlama Yazılımları",
+      "skills": "Ms Word, Excel, Power Point, Visio, Access, Libre Office, diagrams.net",
+      "level": "İleri Seviye",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "72152219",
+      "group": "Ofis ve İçerik Hazırlama Yazılımları",
+      "skills": "Photoshop, Figma, Gimp, Canva, Balsamiq",
+      "level": "Orta Seviye",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "areasOfInterest": [
+    {
+      "id": "15247901",
+      "interest": "Pet Care",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "30686286",
+      "interest": "Culture Trips",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "40005611",
+      "interest": "Music",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "12112560",
+      "interest": "Cinema",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "69293701",
+      "interest": "Evcil Hayvan Bakımı",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "30394012",
+      "interest": "Kültür Gezileri",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "85071663",
+      "interest": "Müzik",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "4345370",
+      "interest": "Sinema",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "education": [
+    {
+      "id": "55559613",
+      "department": "Trakya University",
+      "university": "Bachelor of Computer Science (B.Sc.)",
+      "graduation": "Computer Engineering",
+      "startDate": "25.09.2019",
+      "endDate": "22.07.2020",
+      "grade": "4.00/3.66",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "76904743",
+      "department": "Beykent University",
+      "university": "Master of Computer Science (M.Sc.)",
+      "graduation": "Computer Engineering",
+      "startDate": "24.10.2005",
+      "endDate": "25.12.2008",
+      "grade": "4.00/3.12",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "40410666",
+      "department": "Kocaeli University",
+      "university": "Bachelor of Education (B.Sc.)",
+      "graduation": "Technical Computer Teacher",
+      "startDate": "9.10.2000",
+      "endDate": "15.07.2004",
+      "grade": "4.00/2.71",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "86133064",
+      "department": "Lüleburgaz Anatolian Commercial High School",
+      "university": "High School Degree",
+      "graduation": "Computers, Accounting, Tourism, English",
+      "startDate": "18.09.1995",
+      "endDate": "25.06.1999",
+      "grade": "4.00/3.67",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "91274608",
+      "department": "Trakya Üniversitesi",
+      "university": "Lisans",
+      "graduation": "Bilgisayar Mühendisliği",
+      "startDate": "25.09.2019",
+      "endDate": "22.07.2020",
+      "grade": "4.00/3.66",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "59619004",
+      "department": "Beykent Üniversitesi",
+      "university": "Yüksek Lisans",
+      "graduation": "Bilgisayar Mühendisliği",
+      "startDate": "24.10.2005",
+      "endDate": "25.12.2008",
+      "grade": "4.00/3.12",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "44648171",
+      "department": "Kocaeli Üniversitesi",
+      "university": "Lisans",
+      "graduation": "Teknik Eğitim Fakültesi, Bilgisayar Teknik Öğretmenliği",
+      "startDate": "9.10.2000",
+      "endDate": "15.07.2004",
+      "grade": "4.00/2.71",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "54749808",
+      "department": "Lüleburgaz Anadolu Ticaret Meslek Lisesi",
+      "university": "Lise",
+      "graduation": "Bilgisayar, Muhasebe, Turizm, İngilizce",
+      "startDate": "18.09.1995",
+      "endDate": "25.06.1999",
+      "grade": "4.00/3.67",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "79078514",
+      "header": "Expert Teacher Certificate",
+      "explanation": "Ministry of National Education",
+      "date": "16.12.2022",
+      "language": "en",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "97465542",
+      "header": "Project Cycle Management (PCM) Training Program Participation Certificate",
+      "explanation": "Thrace Development Agency",
+      "date": "6.12.2017",
+      "language": "en",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "70056616",
+      "header": "Driver Examination Officer",
+      "explanation": "Kırklareli-Lüleburgaz Adult Education Center",
+      "date": "30.05.2016",
+      "language": "en",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67649696",
+      "header": "Occupational Health and Safety Training Certificate",
+      "explanation": "Lüleburgaz District Directorate of National Education",
+      "date": "5.04.2016",
+      "language": "en",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "92698668",
+      "header": "Project Cycle Management (PCM) Training Program Participation Certificate",
+      "explanation": "Trakya Development Agency",
+      "date": "7.01.2013",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "75747602",
+      "header": "ISO 9001:2000 Internal Auditor Training Certificate",
+      "explanation": "Mova Consulting and Training Center",
+      "date": "5.09.2007",
+      "language": "en",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "17640797",
+      "header": "Electronic Vocational Area Workplace Opening Certificate",
+      "explanation": "Lüleburgaz Vocational Training Center",
+      "date": "18.09.2004",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "57981529",
+      "header": "Computer Vocational Training Programs Course Certificate",
+      "explanation": "Kırklareli-Lüleburgaz Adult Education Center",
+      "date": "15.09.1997",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "27901006",
+      "header": "Uzman Öğretmen Sertifikası",
+      "explanation": "Milli Eğitim Bakanlığı",
+      "date": "16.12.2022",
+      "language": "tr",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "86350056",
+      "header": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
+      "explanation": "Trakya Kalkınma Ajansı",
+      "date": "6.12.2017",
+      "language": "tr",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "26314934",
+      "header": "Motorlu Taşıt Sürücüleri Direksiyon Eğitimi Sınav Sorumlusu",
+      "explanation": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
+      "date": "30.05.2016",
+      "language": "tr",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "73067161",
+      "header": "İş Sağlığı ve Güvenliği Eğitim Sertifikası",
+      "explanation": "Lüleburgaz İlçe Milli Eğitim Müdürlüğü",
+      "date": "5.04.2016",
+      "language": "tr",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "95729384",
+      "header": "Proje Döngüsü Yönetimi(PCM) Eğitimi Programı Katılım Sertifikası",
+      "explanation": "Trakya Kalkınma Ajansı",
+      "date": "7.01.2013",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "88547729",
+      "header": "ISO 9001:2000 İç Denetçi Eğitimi Sertifikası",
+      "explanation": "Mova Danışmanlık ve Eğitim Merkezi",
+      "date": "5.09.2007",
+      "language": "tr",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "69211290",
+      "header": "Elektronik Meslek Alanı İş Yeri Açma Belgesi",
+      "explanation": "Lüleburgaz Mesleki Eğitim Merkezi",
+      "date": "18.09.2004",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "40397483",
+      "header": "Bilgisayar Meslek Dalı Eğitim Programları Kurs Sertifikası",
+      "explanation": "Kırklareli-Lüleburgaz Halk Eğitim Merkezi",
+      "date": "15.09.1997",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    }
+  ],
+  "udemyCertificates": [
+    {
+      "id": "22658963",
+      "header": "Mastering TypeScript",
+      "explanation": "Colt Steele",
+      "totalHours": "10,5",
+      "date": "4.03.2023",
+      "language": "en",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "17762460",
+      "header": "Full Stack Food Ordering Project with React(Next.js)",
+      "explanation": "Emin Başbayan",
+      "totalHours": "23,5",
+      "date": "4.02.2023",
+      "language": "en",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "26008797",
+      "header": "React – The Complete Guide(incl Hooks, React Router, Redux)",
+      "explanation": "Maximilian Schwarzmüller",
+      "totalHours": "49,5",
+      "date": "4.01.2023",
+      "language": "en",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "27765268",
+      "header": "The Git & Github Bootcamp",
+      "explanation": "Colt Steele",
+      "totalHours": "17,2",
+      "date": "15.07.2022",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "91918793",
+      "header": "Build Responsive Real – World Websites with HTML and CSS",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "37,5",
+      "date": "8.07.2022",
+      "language": "en",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "35879277",
+      "header": "Build Dynamic Websites with JavaScript Part 2",
+      "explanation": "Clyde Matthew",
+      "totalHours": "9,5",
+      "date": "6.02.2021",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "6723997",
+      "header": "Build Dynamic Websites with JavaScript Part 1",
+      "explanation": "Clyde Matthew",
+      "totalHours": "5,5",
+      "date": "1.02.2021",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67088670",
+      "header": "Figma Training Kit from Start to Finish",
+      "explanation": "Ramazan Güler",
+      "totalHours": "24,2",
+      "date": "12.10.2020",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "53688929",
+      "header": "Node.js, Express, MongoDB & More: The Complete Bootcamp",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "42,4",
+      "date": "9.09.2020",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "40450363",
+      "header": "The Complete JavaScript Course: From Zero to Expert!",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "68,5",
+      "date": "11.08.2019",
+      "language": "en",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "68723643",
+      "header": "Advanced CSS and SASS(SCSS): Flexbox, Grid, Animations and More!",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "28,3",
+      "date": "4.02.2019",
+      "language": "en",
+      "priority": "6",
+      "fk_userId": "1"
+    },
+    {
+      "id": "59256222",
+      "header": "Python Advanced Programming from Scratch",
+      "explanation": "Mustafa Murat Coşkun",
+      "totalHours": "42,4",
+      "date": "14.03.2018",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "80100931",
+      "header": "Mastering TypeScript",
+      "explanation": "Colt Steele",
+      "totalHours": "10,5",
+      "date": "4.03.2023",
+      "language": "tr",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "18875512",
+      "header": "React(Next.js) ile Full Stack Yemek Sipariş Projesi",
+      "explanation": "Emin Başbayan",
+      "totalHours": "23,5",
+      "date": "4.02.2023",
+      "language": "tr",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "13276932",
+      "header": "React – The Complete Guide(incl Hooks, React Router, Redux)",
+      "explanation": "Maximilian Schwarzmüller",
+      "totalHours": "49,5",
+      "date": "4.01.2023",
+      "language": "tr",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "8026468",
+      "header": "The Git & Github Bootcamp",
+      "explanation": "Colt Steele",
+      "totalHours": "17,2",
+      "date": "15.07.2022",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "64309338",
+      "header": "Build Responsive Real – World Websites with HTML and CSS",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "37,5",
+      "date": "8.07.2022",
+      "language": "tr",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "63626966",
+      "header": "Build Dynamic Websites with JavaScript Part 2",
+      "explanation": "Clyde Matthew",
+      "totalHours": "9,5",
+      "date": "6.02.2021",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "7155142",
+      "header": "Build Dynamic Websites with JavaScript Part 1",
+      "explanation": "Clyde Matthew",
+      "totalHours": "5,5",
+      "date": "1.02.2021",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "91634330",
+      "header": "Baştan Sona Uygulamalı Figma Eğitim Seti",
+      "explanation": "Ramazan Güler",
+      "totalHours": "24,2",
+      "date": "12.10.2020",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "29559895",
+      "header": "Node.js, Express, MongoDB & More: The Complete Bootcamp",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "42,4",
+      "date": "9.09.2020",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "31997204",
+      "header": "The Complete JavaScript Course: From Zero to Expert!",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "68,5",
+      "date": "11.08.2019",
+      "language": "tr",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "77316792",
+      "header": "Advanced CSS and SASS(SCSS): Flexbox, Grid, Animations and More!",
+      "explanation": "Jonas Schmedtmann",
+      "totalHours": "28,3",
+      "date": "4.02.2019",
+      "language": "tr",
+      "priority": "6",
+      "fk_userId": "1"
+    },
+    {
+      "id": "81544948",
+      "header": "Python Sıfırdan İleri Seviye Programlama",
+      "explanation": "Mustafa Murat Coşkun",
+      "totalHours": "42,4",
+      "date": "14.03.2018",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    }
+  ],
+  "seminars": [
+    {
+      "id": "91592130",
+      "header": "Communication with Young People Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "24.06.2023 - 25.06.2023",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "87299678",
+      "header": "Seminar on Improving School Culture",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "24.06.2023 - 25.06.2023",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "95625925",
+      "header": "Time Management Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "19.04.2023 - 20.04.2023",
+      "language": "en",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "29418799",
+      "header": "Teacher in Our Lives Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "19.04.2023 - 20.04.2023",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "80221179",
+      "header": "Responsibility, Leadership and Values Education Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "19.11.2022 - 20.11.2022",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "56258205",
+      "header": "Teacher's Factory Settings Seminar",
+      "totalHours": "5",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "19.11.2022 - 20.11.2022",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "89261184",
+      "header": "Expert Teacher Training Program Seminar",
+      "totalHours": "180",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "18.07.2022 - 05.09.2022",
+      "language": "en",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "39456936",
+      "header": "New Approaches in In-Service Education, Expert Teaching and Head Teacher Process Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "16.04.2022 - 17.04.2022",
+      "language": "en",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "65380391",
+      "header": "Professional Study - Seminar on Memory Theory and English Vocabulary Learning Methods",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "22.11.2021 - 23.11.2021",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "81131721",
+      "header": "Private Transportation Services Vocational Training and Development (SRC) Theoretical and Practical Examiner Seminar",
+      "totalHours": "4",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "28.06.2021 - 29.06.2021 ",
+      "language": "en",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "39066068",
+      "header": "2023 e Project Seminar with our teachers",
+      "totalHours": "28",
+      "explanation": "General Directorate of Teacher Training and Development CENTRAL ORGANIZATION / MINISTRY",
+      "startDate - endDate": "10.09.2018 - 12.09.2018 ",
+      "language": "en",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67322915",
+      "header": "Computer Science Curriculum Introduction Seminar",
+      "totalHours": "30",
+      "explanation": "Erzurum In-Service Training Institute and Evening Art School AZIZIYE / ERZURUM",
+      "startDate - endDate": "08.05.2017 - 12.05.2017",
+      "language": "en",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "20442459",
+      "header": "Gençlerle İletişim Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "24.06.2023 - 25.06.2023",
+      "language": "tr",
+      "priority": "4",
+      "fk_userId": "1"
+    },
+    {
+      "id": "59533664",
+      "header": "Okul Kültürünün Geliştirilmesi Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "24.06.2023 - 25.06.2023",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "8440472",
+      "header": "Zaman Yönetimi Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "19.04.2023 - 20.04.2023",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "31352288",
+      "header": "Hayatımızdaki Öğretmen Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "19.04.2023 - 20.04.2023",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "93728559",
+      "header": "Sorumluluk, Liderlik ve Değerler Eğitimi Semineri ",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "19.11.2022 - 20.11.2022",
+      "language": "tr",
+      "priority": "2",
+      "fk_userId": "1"
+    },
+    {
+      "id": "99228221",
+      "header": "Öğretmenin Fabrika Ayarları Semineri",
+      "totalHours": "5",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "19.11.2022 - 20.11.2022",
+      "language": "tr",
+      "priority": "5",
+      "fk_userId": "1"
+    },
+    {
+      "id": "59216078",
+      "header": "Uzman Öğretmenlik Eğitim Programı Semineri",
+      "totalHours": "180",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "18.07.2022 - 05.09.2022",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "5759456",
+      "header": "Hizmet İçi Eğitimde Yeni Yaklaşımlar, Uzman Öğretmenlik ve Başöğretmenlik Süreci Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "16.04.2022 - 17.04.2022",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "65873368",
+      "header": "Mesleki Çalışma - Bellek Teorisi ve İngilizce Kelime Öğrenme Yöntemleri Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "22.11.2021 - 23.11.2021",
+      "language": "tr",
+      "priority": "3",
+      "fk_userId": "1"
+    },
+    {
+      "id": "78453866",
+      "header": "Özel Ulaştırma Hizmetleri Mesleki Eğitim ve Geliştirme (SRC) Teorik ve Uygulama Sınav Sorumlusu Semineri",
+      "totalHours": "4",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "28.06.2021 - 29.06.2021 ",
+      "language": "tr",
+      "priority": "1",
+      "fk_userId": "1"
+    },
+    {
+      "id": "61286743",
+      "header": "Öğretmenlerimizle 2023 e Projesi Semineri",
+      "totalHours": "28",
+      "explanation": "Öğretmen Yetiştirme ve Geliştirme Genel Müdürlüğü Merkez Teşkilatı / Bakanlık",
+      "startDate - endDate": "10.09.2018 - 12.09.2018 ",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    },
+    {
+      "id": "58721676",
+      "header": "Bilgisayar Bilimi Öğretim Programı Tanıtım Semineri",
+      "totalHours": "30",
+      "explanation": "Erzurum Hizmetiçi Eğitim Enstitüsü ve Akşam Sanat Okulu AZİZİYE / ERZURUM",
+      "startDate - endDate": "08.05.2017 - 12.05.2017",
+      "language": "tr",
+      "priority": "",
+      "fk_userId": "1"
+    }
+  ],
+  "certificatesOfParticipation": [
+    {
+      "id": "99979876",
+      "header": "4006 TUBITAK Science Fairs Support Program Participation Certificate",
+      "explanation": "Ramazan Yaman Science High School Lüleburgaz / Kırklareli",
+      "date": "30.04.2019",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "78777606",
+      "header": "Certificate of Appreciation for Star of the Future Entrepreneurs",
+      "explanation": "Lüleburgaz Municipality and District Directorate of National Education",
+      "date": "25.04.2018",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "43040641",
+      "header": "Star of the Future Entrepreneurs Certificate of Participation",
+      "explanation": "Lüleburgaz Municipality and District Directorate of National Education",
+      "date": "22.03.2018",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "17398536",
+      "header": "I Manage My Budget Project Tutorial Seminar",
+      "explanation": "Participation Certificate Adult Education Center Lüleburgaz / Kırklareli",
+      "date": "15.06.2017",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "34375707",
+      "header": "4006 TÜBİTAK Bilim Fuarları Destekleme Programı Katılım Belgesi",
+      "explanation": "Ramazan Yaman Fen Lisesi Lüleburgaz / Kırklareli",
+      "date": "30.04.2019",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "71342001",
+      "header": "Geleceğin Yıldızı Girişimcileri Teşekkür Belgesi",
+      "explanation": "Lüleburgaz Belediyesi ve İlçe Milli Eğitim Müdürlüğü",
+      "date": "25.04.2018",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "27329640",
+      "header": "Geleceğin Yıldızı Girişimcileri Katılım Belgesi",
+      "explanation": "Lüleburgaz Belediyesi ve İlçe Milli Eğitim Müdürlüğü",
+      "date": "22.03.2018",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "94162774",
+      "header": "Bütçemi Yönetiyorum Projesi Öğretici Semineri Katılım Belgesi",
+      "explanation": "Halk Eğitim Merkezi Lüleburgaz / Kırklareli",
+      "date": "15.06.2017",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "97364623",
+      "header": "Certificate of Outstanding Achievement",
+      "explanation": "I have been awarded this certificate by the Ministry of National Education because I have been awarded three times with the Certificate of Achievement for my work.",
+      "date": "30.03.2023",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "10141458",
+      "header": "Certificate of Achievement",
+      "explanation": "I have been awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
+      "date": "30.03.2023",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "33110881",
+      "header": "Certificate of Achievement",
+      "explanation": "I was awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
+      "date": "27.12.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "79659969",
+      "header": "Certificate of Achievement",
+      "explanation": "You have been awarded this certificate by the Minister of National Education for your efforts in the face-to-face education of our students during the Covid-19 process in the second semester of the 2021-2022 academic year.",
+      "date": "1.06.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "91286131",
+      "header": "Certificate of Achievement",
+      "explanation": "In the 2021-2022 academic year, I was awarded this certificate by the Minister of National Education for my efforts to ensure that formal education institutions continue face-to-face education and training for five days a week without interruption.",
+      "date": "17.01.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67870727",
+      "header": "Certificate of Appreciation",
+      "explanation": "24 November Teachers' Day Celebration program for my contributions to the District Governor I was entitled to receive this certificate.",
+      "date": "12.01.2012",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "17150595",
+      "header": "Üstün Başarı Belgesi",
+      "explanation": "Çalışmalarımdan dolayı üç defa Başarı Belgesi ile ödüllendirilmemden dolayı Milli Eğitim Bakanlığı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "30.03.2023",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "52522053",
+      "header": "Başarı Belgesi",
+      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "30.03.2023",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "1725466",
+      "header": "Başarı Belgesi",
+      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "27.12.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "95342464",
+      "header": "Başarı Belgesi",
+      "explanation": "2021-2022 Eğitim-Öğretim yılı II. Döneminde Covid-19 sürecinde, öğrencilerimizin yüz yüze eğitim görmelerinde göstermiş olduğum çalışmalardan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandın.",
+      "date": "1.06.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "36227677",
+      "header": "Başarı Belgesi",
+      "explanation": "2021-2022 Eğitim-Öğretim yılında, yüz yüze eğitim ve öğretim sürecinde örgün eğitim kurumlarının, kesintisiz haftada beş gün eğitim ve öğretime yüz yüze devam etmesinde çabalarımdan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "17.01.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "24547576",
+      "header": "Teşekkür Belgesi",
+      "explanation": "24 Kasım Öğretmenler Günü Kutlama programına katkılarımdan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "12.01.2012",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
+  "courses": [
+    {
+      "id": "27033482",
+      "header": "First Aid Training Course",
+      "explanation": "Şehit Göktan Özüpek Occupational and Technical Anatolian High School CENTER / KIRKLARELİ",
+      "totalHours": "18",
+      "startDate": "28.12.2021",
+      "endDate": "29.12.2021",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "30529982",
+      "header": "e-Exam Implementation and Monitoring Officer Course",
+      "explanation": "Lüleburgaz Occupational Training Center LÜLEBURGAZ / KIRKLARELİ",
+      "totalHours": "18",
+      "startDate": "23.09.2020",
+      "endDate": "25.09.2020",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "25916396",
+      "header": "Basic Occupational Health and Safety Training Course for Employees",
+      "explanation": "Lüleburgaz Anatolian Imam Hatip High School LÜLEBURGAZ / KIRKLARELİ",
+      "totalHours": "12",
+      "startDate": "1.04.2016",
+      "endDate": "5.04.2016",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "82849693",
+      "header": "Fatih Project Interactive Classroom Management Course",
+      "explanation": "Central Organization / Ministry",
+      "totalHours": "30",
+      "startDate": "18.01.2016",
+      "endDate": "29.01.2016",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "54891640",
+      "header": "İlk Yardım Eğitimi Kursu",
+      "explanation": "Şehit Göktan Özüpek Mesleki ve Teknik Anadolu Lisesi MERKEZ / KIRKLARELİ",
+      "totalHours": "18",
+      "startDate": "28.12.2021",
+      "endDate": "29.12.2021",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "26986604",
+      "header": "e-Sınav Uygulama ve İzleme Sorumlusu Kursu",
+      "explanation": "Lüleburgaz Mesleki Eğitim Merkezi LÜLEBURGAZ / KIRKLARELİ",
+      "totalHours": "18",
+      "startDate": "23.09.2020",
+      "endDate": "25.09.2020",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "16632406",
+      "header": "Çalışanların Temel İş Sağlığı ve Güvenliği Eğitimi Kursu",
+      "explanation": "Lüleburgaz Anadolu İmam Hatip Lisesi LÜLEBURGAZ / KIRKLARELİ",
+      "totalHours": "12",
+      "startDate": "1.04.2016",
+      "endDate": "5.04.2016",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "95118411",
+      "header": "Fatih Projesi Etkileşimli Sınıf Yönetimi Kursu",
+      "explanation": "MERKEZ TEŞKİLATI / BAKANLIK",
+      "totalHours": "30",
+      "startDate": "18.01.2016",
+      "endDate": "29.01.2016",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ]
+}

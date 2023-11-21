@@ -15,7 +15,7 @@ function Achievements() {
       pageHeader={'Achievements'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(achievement) => (
           <CertificateAchievementCart key={achievement.id} data={achievement} />
         )}

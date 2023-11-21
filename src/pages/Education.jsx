@@ -13,7 +13,7 @@ function Education() {
       pageHeader={'Education'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(education) => (
           <EducationCart key={education.id} data={education} />
         )}
@@ -34,7 +34,7 @@ function EducationCart({ data }) {
       <div className={row_item}>
         <div className="text-left italic">{data.graduation}</div>
         <div className="text-right">
-          {`${data.startYear} -  ${data.endYear}`}
+          {`${data.startDate} -  ${data.endDate}`}
         </div>
       </div>
     </div>

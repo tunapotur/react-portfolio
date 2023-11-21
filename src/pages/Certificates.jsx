@@ -15,7 +15,7 @@ function Certificates() {
       pageHeader={'Certificates'}
     >
       <GeneralListUi
-        data={data}
+        data={data?.filter((item) => item.language === 'en')}
         render={(certificate) => (
           <CertificateAchievementCart key={certificate.id} data={certificate} />
         )}
