@@ -1,5 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
+import GeneralListUi from '../ui/GeneralListUi';
 
 function WorkExperience() {
   const { isPending, isError, error, data } = useGetData('workExperience');
@@ -19,18 +20,18 @@ function WorkExperience() {
 function WorkExperienceUi({ data }) {
   return (
     <>
-      <div className="content-data">
-        {data.work.map((el) => (
-          <WorkExperienceCart key={el.id} data={el} />
-        ))}
-      </div>
+      <GeneralListUi
+        data={data.work}
+        render={(work) => <WorkExperienceCart key={work.id} data={work} />}
+      />
 
       <h2 className="mb-3 mt-8 self-start text-xl font-semibold">Internship</h2>
-      <div className="content-data">
-        {data.internship.map((el) => (
-          <InternshipPartTimeCart key={el.id} data={el} />
-        ))}
-      </div>
+      <GeneralListUi
+        data={data.internship}
+        render={(internship) => (
+          <InternshipPartTimeCart key={internship.id} data={internship} />
+        )}
+      />
 
       <h2 className="mb-3 mt-6 self-start text-xl font-semibold">
         Part-time Jobs

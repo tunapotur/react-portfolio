@@ -1,5 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
+import GeneralListUi from '../ui/GeneralListUi';
 
 function References() {
   const { isPending, isError, error, data } = useGetData('references');
@@ -11,18 +12,13 @@ function References() {
       error={error}
       pageHeader={'References'}
     >
-      <ReferencesUi data={data} />
+      <GeneralListUi
+        data={data}
+        render={(reference) => (
+          <ReferencesCart key={reference.id} data={reference} />
+        )}
+      />
     </PageUi>
-  );
-}
-
-function ReferencesUi({ data }) {
-  return (
-    <div className="content-data">
-      {data.map((el) => (
-        <ReferencesCart key={el.id} data={el} />
-      ))}
-    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
+import GeneralListUi from '../ui/GeneralListUi';
 
 function Education() {
   const { isPending, isError, error, data } = useGetData('education');
@@ -11,18 +12,13 @@ function Education() {
       error={error}
       pageHeader={'Education'}
     >
-      <EducationPageUi data={data} />
+      <GeneralListUi
+        data={data}
+        render={(education) => (
+          <EducationCart key={education.id} data={education} />
+        )}
+      />
     </PageUi>
-  );
-}
-
-function EducationPageUi({ data }) {
-  return (
-    <div className="content-data">
-      {data.map((el) => (
-        <EducationCart key={el.id} data={el} />
-      ))}
-    </div>
   );
 }
 

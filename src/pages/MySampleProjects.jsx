@@ -1,5 +1,6 @@
 import PageUi from '../ui/PageUi';
 import useGetData from '../hooks/useGetData';
+import GeneralListUi from '../ui/GeneralListUi';
 
 import { FaLink } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
@@ -15,18 +16,13 @@ function MySampleProjects() {
       error={error}
       pageHeader={'My Sample Projects'}
     >
-      <MySampleProjectsUi data={data} />
+      <GeneralListUi
+        data={data}
+        render={(project) => (
+          <SampleProjectCart key={project.id} data={project} />
+        )}
+      />
     </PageUi>
-  );
-}
-
-function MySampleProjectsUi({ data }) {
-  return (
-    <div className="content-data">
-      {data.map((el) => (
-        <SampleProjectCart key={el.id} data={el} />
-      ))}
-    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
+import GeneralListUi from '../ui/GeneralListUi';
 
 import PageUi from '../ui/PageUi';
 
@@ -13,18 +14,16 @@ function UdemyCertificates() {
       error={error}
       pageHeader={'Udemy Certificates'}
     >
-      <UdemyCertificatesUi data={data} />
+      <GeneralListUi
+        data={data}
+        render={(udemyCertificate) => (
+          <CertificateAchievementCart
+            key={udemyCertificate.id}
+            data={udemyCertificate}
+          />
+        )}
+      />
     </PageUi>
-  );
-}
-
-function UdemyCertificatesUi({ data }) {
-  return (
-    <div className="content-data">
-      {data.map((el) => (
-        <CertificateAchievementCart key={el.id} data={el} />
-      ))}
-    </div>
   );
 }
 

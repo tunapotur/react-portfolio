@@ -1,5 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
+import GeneralListUi from '../ui/GeneralListUi';
 
 import PageUi from '../ui/PageUi';
 
@@ -13,18 +14,13 @@ function Achievements() {
       error={error}
       pageHeader={'Achievements'}
     >
-      <AchievementsUi data={data} />
+      <GeneralListUi
+        data={data}
+        render={(achievement) => (
+          <CertificateAchievementCart key={achievement.id} data={achievement} />
+        )}
+      />
     </PageUi>
-  );
-}
-
-function AchievementsUi({ data }) {
-  return (
-    <div className="content-data">
-      {data.map((el) => (
-        <CertificateAchievementCart key={el.id} data={el} />
-      ))}
-    </div>
   );
 }
 
