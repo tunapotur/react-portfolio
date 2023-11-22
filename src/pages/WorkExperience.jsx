@@ -6,6 +6,7 @@ import ShowDataContent from '../ui/ShowDataContent';
 
 function WorkExperience() {
   // https://www.js-howto.com/how-to-handle-multiple-queries-with-react-query/
+  // https://tanstack.com/query/v5/docs/react/reference/useQueries
   const [workExperience, internship, partTimeJobs] = useQueries({
     queries: [
       {
