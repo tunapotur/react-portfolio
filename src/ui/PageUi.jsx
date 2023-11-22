@@ -37,4 +37,5 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
     </>
   );
 }
+
 export default PageUi;

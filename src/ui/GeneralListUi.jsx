@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { PAGE_SIZE } from '../data/constants';
 
-function CertificateAchievementUi({ data, render }) {
+function GeneralListUi({ data, render }) {
   const itemCount = data.length;
   const [page, setPage] = useState(1);
   const maxPageCount = Math.ceil(itemCount / PAGE_SIZE) * PAGE_SIZE;
@@ -29,4 +29,4 @@ function CertificateAchievementUi({ data, render }) {
   );
 }
 
-export default CertificateAchievementUi;
+export default GeneralListUi;
