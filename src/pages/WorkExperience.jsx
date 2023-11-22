@@ -1,25 +1,10 @@
-import GeneralListUi from '../ui/GeneralListUi';
-
 import { useQueries } from '@tanstack/react-query';
 import axios from 'axios';
 
-// TODO work experience alanı önceden tek veriden çalışıyordu şimdi 3 farklı veriyi alıp yüklemek gerek
-function WorkExperience() {
-  /*   const keys = ['workExperience', 'internship', 'partTimeJobs'];
-  const combinedQueries = useQueries({
-    queries: keys.map((key) => ({
-      queryKey: [key],
-      queryFn: () =>
-        axios.get(`${import.meta.env.VITE_DB}/${key}`).then((res) => res.data),
-    })),
-    combine: (results) => {
-      return {
-        data: results.map((result) => result.data),
-        isPending: results.some((result) => result.isPending),
-      };
-    },
-  }); */
+import PaginationAuto from '../ui/PaginationAuto';
+import ShowDataContent from '../ui/ShowDataContent';
 
+function WorkExperience() {
   // https://www.js-howto.com/how-to-handle-multiple-queries-with-react-query/
   const [workExperience, internship, partTimeJobs] = useQueries({
     queries: [
@@ -47,32 +32,39 @@ function WorkExperience() {
     ],
   });
 
-  console.log(workExperience.isPending);
-
-  return <p>deneme</p>;
-}
-/*
-function WorkExperienceUi({ data }) {
   return (
     <>
-      <GeneralListUi
-        data={data.workExperience}
-        render={(work) => <WorkExperienceCart key={work.id} data={work} />}
-      />
+      <div className="flex h-full flex-col items-center px-4 pt-12 sm:px-12 md:w-[48rem]">
+        <ShowDataContent
+          data={workExperience}
+          header={'Work Experience'}
+          fnRender={(item) => <WorkExperienceCart key={item.id} data={item} />}
+          fnFilter={(item) => item.language === 'en'}
+        />
 
-      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">Internship</h2>
-      <GeneralListUi
-        data={data.internship}
-        render={(internship) => (
-          <InternshipPartTimeCart key={internship.id} data={internship} />
-        )}
-      />
+        <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
+          Internship
+        </h2>
+        <ShowDataContent
+          data={internship}
+          fnRender={(item) => (
+            <InternshipPartTimeCart key={item.id} data={item} />
+          )}
+          fnFilter={(item) => item.language === 'en'}
+        />
 
-      <h2 className="mb-3 mt-6 self-start text-xl font-semibold">
-        Part-time Jobs
-      </h2>
-      <div className="content-data">
-        <InternshipPartTimeCart data={data.partTimeJob} />
+        <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
+          Part Time Jobs
+        </h2>
+        <ShowDataContent
+          data={partTimeJobs}
+          fnRender={(item) => (
+            <InternshipPartTimeCart key={item.id} data={item} />
+          )}
+          fnFilter={(item) => item.language === 'en'}
+        />
+
+        <PaginationAuto />
       </div>
     </>
   );
@@ -96,7 +88,7 @@ function WorkExperienceCart({ data }) {
 
 function InternshipPartTimeCart({ data }) {
   return (
-    <div className="readable-background border-color flex flex-col space-y-1 border p-2 text-left">
+    <div className="readable-background border-color flex w-full flex-col space-y-1 border p-2 text-left">
       <div>
         {data.startDate} - {data.endDate} {data.company}
       </div>
@@ -104,5 +96,5 @@ function InternshipPartTimeCart({ data }) {
     </div>
   );
 }
-*/
+
 export default WorkExperience;
