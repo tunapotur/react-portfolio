@@ -111,9 +111,9 @@ function SidebarToggle() {
       className="border-color navbar-background absolute left-[16rem] right-12 top-10 z-40 flex h-10 w-[2.25rem] items-center justify-center rounded-r-lg border-y border-r"
       onClick={toggleSidebarOpen}
     >
-      <FaAngleLeft
+      <PiDotsThreeVerticalBold
         className={`translate-animation h-8 w-8 fill-slate-800 dark:fill-slate-300 ${
-          !isSidebarOpen && 'rotate-180'
+          !isSidebarOpen && 'rotate-90'
         }`}
       />
     </button>
