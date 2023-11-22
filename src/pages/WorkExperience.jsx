@@ -1,23 +1,57 @@
-import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
 import GeneralListUi from '../ui/GeneralListUi';
+
+import { useQueries } from '@tanstack/react-query';
+import axios from 'axios';
 
 // TODO work experience alanı önceden tek veriden çalışıyordu şimdi 3 farklı veriyi alıp yüklemek gerek
 function WorkExperience() {
-  const { isPending, isError, error, data } = useGetData('workExperience');
+  /*   const keys = ['workExperience', 'internship', 'partTimeJobs'];
+  const combinedQueries = useQueries({
+    queries: keys.map((key) => ({
+      queryKey: [key],
+      queryFn: () =>
+        axios.get(`${import.meta.env.VITE_DB}/${key}`).then((res) => res.data),
+    })),
+    combine: (results) => {
+      return {
+        data: results.map((result) => result.data),
+        isPending: results.some((result) => result.isPending),
+      };
+    },
+  }); */
 
-  return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'Work Experience'}
-    >
-      <WorkExperienceUi data={data?.filter((item) => item.language === 'en')} />
-    </PageUi>
-  );
+  // https://www.js-howto.com/how-to-handle-multiple-queries-with-react-query/
+  const [workExperience, internship, partTimeJobs] = useQueries({
+    queries: [
+      {
+        queryKey: ['workExperience'],
+        queryFn: () =>
+          axios
+            .get(`${import.meta.env.VITE_DB}/${'workExperience'}`)
+            .then((res) => res.data),
+      },
+      {
+        queryKey: ['internship'],
+        queryFn: () =>
+          axios
+            .get(`${import.meta.env.VITE_DB}/${'internship'}`)
+            .then((res) => res.data),
+      },
+      {
+        queryKey: ['partTimeJobs'],
+        queryFn: () =>
+          axios
+            .get(`${import.meta.env.VITE_DB}/${'partTimeJobs'}`)
+            .then((res) => res.data),
+      },
+    ],
+  });
+
+  console.log(workExperience.isPending);
+
+  return <p>deneme</p>;
 }
-
+/*
 function WorkExperienceUi({ data }) {
   return (
     <>
@@ -70,5 +104,5 @@ function InternshipPartTimeCart({ data }) {
     </div>
   );
 }
-
+*/
 export default WorkExperience;
