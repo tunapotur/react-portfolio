@@ -39,9 +39,9 @@ function Sidebar() {
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
 
-  const userImage = isDarkMode
-    ? '../navbar-user-image-small-dark.png'
-    : '../navbar-user-image-small-light.png';
+  const userImageStyle = isDarkMode
+    ? { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
+    : { backgroundColor: 'rgba(255,255,255,0.5)' };
 
   return (
     <nav
@@ -49,9 +49,10 @@ function SidebarContent() {
     >
       <DarkModeToggle />
       <img
-        src={userImage}
+        src="../navbar-user-image-small.png"
         alt="user navbar photo"
         className="image-dark h-36 rounded-full"
+        style={userImageStyle}
       />
 
       <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
