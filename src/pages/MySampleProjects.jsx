@@ -45,7 +45,7 @@ function SampleProjectCart({ data }) {
           <FaLink className={iconSize} />
         </IconLink>
 
-        <IconLink href={data.github}>
+        <IconLink href={data.gitHub}>
           <SiGithub className={iconSize} />
         </IconLink>
 

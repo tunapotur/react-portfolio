@@ -7,7 +7,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
 
   return (
     <>
-      <div className="flex h-full flex-col items-center px-4 pt-12 sm:px-12 md:w-[48rem]">
+      <div className="flex h-full flex-col items-center px-4 pt-6 sm:px-12 md:w-[48rem]">
         {pageHeader && (
           <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
             {pageHeader}

@@ -21,22 +21,28 @@ function HomeUi({ data }) {
   return (
     <div className="content-narrow">
       <h3 className="text-3xl">Hi!</h3>
-      <h1 className="mt-5 text-2xl font-bold sm:text-4xl">
-        My name is <span>{data.name}</span>
+      <h1 className="mt-1 text-2xl font-bold sm:text-4xl">
+        I Am <span>{data.name}</span>
       </h1>
       <h2 className="text-lg sm:text-xl">{data.occupation}</h2>
-      <p className="mt-5 text-base sm:text-lg">
-        This is my portfolio website where you can review my carrier and sample
-        project
-      </p>
+
       <img
         src="../main-page-user.jpg"
         alt="user navbar photo"
-        className="image-dark mt-10 h-72 rounded-md"
+        className="image-dark mt-5 h-72 rounded-md"
       />
+
       {/* TODO about me düzenlenecek. Daha düzgün bir giriş yapılacak */}
-      <p>{data.aboutMe}</p>
-      <p className="mt-[3rem] text-sm font-thin italic leading-tight text-slate-400 dark:text-slate-500">
+      <p className="readable-background mt-8 text-left font-open_sans text-base leading-6">
+        {data.aboutMe}
+      </p>
+
+      <p className="readable-background mt-3 text-left font-open_sans text-base leading-6">
+        This is my portfolio website where you can review my carrier and sample
+        project
+      </p>
+
+      <p className="mt-[3rem] hidden text-sm font-thin italic leading-tight text-slate-500 dark:text-slate-400 sm:block">
         You could use the left, and right arrow keys to navigate pages.
       </p>
     </div>

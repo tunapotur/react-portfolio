@@ -34,11 +34,11 @@ function WorkExperience() {
   });
 
   return (
-    <div className="flex h-full flex-col items-center px-4 pt-12 sm:px-12 md:w-[48rem]">
+    <div className="flex h-full flex-col items-center px-4 pt-6 sm:px-12 md:w-[48rem]">
+      <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+        Work Experience
+      </h1>
       <div className="content-data">
-        <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-          Work Experience
-        </h1>
         <ShowDataContent
           data={workExperience}
           fnRender={(item) => <WorkExperienceCart key={item.id} data={item} />}
@@ -46,10 +46,8 @@ function WorkExperience() {
         />
       </div>
 
+      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">Internship</h2>
       <div className="content-data">
-        <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
-          Internship
-        </h2>
         <ShowDataContent
           data={internship}
           fnRender={(item) => (
@@ -59,10 +57,10 @@ function WorkExperience() {
         />
       </div>
 
+      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
+        Part Time Jobs
+      </h2>
       <div className="content-data">
-        <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
-          Part Time Jobs
-        </h2>
         <ShowDataContent
           data={partTimeJobs}
           fnRender={(item) => (
