@@ -360,28 +360,28 @@
   "language": [
     {
       "id": "214569133",
-      "foreignLanguage": "English",
+      "explanation": "English",
       "level": "B2",
       "language": "en",
       "fk_userId": "1"
     },
     {
       "id": "706883084",
-      "foreignLanguage": "Russian",
+      "explanation": "Russian",
       "level": "A2",
       "language": "en",
       "fk_userId": "1"
     },
     {
       "id": "817183370",
-      "foreignLanguage": "İngilizce",
+      "explanation": "İngilizce",
       "level": "B2",
       "language": "tr",
       "fk_userId": "1"
     },
     {
       "id": "337416085",
-      "foreignLanguage": "Rusça",
+      "explanation": "Rusça",
       "level": "A2",
       "language": "tr",
       "fk_userId": "1"
