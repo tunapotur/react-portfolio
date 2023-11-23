@@ -6,7 +6,6 @@ function ShowDataContent({ data, fnRender, fnFilter }) {
 
   const style = 'flex h-[50%] flex-col items-center justify-center';
 
-  // TODO GeneralListUi componentinde bulunan show more özelliğini buraya uyarla. Sonrasında tüm sayfalarda PageUi ve GeneralListUi'in kaldırılması denenecek
   return (
     <>
       {data.isPending && (

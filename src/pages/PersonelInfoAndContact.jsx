@@ -1,7 +1,6 @@
 import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
 import { IconContext } from 'react-icons';
-import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
 
 import { SiGithub, SiStackoverflow, SiLinkedin } from 'react-icons/si';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -26,7 +25,7 @@ function PersonelInfoAndContactUi({ data }) {
   return (
     <div className="content-data">
       <div className="readable-background border-color flex flex-col space-y-1 border p-4">
-        <div className="mb-2 flex flex-col space-y-1">
+        <div className="mb-2 flex flex-col space-y-3">
           <Info header={'Address'} data={data.address} />
           <Info header={'Date of Birth'} data={data.dateOfBirth} />
           <Info header={'Gender'} data={data.gender} />
@@ -59,13 +58,11 @@ function PersonelInfoAndContactUi({ data }) {
 }
 
 function Info({ header, data }) {
-  const { isSmScreen } = useScreenBreakpoints();
-  const formattedData = isSmScreen ? ': ' + data : data;
   return (
     <>
-      <div className="flex flex-col space-x-0 sm:flex-row sm:space-x-1">
+      <div className="flex flex-col">
         <div className="font-semibold">{header}</div>
-        <div className="">{formattedData}</div>
+        <div className="leading-5">{data}</div>
       </div>
     </>
   );

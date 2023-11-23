@@ -32,7 +32,6 @@ function HomeUi({ data }) {
         className="image-dark mt-5 h-72 rounded-md"
       />
 
-      {/* TODO about me düzenlenecek. Daha düzgün bir giriş yapılacak */}
       <p className="readable-background mt-8 text-left font-open_sans text-base leading-6">
         {data.aboutMe}
       </p>
