@@ -1,3 +1,9 @@
+import { useQueries } from '@tanstack/react-query';
+import axios from 'axios';
+
+import PaginationAuto from '../ui/PaginationAuto';
+import ShowDataContent from '../ui/ShowDataContent';
+
 import useGetData from '../hooks/useGetData';
 import PageUi from '../ui/PageUi';
 
@@ -5,10 +11,29 @@ import { BsCheckLg } from 'react-icons/bs';
 
 // TODO work experience alanı önceden tek veriden çalışıyordu şimdi 3 farklı veriyi alıp yüklemek gerek
 function LanguageAndSkills() {
-  const { isPending, isError, error, data } = useGetData('languageAndSkills');
+  const [skills, language] = useQueries({
+    queries: [
+      {
+        queryKey: ['skills'],
+        queryFn: () =>
+          axios
+            .get(`${import.meta.env.VITE_DB}/${'skills'}`)
+            .then((res) => res.data),
+      },
+      {
+        queryKey: ['language'],
+        queryFn: () =>
+          axios
+            .get(`${import.meta.env.VITE_DB}/${'language'}`)
+            .then((res) => res.data),
+      },
+    ],
+  });
+  return <div className="content-narrow"></div>;
+}
 
-  return (
-    <PageUi
+/*
+  <PageUi
       isPending={isPending}
       isError={isError}
       error={error}
@@ -16,8 +41,8 @@ function LanguageAndSkills() {
     >
       <LanguageAndSkillsUi data={data} />
     </PageUi>
-  );
-}
+  
+*/
 
 function LanguageAndSkillsUi({ data }) {
   return (

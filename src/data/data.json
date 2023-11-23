@@ -357,6 +357,36 @@
       "fk_userId": "1"
     }
   ],
+  "language": [
+    {
+      "id": "214569133",
+      "foreignLanguage": "English",
+      "level": "B2",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "706883084",
+      "foreignLanguage": "Russian",
+      "level": "A2",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "817183370",
+      "foreignLanguage": "İngilizce",
+      "level": "B2",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "337416085",
+      "foreignLanguage": "Rusça",
+      "level": "A2",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
   "computerSkills": [
     {
       "id": "77494048",
