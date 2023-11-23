@@ -26,33 +26,37 @@ function LanguageAndSkills() {
     ],
   });
   return (
-    <div className="content-narrow">
+    <div className="flex h-full flex-col items-center px-4 pt-12 sm:px-12 md:w-[48rem]">
       <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
         Foreign Languages & Skills
       </h1>
+      <div className="content-narrow">
+        <div className="mb-12 flex flex-col justify-center space-y-4">
+          <h2 className="text-xl font-semibold">Foreign Languages</h2>
+          <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
+            <ShowDataContent
+              data={language}
+              fnRender={(item) => (
+                <LanguageSkillCart key={item.id} data={item} />
+              )}
+              fnFilter={(item) => item.language === 'en'}
+            />
+          </ul>
+        </div>
 
-      <div className="mb-12 flex flex-col justify-center space-y-4">
-        <h2 className="text-xl font-semibold">Language</h2>
-        <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
-          <ShowDataContent
-            data={language}
-            fnRender={(item) => <LanguageSkillCart key={item.id} data={item} />}
-            fnFilter={(item) => item.language === 'en'}
-          />
-        </ul>
+        <div className="mb-12 flex flex-col justify-center space-y-4">
+          <h2 className="text-xl font-semibold">Skills</h2>
+          <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
+            <ShowDataContent
+              data={skills}
+              fnRender={(item) => (
+                <LanguageSkillCart key={item.id} data={item} />
+              )}
+              fnFilter={(item) => item.language === 'en'}
+            />
+          </ul>
+        </div>
       </div>
-
-      <div className="mb-12 flex flex-col justify-center space-y-4">
-        <h2 className="text-xl font-semibold">Skills</h2>
-        <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
-          <ShowDataContent
-            data={skills}
-            fnRender={(item) => <LanguageSkillCart key={item.id} data={item} />}
-            fnFilter={(item) => item.language === 'en'}
-          />
-        </ul>
-      </div>
-
       <PaginationAuto />
     </div>
   );
