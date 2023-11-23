@@ -28,7 +28,7 @@ function LanguageAndSkills() {
   return (
     <div className="content-narrow">
       <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        Work Experience
+        Foreign Languages & Skills
       </h1>
 
       <div className="mb-12 flex flex-col justify-center space-y-4">
