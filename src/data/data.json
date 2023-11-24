@@ -596,6 +596,104 @@
       "fk_userId": "1"
     }
   ],
+  "achievements": [
+    {
+      "id": "97364623",
+      "header": "Certificate of Outstanding Achievement",
+      "explanation": "I have been awarded this certificate by the Ministry of National Education because I have been awarded three times with the Certificate of Achievement for my work.",
+      "date": "30.03.2023",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "10141458",
+      "header": "Certificate of Achievement",
+      "explanation": "I have been awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
+      "date": "30.03.2023",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "33110881",
+      "header": "Certificate of Achievement",
+      "explanation": "I was awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
+      "date": "27.12.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "79659969",
+      "header": "Certificate of Achievement",
+      "explanation": "You have been awarded this certificate by the Minister of National Education for your efforts in the face-to-face education of our students during the Covid-19 process in the second semester of the 2021-2022 academic year.",
+      "date": "1.06.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "91286131",
+      "header": "Certificate of Achievement",
+      "explanation": "In the 2021-2022 academic year, I was awarded this certificate by the Minister of National Education for my efforts to ensure that formal education institutions continue face-to-face education and training for five days a week without interruption.",
+      "date": "17.01.2022",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "67870727",
+      "header": "Certificate of Appreciation",
+      "explanation": "24 November Teachers' Day Celebration program for my contributions to the District Governor I was entitled to receive this certificate.",
+      "date": "12.01.2012",
+      "language": "en",
+      "fk_userId": "1"
+    },
+    {
+      "id": "17150595",
+      "header": "Üstün Başarı Belgesi",
+      "explanation": "Çalışmalarımdan dolayı üç defa Başarı Belgesi ile ödüllendirilmemden dolayı Milli Eğitim Bakanlığı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "30.03.2023",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "52522053",
+      "header": "Başarı Belgesi",
+      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "30.03.2023",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "1725466",
+      "header": "Başarı Belgesi",
+      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "27.12.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "95342464",
+      "header": "Başarı Belgesi",
+      "explanation": "2021-2022 Eğitim-Öğretim yılı II. Döneminde Covid-19 sürecinde, öğrencilerimizin yüz yüze eğitim görmelerinde göstermiş olduğum çalışmalardan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandın.",
+      "date": "1.06.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "36227677",
+      "header": "Başarı Belgesi",
+      "explanation": "2021-2022 Eğitim-Öğretim yılında, yüz yüze eğitim ve öğretim sürecinde örgün eğitim kurumlarının, kesintisiz haftada beş gün eğitim ve öğretime yüz yüze devam etmesinde çabalarımdan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "17.01.2022",
+      "language": "tr",
+      "fk_userId": "1"
+    },
+    {
+      "id": "24547576",
+      "header": "Teşekkür Belgesi",
+      "explanation": "24 Kasım Öğretmenler Günü Kutlama programına katkılarımdan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
+      "date": "12.01.2012",
+      "language": "tr",
+      "fk_userId": "1"
+    }
+  ],
   "certificates": [
     {
       "id": "79078514",
@@ -1232,6 +1330,7 @@
       "header": "4006 TUBITAK Science Fairs Support Program Participation Certificate",
       "explanation": "Ramazan Yaman Science High School Lüleburgaz / Kırklareli",
       "date": "30.04.2019",
+      "priority": "1",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1240,6 +1339,7 @@
       "header": "Certificate of Appreciation for Star of the Future Entrepreneurs",
       "explanation": "Lüleburgaz Municipality and District Directorate of National Education",
       "date": "25.04.2018",
+      "priority": "2",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1248,6 +1348,7 @@
       "header": "Star of the Future Entrepreneurs Certificate of Participation",
       "explanation": "Lüleburgaz Municipality and District Directorate of National Education",
       "date": "22.03.2018",
+      "priority": "3",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1256,6 +1357,7 @@
       "header": "I Manage My Budget Project Tutorial Seminar",
       "explanation": "Participation Certificate Adult Education Center Lüleburgaz / Kırklareli",
       "date": "15.06.2017",
+      "priority": "4",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1264,6 +1366,7 @@
       "header": "4006 TÜBİTAK Bilim Fuarları Destekleme Programı Katılım Belgesi",
       "explanation": "Ramazan Yaman Fen Lisesi Lüleburgaz / Kırklareli",
       "date": "30.04.2019",
+      "priority": "1",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1272,6 +1375,7 @@
       "header": "Geleceğin Yıldızı Girişimcileri Teşekkür Belgesi",
       "explanation": "Lüleburgaz Belediyesi ve İlçe Milli Eğitim Müdürlüğü",
       "date": "25.04.2018",
+      "priority": "2",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1280,6 +1384,7 @@
       "header": "Geleceğin Yıldızı Girişimcileri Katılım Belgesi",
       "explanation": "Lüleburgaz Belediyesi ve İlçe Milli Eğitim Müdürlüğü",
       "date": "22.03.2018",
+      "priority": "3",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1288,104 +1393,7 @@
       "header": "Bütçemi Yönetiyorum Projesi Öğretici Semineri Katılım Belgesi",
       "explanation": "Halk Eğitim Merkezi Lüleburgaz / Kırklareli",
       "date": "15.06.2017",
-      "language": "tr",
-      "fk_userId": "1"
-    }
-  ],
-  "achievements": [
-    {
-      "id": "97364623",
-      "header": "Certificate of Outstanding Achievement",
-      "explanation": "I have been awarded this certificate by the Ministry of National Education because I have been awarded three times with the Certificate of Achievement for my work.",
-      "date": "30.03.2023",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "10141458",
-      "header": "Certificate of Achievement",
-      "explanation": "I have been awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
-      "date": "30.03.2023",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "33110881",
-      "header": "Certificate of Achievement",
-      "explanation": "I was awarded this certificate by the District Governor for my efforts and contributions to the ceremonies and events organized in the 2022-2023 academic year.",
-      "date": "27.12.2022",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "79659969",
-      "header": "Certificate of Achievement",
-      "explanation": "You have been awarded this certificate by the Minister of National Education for your efforts in the face-to-face education of our students during the Covid-19 process in the second semester of the 2021-2022 academic year.",
-      "date": "1.06.2022",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "91286131",
-      "header": "Certificate of Achievement",
-      "explanation": "In the 2021-2022 academic year, I was awarded this certificate by the Minister of National Education for my efforts to ensure that formal education institutions continue face-to-face education and training for five days a week without interruption.",
-      "date": "17.01.2022",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "67870727",
-      "header": "Certificate of Appreciation",
-      "explanation": "24 November Teachers' Day Celebration program for my contributions to the District Governor I was entitled to receive this certificate.",
-      "date": "12.01.2012",
-      "language": "en",
-      "fk_userId": "1"
-    },
-    {
-      "id": "17150595",
-      "header": "Üstün Başarı Belgesi",
-      "explanation": "Çalışmalarımdan dolayı üç defa Başarı Belgesi ile ödüllendirilmemden dolayı Milli Eğitim Bakanlığı tarafından bu belgeyi almaya hak kazandım.",
-      "date": "30.03.2023",
-      "language": "tr",
-      "fk_userId": "1"
-    },
-    {
-      "id": "52522053",
-      "header": "Başarı Belgesi",
-      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
-      "date": "30.03.2023",
-      "language": "tr",
-      "fk_userId": "1"
-    },
-    {
-      "id": "1725466",
-      "header": "Başarı Belgesi",
-      "explanation": "2022-2023 Eğitim-Öğretim yılında düzenlenen tören ve etkinliklerde göstermiş olduğum gayret ve katkılardan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
-      "date": "27.12.2022",
-      "language": "tr",
-      "fk_userId": "1"
-    },
-    {
-      "id": "95342464",
-      "header": "Başarı Belgesi",
-      "explanation": "2021-2022 Eğitim-Öğretim yılı II. Döneminde Covid-19 sürecinde, öğrencilerimizin yüz yüze eğitim görmelerinde göstermiş olduğum çalışmalardan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandın.",
-      "date": "1.06.2022",
-      "language": "tr",
-      "fk_userId": "1"
-    },
-    {
-      "id": "36227677",
-      "header": "Başarı Belgesi",
-      "explanation": "2021-2022 Eğitim-Öğretim yılında, yüz yüze eğitim ve öğretim sürecinde örgün eğitim kurumlarının, kesintisiz haftada beş gün eğitim ve öğretime yüz yüze devam etmesinde çabalarımdan dolayı Milli Eğitim Bakanı tarafından bu belgeyi almaya hak kazandım.",
-      "date": "17.01.2022",
-      "language": "tr",
-      "fk_userId": "1"
-    },
-    {
-      "id": "24547576",
-      "header": "Teşekkür Belgesi",
-      "explanation": "24 Kasım Öğretmenler Günü Kutlama programına katkılarımdan dolayı İlçe Kaymakamı tarafından bu belgeyi almaya hak kazandım.",
-      "date": "12.01.2012",
+      "priority": "4",
       "language": "tr",
       "fk_userId": "1"
     }
@@ -1398,6 +1406,7 @@
       "totalHours": "18",
       "startDate": "28.12.2021",
       "endDate": "29.12.2021",
+      "priority": "1",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1408,6 +1417,7 @@
       "totalHours": "18",
       "startDate": "23.09.2020",
       "endDate": "25.09.2020",
+      "priority": "2",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1418,6 +1428,7 @@
       "totalHours": "12",
       "startDate": "1.04.2016",
       "endDate": "5.04.2016",
+      "priority": "3",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1428,6 +1439,7 @@
       "totalHours": "30",
       "startDate": "18.01.2016",
       "endDate": "29.01.2016",
+      "priority": "4",
       "language": "en",
       "fk_userId": "1"
     },
@@ -1438,6 +1450,7 @@
       "totalHours": "18",
       "startDate": "28.12.2021",
       "endDate": "29.12.2021",
+      "priority": "1",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1448,6 +1461,7 @@
       "totalHours": "18",
       "startDate": "23.09.2020",
       "endDate": "25.09.2020",
+      "priority": "2",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1458,6 +1472,7 @@
       "totalHours": "12",
       "startDate": "1.04.2016",
       "endDate": "5.04.2016",
+      "priority": "3",
       "language": "tr",
       "fk_userId": "1"
     },
@@ -1468,6 +1483,7 @@
       "totalHours": "30",
       "startDate": "18.01.2016",
       "endDate": "29.01.2016",
+      "priority": "4",
       "language": "tr",
       "fk_userId": "1"
     }
