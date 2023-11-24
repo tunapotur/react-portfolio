@@ -6,7 +6,7 @@ import { useDarkMode } from '../context/DarkModeContext';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import { BsDownload } from 'react-icons/bs';
-import { FaAngleLeft } from 'react-icons/fa6';
+import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
 import rootList from '../data/rootList';
 
