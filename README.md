@@ -1,5 +1,0 @@
-certificates
-udemyCertificates
-seminars
-courses
-certificatesOfParticipation

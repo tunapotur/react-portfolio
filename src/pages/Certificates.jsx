@@ -7,6 +7,8 @@ import GeneralListUi from '../ui/GeneralListUi';
 function Certificates() {
   const { isPending, isError, error, data } = useGetData('certificates');
 
+  data?.sort((a, b) => a.priority - b.priority);
+
   return (
     <PageUi
       isPending={isPending}

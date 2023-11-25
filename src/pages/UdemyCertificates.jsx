@@ -4,9 +4,10 @@ import GeneralListUi from '../ui/GeneralListUi';
 
 import PageUi from '../ui/PageUi';
 
-// TODO: öncelik olan veriler için sort özelliği getirilecek
 function UdemyCertificates() {
   const { isPending, isError, error, data } = useGetData('udemyCertificates');
+
+  data?.sort((a, b) => a.priority - b.priority);
 
   return (
     <PageUi
