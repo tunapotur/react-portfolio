@@ -5,18 +5,18 @@ import { DarkModeProvider } from './context/DarkModeContext';
 import { SidebarControlProvider } from './context/SidebarControlContext';
 
 import AppLayout from './ui/AppLayout';
-import Home from './page/Home';
-import About from './page/About';
-import Education from './page/Education';
-import WorkExperience from './page/workExperience';
-import MySampleProjects from './page/MySampleProjects';
-import LanguageAndSkills from './page/LanguageAndSkills';
-import Achievements from './page/Achievements';
-import Certificates from './page/Certificates';
-import UdemyCertificates from './page/UdemyCertificates';
-import References from './page/References';
-import PersonelInfoAndContact from './page/PersonelInfoAndContact';
-import PageNotFound from './page/PageNotFound';
+import Home from './pages/Home';
+import About from './pages/About';
+import Education from './pages/Education';
+import WorkExperience from './pages/workExperience';
+import MySampleProjects from './pages/MySampleProjects';
+import LanguageAndSkills from './pages/LanguageAndSkills';
+import Achievements from './pages/Achievements';
+import Certificates from './pages/Certificates';
+import UdemyCertificates from './pages/UdemyCertificates';
+import References from './pages/References';
+import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
+import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 
 const queryClient = new QueryClient({
