@@ -24,7 +24,7 @@ function PersonelInfoAndContact() {
 function PersonelInfoAndContactUi({ data }) {
   return (
     <div className="content-data">
-      <div className="readable-background border-color flex flex-col space-y-1 border p-4">
+      <div className="readable-background border-color flex w-full flex-col space-y-1 border p-4">
         <div className="mb-2 flex flex-col space-y-3">
           <Info header={'Address'} data={data.address} />
           <Info header={'Date of Birth'} data={data.dateOfBirth} />
