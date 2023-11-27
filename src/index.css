@@ -45,11 +45,11 @@
 
   /* https://codepen.io/JoeHastings/pen/gPrPMo?editors=1100 */
   p.bubble {
-    @apply relative mx-[2.5rem] my-auto w-[16rem] rounded-[2rem] border-4 border-slate-800 p-5 text-center font-open_sans text-lg font-medium italic leading-6 dark:border-slate-400;
+    @apply relative rounded-[2rem] border-4 border-slate-800 p-5 text-center font-open_sans text-base font-medium italic leading-4 dark:border-slate-400 sm:text-lg;
   }
 
   p.thought {
-    @apply w-80 rounded-full p-6;
+    @apply w-[12rem] rounded-full p-4 sm:w-[20rem];
   }
 
   p.bubble:before,
@@ -60,11 +60,11 @@
 
   p.thought:before,
   p.thought:after {
-    @apply -bottom-9 left-3 h-9 w-9 rounded-[1.75rem] border-4 border-slate-800 dark:border-slate-400;
+    @apply -bottom-[2rem] left-[4rem] h-6 w-6 rounded-[1.75rem] border-4 border-slate-800 dark:border-slate-400;
   }
 
   p.thought:after {
-    @apply -bottom-14 left-2 h-5 w-5 rounded-[1rem];
+    @apply -bottom-[3rem] left-[5rem] h-4 w-4 rounded-[1rem];
   }
 
   /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
