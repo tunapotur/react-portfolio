@@ -8,6 +8,7 @@ import AppLayout from './ui/AppLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Education from './pages/Education';
+import WorkExperience from './pages/WorkExperience';
 import MySampleProjects from './pages/MySampleProjects';
 import LanguageAndSkills from './pages/LanguageAndSkills';
 import Achievements from './pages/Achievements';
@@ -44,7 +45,7 @@ function App() {
                   <Route path="home" element={<Home />} />
                   <Route path="about" element={<About />} />
                   <Route path="education" element={<Education />} />
-
+                  <Route path="workexperience" element={<WorkExperience />} />
                   <Route
                     path="mysampleprojects"
                     element={<MySampleProjects />}
