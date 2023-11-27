@@ -10,7 +10,7 @@ function SidebarMobilOpenOverlay() {
       className={`translate-animation absolute ${
         !isLgScreen &&
         isSidebarOpen &&
-        'inset-0 flex items-center justify-center bg-slate-300/20 backdrop-blur-sm dark:bg-slate-600/20'
+        'inset-0 z-30 flex items-center justify-center bg-slate-300/20 backdrop-blur-sm dark:bg-slate-600/20'
       }`}
     ></div>
   );

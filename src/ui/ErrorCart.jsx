@@ -1,5 +1,6 @@
 import { BiError } from 'react-icons/bi';
 
+// TODO: error cart düzgün durmuyor!
 function ErrorCart({ message }) {
   return (
     <div className="readable-background border-color flex w-full flex-col items-center space-y-4 border p-4">
