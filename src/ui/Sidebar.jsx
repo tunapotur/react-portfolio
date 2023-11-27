@@ -86,6 +86,7 @@ function SidebarContent() {
 }
 
 function StyledNavLink({ linkTo, linkText }) {
+  // TODO: mobil'de link tıklandığında navbar kapansın
   return (
     <li className="mb-4">
       <NavLink
