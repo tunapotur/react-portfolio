@@ -7,7 +7,7 @@ function PageNotFound() {
   const navigate = useNavigate();
   return (
     <div className="bg-heropattern flex h-screen w-screen items-center justify-center p-10">
-      <div className="mt-[8rem] flex h-fit flex-col items-center sm:mt-[6rem]">
+      <div className="mt-[4rem] flex h-fit flex-col items-center sm:mt-[6rem]">
         <div className="relative">
           <SpeechBubble
             speek={

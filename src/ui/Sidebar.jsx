@@ -86,10 +86,14 @@ function SidebarContent() {
 }
 
 function StyledNavLink({ linkTo, linkText }) {
-  // TODO: mobil'de link tıklandığında navbar kapansın
+  const { closeSidebar } = useSidebarOpen();
+  const { isLgScreen } = useScreenBreakpoints();
   return (
     <li className="mb-4">
       <NavLink
+        onClick={() => {
+          if (!isLgScreen) closeSidebar();
+        }}
         to={`${linkTo}`}
         className={({ isActive, isPending }) =>
           [
