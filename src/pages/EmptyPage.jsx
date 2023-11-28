@@ -1,13 +1,34 @@
+import PageUi from '../ui/PageUi';
+import useGetData from '../hooks/useGetData';
+
 import Loader from '../ui/Loader';
+import ErrorCart from '../ui/ErrorCart';
 
 function EmptyPage() {
+  const { isPending, isError, error } = useGetData('sampleProjects');
   return (
-    <div className="flex h-full w-[48rem] flex-col items-center px-12 pt-12">
-      <h1 className="@apply mb-16 text-2xl font-semibold">Empty Test Page</h1>
-      <div className="flex h-[50%] w-[50%] flex-col items-center justify-center">
+    <PageUi
+      isPending={isPending}
+      isError={isError}
+      error={error}
+      pageHeader={'Test Page'}
+    >
+      <TestUi />
+    </PageUi>
+  );
+}
+
+function TestUi() {
+  return (
+    <>
+      <div className={'error-loader'}>
         <Loader />
       </div>
-    </div>
+
+      <div className={'error-loader'}>
+        <ErrorCart message={'Network Error'} />
+      </div>
+    </>
   );
 }
 

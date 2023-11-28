@@ -18,6 +18,7 @@ import References from './pages/References';
 import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
+// import EmptyPage from './pages/EmptyPage';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -41,6 +42,7 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route element={<AppLayout />}>
+                  {/* <Route path="emptypage" element={<EmptyPage />} /> */}
                   <Route index element={<Navigate replace to="home" />} />
                   <Route path="home" element={<Home />} />
                   <Route path="about" element={<About />} />

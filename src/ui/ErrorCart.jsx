@@ -1,17 +1,14 @@
 import { BiError } from 'react-icons/bi';
 
-// TODO: error cart düzgün durmuyor!
 function ErrorCart({ message }) {
   return (
-    <div className="readable-background border-color flex w-full flex-col items-center space-y-4 border p-4">
-      <div className="flex items-center space-x-4">
-        <BiError className="h-36 w-36 fill-amber-700" />
-        <h1 className="text-[4rem] font-bold text-amber-700">Error</h1>
-      </div>
-      <div className="flex flex-col items-center space-y-2 text-[2rem]">
-        <p>An error has occurred:</p>
-        <p>{message}</p>
-      </div>
+    <div className="readable-background border-color flex w-full flex-col items-center border p-4 text-center">
+      <BiError className="h-36 w-36 fill-amber-700" />
+      <h1 className="text-[3rem] font-bold leading-none text-amber-700">
+        Error
+      </h1>
+      <p className="mt-[1rem] text-[1.5rem] font-bold">An error has occurred</p>
+      <p className="text-[1.5rem]">{message}</p>
     </div>
   );
 }

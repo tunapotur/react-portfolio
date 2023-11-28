@@ -27,6 +27,10 @@
     @apply border-slate-400 dark:border-slate-700;
   }
 
+  .error-loader {
+    @apply flex h-[50%] w-full flex-col items-center justify-center;
+  }
+
   .bg-heropattern {
     @apply heropattern-circuitboard-slate-200/50 dark:heropattern-circuitboard-slate-800/50;
   }
