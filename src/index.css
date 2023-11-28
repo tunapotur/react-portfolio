@@ -12,7 +12,7 @@
   }
 
   .navbar-background {
-    @apply bg-slate-200 dark:bg-slate-900;
+    @apply bg-slate-200/90 dark:bg-slate-950/90;
   }
 
   .content-narrow {
@@ -20,7 +20,7 @@
   }
 
   .readable-background {
-    @apply rounded bg-stone-100/40 dark:bg-zinc-950/30;
+    @apply rounded bg-stone-50/40 dark:bg-zinc-900/30;
   }
 
   .border-color {
