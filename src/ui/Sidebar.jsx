@@ -69,12 +69,16 @@ function SidebarContent() {
         ))}
       </ul>
 
-      {/* TODO  cv dosyası eklenecek */}
       <div className="mb-2 mt-auto text-xs text-slate-600 dark:text-slate-400">
-        <div className="border-color mb-2 flex items-center justify-around border-[1px] px-3 py-2">
+        <a
+          href="../../public/Ahmet Tuna POTUR CV for Web Page.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="border-color mb-2 flex items-center justify-around border-[1px] px-3 py-2"
+        >
           <span className="pr-2">Download CV</span>
           <BsDownload />
-        </div>
+        </a>
 
         <div className="italic leading-3">
           <p>Ahmet Tuna Potur</p>
