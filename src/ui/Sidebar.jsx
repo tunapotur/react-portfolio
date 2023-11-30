@@ -71,7 +71,7 @@ function SidebarContent() {
 
       <div className="mb-2 mt-auto text-xs text-slate-600 dark:text-slate-400">
         <a
-          href="../../public/Ahmet Tuna POTUR CV for Web Page.pdf"
+          href="../cv-for-web-page.pdf"
           rel="noopener noreferrer"
           target="_blank"
           className="border-color mb-2 flex items-center justify-around border-[1px] px-3 py-2"
