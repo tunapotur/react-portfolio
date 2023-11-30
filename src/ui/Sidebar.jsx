@@ -60,7 +60,7 @@ function SidebarContent() {
       </h3>
 
       <h2 className="mb-10 font-open_sans font-medium">
-        ICT Teacher &amp; Engineer
+        ICT Teacher &amp; Computer Engineer
       </h2>
 
       <ul>
