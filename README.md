@@ -27,21 +27,14 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 ## Technologies:
 
-<div>
-<span>
-<a align="center" href="https://github.com/TanStack/query">
-<img alt="react-query" style="width:auto;height:50px;border-radius: 5px;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
-</a>
+<a href="https://github.com/TanStack/query">
+<img alt="react-query" style="width:auto;height:50px;text-align: center;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
 <p>TanStack query (React Query)</p>
-</span>
-
-<span>
-<a align="center" href="https://github.com/TanStack/query">
-<img alt="react-query" style="width:auto;height:50px;border-radius: 5px;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
 </a>
+<a href="https://github.com/TanStack/query">
+<img alt="react-query" style="width:auto;height:50px;text-align: center;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
 <p>TanStack query (React Query)</p>
-</span>
-</div>
+</a>
 
 ## License
 
