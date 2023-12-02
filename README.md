@@ -1,10 +1,10 @@
+<p align="center">
+  <img alt="pembe" style="width:250px;border-radius: 5px;" src="https://media2.giphy.com/media/nFLW7PNGgN3lI68rdv/giphy.gif?cid=ecf05e47quolaqdqmgfpfyd6328k0j4l7dav3bjm04uqmha3&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+</p>
+
 # I Am Ahmet Tuna POTUR
 
 This is the source code of my portfolio web page. I developed this site to host information about my career.
-
-![pembe](https://giphy.com/embed/nFLW7PNGgN3lI68rdv)
-
-<iframe src="https://giphy.com/embed/nFLW7PNGgN3lI68rdv" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/PembeThePinkCat-cute-pembe-the-pink-cat-nFLW7PNGgN3lI68rdv">via GIPHY</a></p>
 
 ## Website:
 
