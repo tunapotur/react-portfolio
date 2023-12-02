@@ -10,10 +10,7 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 <p align="center">
 <img alt="webpage-gif" style="width:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/WebPage.gif"></img>
-</p>
-
-<p align="center">
-<img alt="mobilepage-gif" style="heigh:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/MobilPage.gif"></img>
+<img alt="mobilepage-gif" style="heigh:250px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/MobilPage.gif"></img>
 </p>
 
 ## Technologies:
