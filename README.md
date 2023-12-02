@@ -28,12 +28,15 @@ This is the source code of my portfolio web page. I developed this site to host 
 ## Technologies:
 
 <a href="https://github.com/TanStack/query">
-<img alt="react-query" style="width:auto;height:50px;text-align: center;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
-<span>TanStack query (React Query)</span>
+TanStack query (React Query)
 </a>
-<a href="https://github.com/TanStack/query">
-<img alt="react-query" style="width:auto;height:50px;text-align: center;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
-<span>TanStack query (React Query)</span>
+
+<a href="https://github.com/axios/axios">
+axios
+</a>
+
+<a href="https://github.com/typicode/json-server">
+json-server
 </a>
 
 ## License
