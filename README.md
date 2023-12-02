@@ -27,6 +27,8 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 ## Technologies:
 
+<img alt="react-query" style="width:auto;height:500px;"  src="https://github.com/tunapotur/react-portfolio/blob/main/public/react-query-seeklogo.com.svg"></img>
+
 ## License
 
 MIT
