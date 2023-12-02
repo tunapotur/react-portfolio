@@ -19,9 +19,10 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 </br></br>
 
+### 404 Page
+
 <p align="center">
 <img alt="404" style="width:auto;height:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/404.png"></img>
-
 </p>
 
 ## Technologies:
