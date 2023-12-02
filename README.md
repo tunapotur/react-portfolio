@@ -9,7 +9,7 @@ This is the source code of my portfolio web page. I developed this site to host 
 ## Website:
 
   <p align="center">
-    <a style="font-size:24pt;" href="https://tuna-react-portfolio.vercel.app">https://tuna-react-portfolio.vercel.app</a>
+    <a style="font-size:24px;" href="https://tuna-react-portfolio.vercel.app">https://tuna-react-portfolio.vercel.app</a>
   </p>
 
 </br></br>
