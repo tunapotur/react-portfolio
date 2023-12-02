@@ -35,33 +35,33 @@ This is the source code of my portfolio web page. I developed this site to host 
   TanStack query (React Query)
   </a>
 
-<p><a href="https://github.com/tailwindlabs/tailwindcss">
-Tailwindcss
-</a></p>
+- <a href="https://github.com/tailwindlabs/tailwindcss">
+  Tailwindcss
+  </a>
 
-<p><a href="https://github.com/vitejs/vite/tree/main">
-Vite
-</a></p>
+- <a href="https://github.com/vitejs/vite/tree/main">
+  Vite
+  </a>
 
-<p><a href="https://github.com/axios/axios">
-axios
-</a></p>
+- <a href="https://github.com/axios/axios">
+  axios
+  </a>
 
-<p><a href="https://github.com/yocontra/react-responsive">
-react-responsive
-</a></p>
+- <a href="https://github.com/yocontra/react-responsive">
+  react-responsive
+  </a>
 
-<p><a href="https://github.com/zhaluza/react-detect-click-outside">
-react-detect-click-outside
-</a></p>
+- <a href="https://github.com/zhaluza/react-detect-click-outside">
+  react-detect-click-outside
+  </a>
 
-<p><a href="https://github.com/JoseRFelix/react-toggle-dark-mode">
-react-toggle-dark-mode
-</a></p>
+- <a href="https://github.com/JoseRFelix/react-toggle-dark-mode">
+  react-toggle-dark-mode
+  </a>
 
-<p><a href="https://github.com/typicode/json-server">
-json-server
-</a></p>
+- <a href="https://github.com/typicode/json-server">
+  json-server
+  </a>
 
 ## License
 
