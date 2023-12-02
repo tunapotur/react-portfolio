@@ -8,7 +8,7 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 ## Website:
 
-<p align="center" style="font-size:32px;"><a href="https://tuna-react-portfolio.vercel.app">https://tuna-react-portfolio.vercel.app</a></p>
+<p align="center"><a style="font-size:32px;" href="https://tuna-react-portfolio.vercel.app">https://tuna-react-portfolio.vercel.app</a></p>
 
 </br></br>
 
