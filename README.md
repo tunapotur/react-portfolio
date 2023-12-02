@@ -17,6 +17,13 @@ This is the source code of my portfolio web page. I developed this site to host 
 <img alt="mobilepage-gif" style="width:auto;height:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/MobilPage.gif"></img>
 </p>
 
+</br></br>
+
+<p align="center">
+<img alt="404" style="width:auto;height:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/404.png"></img>
+
+</p>
+
 ## Technologies:
 
 ## License
