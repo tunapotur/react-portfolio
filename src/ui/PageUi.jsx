@@ -6,6 +6,7 @@ import useRootInfo from '../hooks/useRootInfo';
 import { useNavigate } from 'react-router-dom';
 
 function PageUi({ isPending, isError, error, pageHeader, children }) {
+  // https://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android
   const [xDown, setXDown] = useState(null);
   const [yDown, setYDown] = useState(null);
   const navigate = useNavigate();
@@ -34,11 +35,11 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
       /*most significant*/
       if (xDiff > 0) {
         /* right swipe */
-        console.log('right swipe: ', xDiff);
+        // console.log('right swipe: ', xDiff);
         navRoot(rightMove.pathName);
       } else {
         /* left swipe */
-        console.log('left swipe: ', xDiff);
+        // console.log('left swipe: ', xDiff);
         navRoot(leftMove.pathName);
       }
     } else {
