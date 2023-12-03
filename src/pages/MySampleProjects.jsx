@@ -39,7 +39,9 @@ function SampleProjectCart({ data }) {
       </div>
 
       <div
-        className={'flex w-2/12 flex-col items-center justify-around sm:w-1/12'}
+        className={
+          'flex w-2/12 flex-col items-center justify-around sm:w-1/12 sm:space-y-5'
+        }
       >
         <IconLink href={data.webPage}>
           <FaLink className={iconSize} />
