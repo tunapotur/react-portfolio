@@ -59,7 +59,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
       <div
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        className="flex h-full w-full flex-col items-center bg-orange-600 px-4 pt-6 sm:px-12 md:w-[48rem]"
+        className="flex h-full w-full flex-col items-center px-4 pt-6 sm:px-12 md:w-[48rem]"
       >
         {pageHeader && (
           <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
