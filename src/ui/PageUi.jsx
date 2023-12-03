@@ -32,7 +32,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       /*most significant*/
-      if (xDiff > 25) {
+      if (xDiff > 15) {
         /* right swipe */
         console.log('right swipe: ', xDiff);
         navRoot(rightMove.pathName);
