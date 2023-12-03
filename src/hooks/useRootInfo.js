@@ -8,7 +8,18 @@ function useRootInfo() {
   const rootIndexOfArray = rootList.findIndex(
     (el) => el.pathName === location.pathname.replace('/', ''),
   );
-  return { endOfRootListIndex, rootIndexOfArray };
+
+  const beforeRoot =
+    rootIndexOfArray === endOfRootListIndex || rootIndexOfArray > 0
+      ? rootList[rootIndexOfArray - 1]
+      : '';
+
+  const nextRoot =
+    rootIndexOfArray === 0 || rootIndexOfArray < endOfRootListIndex
+      ? rootList[rootIndexOfArray + 1]
+      : '';
+
+  return { endOfRootListIndex, rootIndexOfArray, beforeRoot, nextRoot };
 }
 
 export default useRootInfo;

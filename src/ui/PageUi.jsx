@@ -2,33 +2,62 @@ import PaginationAuto from './PaginationAuto';
 import ErrorCart from '../ui/ErrorCart';
 import Loader from './Loader';
 import { useState } from 'react';
+import useRootInfo from '../hooks/useRootInfo';
+import { useNavigate } from 'react-router-dom';
 
 function PageUi({ isPending, isError, error, pageHeader, children }) {
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
+  const [xDown, setXDown] = useState(null);
+  const [yDown, setYDown] = useState(null);
+  const navigate = useNavigate();
+  const { beforeRoot: leftMove, nextRoot: rightMove } = useRootInfo();
 
-  function checkDirection() {
-    if (touchEndX < touchStartX) console.log('swiped left!');
-    if (touchEndX > touchStartX) console.log('swiped right!');
+  function navRoot(path) {
+    if (!path) return;
+    navigate('/' + path);
   }
 
   function handleTouchStart(e) {
-    setTouchStartX(e.changedTouches[0].screenX);
-    // console.log('onTouchStart: ', touchStartX
-    console.log(e.touches);
+    setXDown(e.touches[0].clientX);
+    setYDown(e.touches[0].clientY);
   }
 
-  function handleTouchEnd(e) {
-    setTouchEndX(e.changedTouches[0].screenX);
-    checkDirection();
-    // console.log('onTouchEnd: ', touchEndX);
+  function handleTouchMove(e) {
+    if (!xDown || !yDown) return;
+
+    const xUp = e.touches[0].clientX;
+    const yUp = e.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      /*most significant*/
+      if (xDiff > 0) {
+        /* right swipe */
+        console.log('right swipe');
+        navRoot(rightMove.pathName);
+      } else {
+        /* left swipe */
+        console.log('left swipe');
+        navRoot(leftMove.pathName);
+      }
+    } else {
+      if (yDiff > 0) {
+        /* down swipe */
+      } else {
+        /* up swipe */
+      }
+    }
+    /* reset values */
+    setXDown(null);
+    setYDown(null);
   }
 
   return (
     <>
       <div
         onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
         className="flex h-full w-full flex-col items-center bg-orange-600 px-4 pt-6 sm:px-12 md:w-[48rem]"
       >
         {pageHeader && (
