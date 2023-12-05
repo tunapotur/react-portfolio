@@ -1,19 +1,19 @@
 import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
+
+import ShowDataContent from '../ui/ShowDataContent';
+import PageControl from '../ui/PageControl';
 
 function Home() {
-  const { isPending, isError, error, data } = useGetData('personalInfo');
-  const filteredData = data?.filter((item) => item.language === 'en')[0];
+  const data = useGetData('personalInfo');
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={''}
-    >
-      <HomeUi data={filteredData} />
-    </PageUi>
+    <PageControl>
+      <ShowDataContent
+        data={data}
+        fnRender={(item) => <HomeUi key={1} data={item} />}
+        fnFilter={(item) => item.language === 'en'}
+      ></ShowDataContent>
+    </PageControl>
   );
 }
 

@@ -20,6 +20,13 @@ import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 // import EmptyPage from './pages/EmptyPage';
 
+/**
+ * TODO Eng Tr geçişi yapılacak.
+ * TODO Mobil de en alttaki page navlar kalkalacak,
+ * TODO Mobil de Home sayfasında sürükleyerek geçebilirsiniz yazacak
+ * TODO Nav'üzerinde bulunan sabit bilgiler(ad soyad gibi) db.json üzerinden gelecek şekilde düzenlenecek
+ */
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
