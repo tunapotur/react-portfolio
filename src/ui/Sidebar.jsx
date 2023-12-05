@@ -21,7 +21,10 @@ const languages = [
 function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
   const { isLgScreen } = useScreenBreakpoints();
-  const ref = useDetectClickOutside({ onTriggered: closeSidebar });
+  const ref = useDetectClickOutside({
+    onTriggered: closeSidebar,
+    disableClick: true,
+  });
   const { isSidebarOpen } = useSidebarOpen();
 
   const sidebarStyle = `translate-animation absolute top-0 left-0 z-50 h-full ${
@@ -61,7 +64,7 @@ function SidebarContent() {
 
         <div className="w-[4rem]">
           <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-            <div className="relative">
+            <div className="relative z-10">
               <Listbox.Button className="relative w-full rounded-lg bg-stone-100 py-2 pl-3 text-left dark:bg-zinc-900 sm:text-sm">
                 <span className="block truncate">{selectedLanguage.name}</span>
                 <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
