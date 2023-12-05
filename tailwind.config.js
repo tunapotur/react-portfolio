@@ -16,5 +16,8 @@ export default {
       },
     },
   },
-  plugins: [require('tailwindcss-hero-patterns')],
+  plugins: [
+    require('tailwindcss-hero-patterns'),
+    require('@headlessui/tailwindcss'),
+  ],
 };

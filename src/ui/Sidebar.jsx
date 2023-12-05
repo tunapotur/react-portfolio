@@ -4,11 +4,18 @@ import { useSidebarOpen } from '../context/SidebarControlContext';
 import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
 import { useDarkMode } from '../context/DarkModeContext';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { Listbox } from '@headlessui/react';
 
 import { BsDownload } from 'react-icons/bs';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
 import rootList from '../data/rootList';
+import { useState } from 'react';
+
+const language = [
+  { id: 1, name: 'English', unavailable: false },
+  { id: 2, name: 'Türkçe', unavailable: false },
+];
 
 function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
@@ -38,6 +45,7 @@ function Sidebar() {
 
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
+  const [selectedLanguage, setSelectedLanguage] = useState(language[0]);
 
   const userImageStyle = isDarkMode
     ? { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
@@ -48,6 +56,22 @@ function SidebarContent() {
       className={`border-color navbar-background flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 text-center`}
     >
       <DarkModeToggle />
+
+      <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
+        <Listbox.Button>{selectedLanguage.name}</Listbox.Button>
+        <Listbox.Options>
+          {language.map((language) => (
+            <Listbox.Option
+              key={language.id}
+              value={language}
+              disabled={language.unavailable}
+            >
+              {language.name}
+            </Listbox.Option>
+          ))}
+        </Listbox.Options>
+      </Listbox>
+
       <img
         src="../navbar-user-image-small.png"
         alt="user navbar photo"
