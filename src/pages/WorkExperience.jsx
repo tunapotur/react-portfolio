@@ -52,7 +52,6 @@ function WorkExperienceUi({ props }) {
         <ShowDataContent
           data={props.workExperience}
           fnRender={(item) => <WorkExperienceCart key={item.id} data={item} />}
-          fnFilter={(item) => item.language === 'en'}
         />
       </div>
 
@@ -63,7 +62,6 @@ function WorkExperienceUi({ props }) {
           fnRender={(item) => (
             <InternshipPartTimeCart key={item.id} data={item} />
           )}
-          fnFilter={(item) => item.language === 'en'}
         />
       </div>
 

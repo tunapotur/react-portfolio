@@ -48,7 +48,6 @@ function LanguageAndSkillsUi({ props }) {
               fnRender={(item) => (
                 <LanguageSkillCart key={item.id} data={item} />
               )}
-              fnFilter={(item) => item.language === 'en'}
             />
           </ul>
         </div>
@@ -61,7 +60,6 @@ function LanguageAndSkillsUi({ props }) {
               fnRender={(item) => (
                 <LanguageSkillCart key={item.id} data={item} />
               )}
-              fnFilter={(item) => item.language === 'en'}
             />
           </ul>
         </div>

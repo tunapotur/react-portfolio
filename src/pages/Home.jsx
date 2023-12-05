@@ -11,7 +11,6 @@ function Home() {
       <ShowDataContent
         data={data}
         fnRender={(item) => <HomeUi key={1} data={item} />}
-        fnFilter={(item) => item.language === 'en'}
       ></ShowDataContent>
     </PageControl>
   );

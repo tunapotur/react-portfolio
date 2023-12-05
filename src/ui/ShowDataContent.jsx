@@ -1,8 +1,8 @@
 import ErrorCart from '../ui/ErrorCart';
 import Loader from '../ui/Loader';
 
-function ShowDataContent({ data, fnRender, fnFilter }) {
-  const filteredData = fnFilter ? data.data?.filter(fnFilter) : data.data;
+function ShowDataContent({ data, fnRender, language = 'en' }) {
+  const filteredData = data.data?.filter((item) => item.language === language);
 
   const style = 'flex h-[50%] flex-col items-center justify-center';
 
