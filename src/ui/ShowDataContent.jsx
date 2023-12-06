@@ -1,8 +1,14 @@
+import { usePageLanguage } from '../context/PageLanguageContext';
 import ErrorCart from '../ui/ErrorCart';
 import Loader from '../ui/Loader';
 
-function ShowDataContent({ data, fnRender, language = 'en' }) {
-  const filteredData = data.data?.filter((item) => item.language === language);
+function ShowDataContent({ data, fnRender }) {
+  const { getPageLanguage } = usePageLanguage();
+  const pageLanguage = getPageLanguage().name.toLowerCase();
+
+  const filteredData = data.data?.filter(
+    (item) => item.language === pageLanguage,
+  );
 
   const style = 'flex h-[50%] flex-col items-center justify-center';
 

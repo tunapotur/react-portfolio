@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom';
 import { useDetectClickOutside } from 'react-detect-click-outside';
 import { useSidebarOpen } from '../context/SidebarControlContext';
 import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
+import { usePageLanguage } from '../context/PageLanguageContext';
 import { useDarkMode } from '../context/DarkModeContext';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { useState } from 'react';
 import { Listbox } from '@headlessui/react';
 import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 
@@ -12,11 +12,6 @@ import { BsDownload } from 'react-icons/bs';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
 import rootList from '../data/rootList';
-
-const languages = [
-  { id: 1, name: 'En' },
-  { id: 2, name: 'Tr' },
-];
 
 function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
@@ -49,7 +44,6 @@ function Sidebar() {
 
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 
   const userImageStyle = isDarkMode
     ? { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
@@ -61,52 +55,7 @@ function SidebarContent() {
     >
       <div className=" my-[1rem] flex w-full items-center justify-between">
         <DarkModeToggle />
-
-        <div className="w-[4rem]">
-          <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
-            <div className="relative z-10">
-              <Listbox.Button className="relative w-full rounded-lg bg-stone-100 py-2 pl-3 text-left dark:bg-zinc-900 sm:text-sm">
-                <span className="block truncate">{selectedLanguage.name}</span>
-                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
-                </span>
-              </Listbox.Button>
-
-              <Listbox.Options className="absolute mt-1 w-full rounded-md bg-stone-100 py-1 dark:bg-zinc-900 sm:text-sm">
-                {languages.map((language, languageIdx) => (
-                  <Listbox.Option
-                    key={languageIdx}
-                    className={({ active }) =>
-                      `relative cursor-pointer select-none py-2 pl-6 pr-1 ${
-                        active
-                          ? 'bg-amber-200/70 font-semibold dark:bg-amber-900'
-                          : ''
-                      }`
-                    }
-                    value={language}
-                  >
-                    {({ selected }) => (
-                      <>
-                        <span
-                          className={`block truncate ${
-                            selected ? 'font-medium' : 'font-normal'
-                          }`}
-                        >
-                          {language.name}
-                        </span>
-                        {selected ? (
-                          <span className="absolute inset-y-0 left-0 flex items-center pl-1 text-amber-700 dark:text-amber-400">
-                            <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                          </span>
-                        ) : null}
-                      </>
-                    )}
-                  </Listbox.Option>
-                ))}
-              </Listbox.Options>
-            </div>
-          </Listbox>
-        </div>
+        <LanguageSelect />
       </div>
 
       <img
@@ -188,6 +137,64 @@ function SidebarToggle() {
         }`}
       />
     </button>
+  );
+}
+
+function LanguageSelect() {
+  const { setPageLanguage, languages, getPageLanguage } = usePageLanguage();
+  const pageLanguage = getPageLanguage();
+
+  return (
+    <div className="w-[4rem]">
+      <Listbox
+        value={pageLanguage}
+        onChange={(e) => {
+          setPageLanguage(e.name);
+        }}
+      >
+        <div className="relative z-10">
+          <Listbox.Button className="relative w-full rounded-lg bg-stone-100 py-2 pl-3 text-left dark:bg-zinc-900 sm:text-sm">
+            <span className="block truncate">{pageLanguage.name}</span>
+            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+              <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+            </span>
+          </Listbox.Button>
+
+          <Listbox.Options className="absolute mt-1 w-full rounded-md bg-stone-100 py-1 dark:bg-zinc-900 sm:text-sm">
+            {languages.map((language, languageIdx) => (
+              <Listbox.Option
+                key={languageIdx}
+                className={({ active }) =>
+                  `relative cursor-pointer select-none py-2 pl-6 pr-1 ${
+                    active
+                      ? 'bg-amber-200/70 font-semibold dark:bg-amber-900'
+                      : ''
+                  }`
+                }
+                value={language}
+              >
+                {({ selected }) => (
+                  <>
+                    <span
+                      className={`block truncate ${
+                        selected ? 'font-medium' : 'font-normal'
+                      }`}
+                    >
+                      {language.name}
+                    </span>
+                    {selected ? (
+                      <span className="absolute inset-y-0 left-0 flex items-center pl-1 text-amber-700 dark:text-amber-400">
+                        <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                      </span>
+                    ) : null}
+                  </>
+                )}
+              </Listbox.Option>
+            ))}
+          </Listbox.Options>
+        </div>
+      </Listbox>
+    </div>
   );
 }
 
