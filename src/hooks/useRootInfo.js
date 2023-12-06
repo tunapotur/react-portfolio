@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 
-import rootList from '../data/rootList';
+import { rootList } from '../data/rootList';
 
 function useRootInfo() {
   const location = useLocation();

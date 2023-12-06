@@ -11,7 +11,7 @@ import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
 import { BsDownload } from 'react-icons/bs';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
-import rootList from '../data/rootList';
+import { rootList, getLinkName } from '../data/rootList';
 
 function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
@@ -44,6 +44,7 @@ function Sidebar() {
 
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
+  const { getPageLanguageName } = usePageLanguage();
 
   const userImageStyle = isDarkMode
     ? { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
@@ -75,7 +76,11 @@ function SidebarContent() {
 
       <ul>
         {rootList.map((el) => (
-          <StyledNavLink key={el.id} linkTo={el.pathName} linkText={el.text} />
+          <StyledNavLink
+            key={el.id}
+            linkTo={el.pathName}
+            linkText={getLinkName(el.id, getPageLanguageName())}
+          />
         ))}
       </ul>
 
@@ -202,8 +207,6 @@ function DarkModeToggle() {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const amber600 = '#d97706';
   const slate300 = '#cbd5e1';
-
-  //className="ml-[-0.25rem] mt-[1rem] self-start"
 
   return (
     <DarkModeSwitch

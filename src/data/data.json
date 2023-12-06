@@ -3,7 +3,16 @@
     {
       "id": "1",
       "name": "ahmet tuna potur",
-      "email": "tunapotur@yahoo.com"
+      "email": "tunapotur@yahoo.com",
+      "occupation": "ICT Teacher & Computer Engineer",
+      "language": "en"
+    },
+    {
+      "id": "1",
+      "name": "ahmet tuna potur",
+      "email": "tunapotur@yahoo.com",
+      "occupation": "Bilgisayar Öğretmeni & Bilgisayar Mühendisi",
+      "language": "tr"
     }
   ],
   "personalInfo": [
@@ -45,7 +54,7 @@
         "Sizin beklentileriniz ve benim becerilerimle ilgili diğer detayları konuşmak üzere sizinle tanışmayı çok isterim. İlginize teşekkür ederim.",
         "Saygılarımla."
       ],
-      "address": "Zafer Mah. Büklüm Cad. Gencer Kent Sitesi No:73 A Blok Kat 2 Daire 9 Lüleburgaz / Kırklareli",
+      "address": "Lüleburgaz / Kırklareli / Türkiye",
       "gsm": "+90 535 519 60 90 ",
       "email": "tunapotur@yahoo.com",
       "dateOfBirth": "6.03.1981",
