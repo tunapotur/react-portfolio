@@ -1,26 +1,28 @@
 import { v4 as uuidv4 } from 'uuid';
 import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
+
+import ShowDataContent from '../ui/ShowDataContent';
+import PageControl from '../ui/PageControl';
 
 function About() {
-  const { isPending, isError, error, data } = useGetData('personalInfo');
-  const filteredData = data?.filter((item) => item.language === 'en')[0];
+  const data = useGetData('personalInfo');
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'About Me'}
-    >
-      <AboutUi data={filteredData} />
-    </PageUi>
+    <PageControl>
+      <ShowDataContent
+        data={data}
+        fnRender={(item) => <AboutUi key={1} data={item} />}
+      />
+    </PageControl>
   );
 }
 
 function AboutUi({ data }) {
   return (
     <>
+      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+        About Me
+      </h1>
       <div className="readable-background flex flex-col space-y-7 px-6 text-left text-lg leading-relaxed sm:text-justify sm:text-xl">
         {data.coverLetter.map((el) => (
           <p key={uuidv4()}>{el}</p>

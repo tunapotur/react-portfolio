@@ -11,7 +11,7 @@ function Home() {
       <ShowDataContent
         data={data}
         fnRender={(item) => <HomeUi key={1} data={item} />}
-      ></ShowDataContent>
+      />
     </PageControl>
   );
 }
