@@ -23,12 +23,17 @@ function PageLanguageProvider({ children }) {
     return getLanguage(pageLanguage);
   }
 
+  function getPageLanguageName() {
+    return getLanguage(pageLanguage).name.toLowerCase();
+  }
+
   return (
     <PageLanguageContext.Provider
       value={{
         setPageLanguage,
         languages,
         getPageLanguage,
+        getPageLanguageName,
       }}
     >
       {children}
