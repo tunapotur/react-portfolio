@@ -22,14 +22,11 @@ import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 // import EmptyPage from './pages/EmptyPage';
 
 // TODO Eng Tr geçişi yapılacak.
-// TODO Mobil de en alttaki page navlar kalkalacak,
-// TODO Mobil de Home sayfasında sürükleyerek geçebilirsiniz yazacak
-// TODO Nav'üzerinde bulunan sabit bilgiler(ad soyad gibi) db.json üzerinden gelecek şekilde düzenlenecek
 // TODO Gesture kodu sadeleştirilecek geresiz kısımlar silinecek.
 // TODO Gesture Mümkünse biraz daha yavaş bir geçiş yapılacak. Hakeretle hemen geçiyor
-// TODO site ayarlarını kontrol eden Darkmode, sidebar, language gibi Condex'leri ayrı ayrı kontrol etmek yerine tek bir SiteControlCondex gibi tek bir Contex üzerinden kontrol edilecek şekilde düzenle
 // TODO türkçe indirilecek cv hazırlanacak.
 // TODO indirilen cv'lere örnek proje linkleri konacak qr olabilir
+// TODO readme dosyasına projenin nasıl çalıştırılacağı ve nasıl özelliştirileceği anlatılarca
 
 const queryClient = new QueryClient({
   defaultOptions: {

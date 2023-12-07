@@ -12,10 +12,8 @@ const pageDictionary = [
         iam: 'I am',
         definition:
           'This is my portfolio website where you can review my carrier and sample project',
-        webPageUsage:
-          'You could use the left, and right arrow keys to navigate pages',
-        mobilPageUsage:
-          'You could swift your finger left, and right to navigate pages',
+        pageUsage:
+          'You can use the left and right arrow keys of the keyboard to navigate through the pages or you can swipe the screen left and right on mobile',
         language: 'en',
       },
       {
@@ -23,10 +21,8 @@ const pageDictionary = [
         iam: 'Ben',
         definition:
           'Bu benim kariyerimi ve örnek projemi inceleyebileceğiniz portföy web sitemdir',
-        webPageUsage:
-          'Sayfalarda gezinmek için sol ve sağ ok tuşlarını kullanabilirsiniz',
-        mobilPageUsage:
-          'Sayfalarda gezinmek için parmağınızı sola ve sağa kaydırabilirsiniz',
+        pageUsage:
+          'Sayfalar arasında gezinmek için klavyenin sol ve sağ ok tuşlarını kullanabilir veya mobil cihazlarda ekranı sola ve sağa kaydırabilirsiniz',
         language: 'tr',
       },
     ],
@@ -36,6 +32,13 @@ const pageDictionary = [
     text: [
       { header: 'About Me', language: 'en' },
       { header: 'Hakkımda', language: 'tr' },
+    ],
+  },
+  {
+    page: 'education',
+    text: [
+      { header: 'Education', language: 'en' },
+      { header: 'Eğitim', language: 'tr' },
     ],
   },
 ];

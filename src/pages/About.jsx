@@ -3,6 +3,8 @@ import useGetData from '../hooks/useGetData';
 
 import ShowDataContent from '../ui/ShowDataContent';
 import PageControl from '../ui/PageControl';
+import { getPageDictionary } from '../data/pageDictionary';
+import { usePageLanguage } from '../context/PageLanguageContext';
 
 function About() {
   const data = useGetData('personalInfo');
@@ -18,10 +20,11 @@ function About() {
 }
 
 function AboutUi({ data }) {
+  const { getPageLanguageName } = usePageLanguage();
   return (
     <>
       <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        About Me
+        {getPageDictionary('about', getPageLanguageName()).header}
       </h1>
       <div className="readable-background flex flex-col space-y-7 px-6 text-left text-lg leading-relaxed sm:text-justify sm:text-xl">
         {data.coverLetter.map((el) => (

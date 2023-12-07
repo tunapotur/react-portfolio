@@ -37,16 +37,16 @@ function HomeUi({ data }) {
         className="image-dark mt-5 h-72 rounded-md"
       />
 
-      <p className="readable-background mt-8 text-left font-open_sans text-base leading-6">
+      <p className="readable-background mt-8 text-justify font-open_sans text-base leading-6">
         {data.aboutMe}
       </p>
 
-      <p className="readable-background mt-3 text-left font-open_sans text-base leading-6">
+      <p className="readable-background mt-3 text-justify font-open_sans text-sm leading-6">
         {dictionary.definition}
       </p>
 
-      <p className="mt-[3rem] hidden text-left text-sm font-thin italic leading-tight text-slate-500 dark:text-slate-400 sm:block">
-        {dictionary.mobilPageUsage}
+      <p className="mt-[3rem] hidden text-justify text-sm font-thin italic leading-tight text-slate-500 dark:text-slate-400 sm:block">
+        {dictionary.pageUsage}
       </p>
     </div>
   );

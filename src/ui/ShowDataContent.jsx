@@ -2,8 +2,6 @@ import { usePageLanguage } from '../context/PageLanguageContext';
 import ErrorCart from '../ui/ErrorCart';
 import Loader from '../ui/Loader';
 
-// TODO sayfa başlıkları için bir çözüm düşün.
-// TODO veribananında olamyan site içinde kullanılan sayfa başlığı gibi metinlerin dil değişimi için bir çözüm düşün
 function ShowDataContent({ data, fnRender }) {
   const { getPageLanguageName } = usePageLanguage();
 
