@@ -1,3 +1,8 @@
+const sidebar = [
+  { download: 'Download', language: 'en' },
+  { download: 'İndir', language: 'tr' },
+];
+
 const pageDictionary = [
   {
     page: 'home',
@@ -41,4 +46,8 @@ function getPageDictionary(page, language = 'en') {
     .text.filter((item) => item.language === language)[0];
 }
 
-export { pageDictionary, getPageDictionary };
+function getSidebar(language = 'en') {
+  return sidebar.filter((item) => item.language === language)[0];
+}
+
+export { pageDictionary, getPageDictionary, sidebar, getSidebar };
