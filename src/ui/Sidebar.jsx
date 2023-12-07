@@ -87,7 +87,7 @@ function SidebarContent() {
 
       <div className="mb-2 mt-auto flex flex-col items-center justify-center text-xs text-slate-600 dark:text-slate-400">
         <a
-          href="../cv-for-web-page.pdf"
+          href={`../cv-for-web-page-${getPageLanguageName()}.pdf`}
           rel="noopener noreferrer"
           target="_blank"
           className="border-color mb-2 flex w-fit items-center justify-center border-[1px] px-2 py-2"
