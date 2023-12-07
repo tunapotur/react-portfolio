@@ -12,7 +12,10 @@ import { BsDownload } from 'react-icons/bs';
 import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
 import { rootList, getLinkName } from '../data/rootList';
-import { getSidebar } from '../data/pageDictionary';
+import { getSidebarDictionary } from '../data/pageDictionary';
+import LoaderSidebar from './LoaderSmallSpinner';
+import useGetData from '../hooks/useGetData';
+import LoaderSmallSpinner from './LoaderSmallSpinner';
 
 function Sidebar() {
   const { closeSidebar } = useSidebarOpen();
@@ -46,6 +49,19 @@ function Sidebar() {
 function SidebarContent() {
   const { isDarkMode } = useDarkMode();
   const { getPageLanguageName } = usePageLanguage();
+  const data = useGetData('user');
+
+  function getSidebarUserInfo() {
+    const filteredData = data.data?.filter(
+      (item) => item.language === getPageLanguageName(),
+    )[0];
+
+    if (data.isPending) return <LoaderSmallSpinner />;
+
+    if (data.isError) return <p className="">{data.error.message}</p>;
+
+    return filteredData;
+  }
 
   const userImageStyle = isDarkMode
     ? { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
@@ -55,7 +71,7 @@ function SidebarContent() {
     <nav
       className={`border-color navbar-background flex h-full w-[16rem] flex-col items-center overflow-y-auto border-r px-5 pb-1 text-center`}
     >
-      <div className=" my-[1rem] flex w-full items-center justify-between">
+      <div className="my-[0.5rem] flex w-full items-center justify-between sm:my-[1rem]">
         <DarkModeToggle />
         <LanguageSelect />
       </div>
@@ -63,16 +79,16 @@ function SidebarContent() {
       <img
         src="../navbar-user-image-small.png"
         alt="user navbar photo"
-        className="image-dark h-36 rounded-full"
+        className="image-dark h-28 rounded-full sm:h-36"
         style={userImageStyle}
       />
 
-      <h3 className="mb-2 mt-3 font-nunito text-3xl font-semibold leading-7">
-        Ahmet Tuna Potur
+      <h3 className="mb-1 mt-3 font-nunito text-2xl font-semibold leading-7 sm:text-3xl">
+        {getSidebarUserInfo().name}
       </h3>
 
-      <h2 className="mb-10 font-open_sans font-medium">
-        ICT Teacher &amp; Computer Engineer
+      <h2 className="mb-4 font-open_sans text-sm font-medium sm:mb-10 sm:text-base">
+        {getSidebarUserInfo().occupation}
       </h2>
 
       <ul>
@@ -93,14 +109,14 @@ function SidebarContent() {
           className="border-color mb-2 flex w-fit items-center justify-center border-[1px] px-2 py-2"
         >
           <span className="mr-2">
-            CV {getSidebar(getPageLanguageName()).download}
+            CV {getSidebarDictionary(getPageLanguageName()).download}
           </span>
           <BsDownload />
         </a>
 
         <div className="italic leading-3">
-          <p>Ahmet Tuna Potur</p>
-          <p>tunapotur@yahoo.com</p>
+          <p>{getSidebarUserInfo().name}</p>
+          <p>{getSidebarUserInfo().email}</p>
         </div>
       </div>
     </nav>

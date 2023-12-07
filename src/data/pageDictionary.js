@@ -1,4 +1,4 @@
-const sidebar = [
+const sidebarDictionary = [
   { download: 'Download', language: 'en' },
   { download: 'İndir', language: 'tr' },
 ];
@@ -46,8 +46,13 @@ function getPageDictionary(page, language = 'en') {
     .text.filter((item) => item.language === language)[0];
 }
 
-function getSidebar(language = 'en') {
-  return sidebar.filter((item) => item.language === language)[0];
+function getSidebarDictionary(language = 'en') {
+  return sidebarDictionary.filter((item) => item.language === language)[0];
 }
 
-export { pageDictionary, getPageDictionary, sidebar, getSidebar };
+export {
+  pageDictionary,
+  getPageDictionary,
+  sidebarDictionary,
+  getSidebarDictionary,
+};
