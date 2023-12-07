@@ -13,7 +13,6 @@ import { PiDotsThreeVerticalBold } from 'react-icons/pi';
 
 import { rootList, getLinkName } from '../data/rootList';
 import { getSidebarDictionary } from '../data/pageDictionary';
-import LoaderSidebar from './LoaderSmallSpinner';
 import useGetData from '../hooks/useGetData';
 import LoaderSmallSpinner from './LoaderSmallSpinner';
 
@@ -50,17 +49,21 @@ function SidebarContent() {
   const { isDarkMode } = useDarkMode();
   const { getPageLanguageName } = usePageLanguage();
   const data = useGetData('user');
+  const filteredData = data.data?.filter(
+    (item) => item.language === getPageLanguageName(),
+  )[0];
 
   function getSidebarUserInfo() {
-    const filteredData = data.data?.filter(
-      (item) => item.language === getPageLanguageName(),
-    )[0];
-
     if (data.isPending) return <LoaderSmallSpinner />;
 
-    if (data.isError) return <p className="">{data.error.message}</p>;
+    if (data.isError)
+      return (
+        <p className="dark:text-amber-500; text-amber-700">
+          {data.error.message}
+        </p>
+      );
 
-    return filteredData;
+    return null;
   }
 
   const userImageStyle = isDarkMode
@@ -76,20 +79,34 @@ function SidebarContent() {
         <LanguageSelect />
       </div>
 
-      <img
-        src="../navbar-user-image-small.png"
-        alt="user navbar photo"
-        className="image-dark h-28 rounded-full sm:h-36"
-        style={userImageStyle}
-      />
+      {filteredData ? (
+        <>
+          <img
+            src={`../${filteredData.photo}`}
+            alt="user navbar photo"
+            className="image-dark h-28 rounded-full sm:h-36"
+            style={userImageStyle}
+          />
+        </>
+      ) : (
+        <div className="h-28  sm:h-36">{getSidebarUserInfo()}</div>
+      )}
 
-      <h3 className="mb-1 mt-3 font-nunito text-2xl font-semibold leading-7 sm:text-3xl">
-        {getSidebarUserInfo().name}
-      </h3>
+      <div className="mb-4 mt-3 sm:mb-10">
+        {filteredData ? (
+          <>
+            <h3 className="mb-1 font-nunito text-2xl font-semibold leading-6 sm:text-3xl">
+              {filteredData.name}
+            </h3>
 
-      <h2 className="mb-4 font-open_sans text-sm font-medium sm:mb-10 sm:text-base">
-        {getSidebarUserInfo().occupation}
-      </h2>
+            <h2 className="font-open_sans text-sm font-medium leading-5 sm:text-base">
+              {filteredData.occupation}
+            </h2>
+          </>
+        ) : (
+          getSidebarUserInfo()
+        )}
+      </div>
 
       <ul>
         {rootList.map((el) => (
@@ -115,8 +132,14 @@ function SidebarContent() {
         </a>
 
         <div className="italic leading-3">
-          <p>{getSidebarUserInfo().name}</p>
-          <p>{getSidebarUserInfo().email}</p>
+          {filteredData ? (
+            <>
+              <p>{filteredData.name}</p>
+              <p>{filteredData.email}</p>
+            </>
+          ) : (
+            getSidebarUserInfo()
+          )}
         </div>
       </div>
     </nav>
