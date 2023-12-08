@@ -117,6 +117,29 @@ const pageDictionary = [
       { header: 'Referanslar', language: 'tr' },
     ],
   },
+  {
+    page: 'personalInfo',
+    text: [
+      {
+        header: 'Personal Information & Contact',
+        address: 'Address',
+        dateOfBirth: 'Date of Birth',
+        gender: 'Gender',
+        driveLicense: 'Drive License',
+        socialMediaAddress: 'Social Media Address',
+        language: 'en',
+      },
+      {
+        header: 'Kişisel Bilgiler & İletişim',
+        address: 'Adres',
+        dateOfBirth: 'Doğum Tarihi',
+        gender: 'Cinsiyet',
+        driveLicense: 'Sürücü Ehliyeti',
+        socialMediaAddress: 'Sosyal Medya Adresleri',
+        language: 'tr',
+      },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {

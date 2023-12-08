@@ -1,40 +1,43 @@
 import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
-import { IconContext } from 'react-icons';
+import PageControl from '../ui/PageControl';
+import { getPageDictionary } from '../data/pageDictionary';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import ShowDataContent from '../ui/ShowDataContent';
 
 import { SiGithub, SiStackoverflow, SiLinkedin } from 'react-icons/si';
 import { FaXTwitter } from 'react-icons/fa6';
+import { IconContext } from 'react-icons';
 
 function PersonelInfoAndContact() {
-  const { isPending, isError, error, data } = useGetData('personalInfo');
-  const filteredData = data?.filter((item) => item.language === 'en')[0];
+  const data = useGetData('personalInfo');
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'Personal Information & Contact'}
-    >
-      <PersonelInfoAndContactUi data={filteredData} />
-    </PageUi>
+    <PageControl>
+      <ShowDataContent
+        data={data}
+        fnRender={(item) => <PersonelInfoAndContactUi key={1} data={item} />}
+      />
+    </PageControl>
   );
 }
 
 function PersonelInfoAndContactUi({ data }) {
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary('personalInfo', getPageLanguageName());
+
   return (
     <div className="content-data">
       <div className="readable-background border-color flex w-full flex-col space-y-1 border p-4">
         <div className="mb-2 flex flex-col space-y-3">
-          <Info header={'Address'} data={data.address} />
-          <Info header={'Date of Birth'} data={data.dateOfBirth} />
-          <Info header={'Gender'} data={data.gender} />
-          <Info header={'Drive License'} data={data.driverLicense} />
+          <Info header={dictionary.address} data={data.address} />
+          <Info header={dictionary.dateOfBirth} data={data.dateOfBirth} />
+          <Info header={dictionary.gender} data={data.gender} />
+          <Info header={dictionary.driveLicense} data={data.driverLicense} />
         </div>
 
         <div className="flex flex-col space-y-2">
           <div className="mb-4 font-semibold underline decoration-slate-800">
-            Social Media Address
+            {dictionary.socialMediaAddress}
           </div>
 
           <div className="flex flex-row flex-wrap items-center justify-around gap-3">
