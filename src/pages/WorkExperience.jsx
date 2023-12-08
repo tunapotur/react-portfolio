@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import ShowDataContent from '../ui/ShowDataContent';
 import PageControl from '../ui/PageControl';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import { getPageDictionary } from '../data/pageDictionary';
 
 function WorkExperience() {
   // https://www.js-howto.com/how-to-handle-multiple-queries-with-react-query/
@@ -36,29 +38,35 @@ function WorkExperience() {
   return (
     <PageControl>
       <WorkExperienceUi
-        props={{ workExperience, internship, partTimeJobs }}
+        data={{ workExperience, internship, partTimeJobs }}
       ></WorkExperienceUi>
     </PageControl>
   );
 }
 
-function WorkExperienceUi({ props }) {
+function WorkExperienceUi({ data }) {
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary('workExperience', getPageLanguageName());
+
+  console.log(dictionary);
   return (
     <>
       <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        Work Experience
+        {dictionary.workExperience}
       </h1>
       <div className="content-data">
         <ShowDataContent
-          data={props.workExperience}
+          data={data.workExperience}
           fnRender={(item) => <WorkExperienceCart key={item.id} data={item} />}
         />
       </div>
 
-      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">Internship</h2>
+      <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
+        {dictionary.internship}
+      </h2>
       <div className="content-data">
         <ShowDataContent
-          data={props.internship}
+          data={data.internship}
           fnRender={(item) => (
             <InternshipPartTimeCart key={item.id} data={item} />
           )}
@@ -66,11 +74,11 @@ function WorkExperienceUi({ props }) {
       </div>
 
       <h2 className="mb-3 mt-8 self-start text-xl font-semibold">
-        Part Time Jobs
+        {dictionary.partTimeJobs}
       </h2>
       <div className="content-data">
         <ShowDataContent
-          data={props.partTimeJobs}
+          data={data.partTimeJobs}
           fnRender={(item) => (
             <InternshipPartTimeCart key={item.id} data={item} />
           )}

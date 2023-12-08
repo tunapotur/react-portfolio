@@ -239,7 +239,7 @@
       "fk_userId": "1"
     }
   ],
-  "sampleProjects": [
+  "mySampleProjects": [
     {
       "id": "91257917",
       "name": "React - My Resume Web Page",
@@ -266,7 +266,7 @@
       "explanation": "Bu web sayfasını kendi özgeçmişimi paylaşmak için React kullanarak programladım. Yan tarafta bulunan linklere tıklayarak kaynak koda erişebilirsiniz.",
       "gitHub": "https://github.com/tunapotur/react-portfolio",
       "lib": "https://react.dev/",
-      "webPage": "",
+      "webPage": "https://tuna-react-portfolio.vercel.app",
       "language": "tr",
       "fk_userId": "1"
     },

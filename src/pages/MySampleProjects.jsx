@@ -1,28 +1,41 @@
-import PageUi from '../ui/PageUi';
 import useGetData from '../hooks/useGetData';
-import GeneralListUi from '../ui/GeneralListUi';
-
 import { FaLink } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
 import { IoLibrary } from 'react-icons/io5';
+import PageControl from '../ui/PageControl';
+import { getPageDictionary } from '../data/pageDictionary';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import ShowDataContent from '../ui/ShowDataContent';
 
 function MySampleProjects() {
-  const { isPending, isError, error, data } = useGetData('sampleProjects');
+  const data = useGetData('mySampleProjects');
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary(
+    'mySampleProjects',
+    getPageLanguageName(),
+  );
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'My Sample Projects'}
-    >
-      <GeneralListUi
-        data={data?.filter((item) => item.language === 'en')}
-        render={(project) => (
-          <SampleProjectCart key={project.id} data={project} />
-        )}
-      />
-    </PageUi>
+    <PageControl>
+      <MySampleProjectsUi data={data} dictionary={dictionary} />
+    </PageControl>
+  );
+}
+
+function MySampleProjectsUi({ data, dictionary }) {
+  return (
+    <>
+      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+        {dictionary.header}
+      </h1>
+
+      <div className="content-data">
+        <ShowDataContent
+          data={data}
+          fnRender={(item) => <SampleProjectCart key={item.id} data={item} />}
+        />
+      </div>
+    </>
   );
 }
 

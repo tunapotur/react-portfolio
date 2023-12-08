@@ -41,6 +41,30 @@ const pageDictionary = [
       { header: 'Eğitim', language: 'tr' },
     ],
   },
+  {
+    page: 'workExperience',
+    text: [
+      {
+        workExperience: 'Work Experience',
+        internship: 'Internships',
+        partTimeJobs: 'Part Time Jobs',
+        language: 'en',
+      },
+      {
+        workExperience: 'İş Deneyimi',
+        internship: 'Stajlar',
+        partTimeJobs: 'Yarı Zamanlı İşler',
+        language: 'tr',
+      },
+    ],
+  },
+  {
+    page: 'mySampleProjects',
+    text: [
+      { header: 'My Sample Projects', language: 'en' },
+      { header: 'Benim Örnek Projelerim', language: 'tr' },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {

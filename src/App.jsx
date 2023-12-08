@@ -27,6 +27,8 @@ import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 // TODO türkçe indirilecek cv hazırlanacak.
 // TODO indirilen cv'lere örnek proje linkleri konacak qr olabilir
 // TODO readme dosyasına projenin nasıl çalıştırılacağı ve nasıl özelliştirileceği anlatılarca
+// TODO GeneralListUi'da bulunan daha fazla göster özelliği sonra yine kullanılacak
+// TODO PageUi gereksizleşecek silinebilir
 
 const queryClient = new QueryClient({
   defaultOptions: {

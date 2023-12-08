@@ -1,58 +1,34 @@
 import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
-import GeneralListUi from '../ui/GeneralListUi';
 import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
+import ShowDataContent from '../ui/ShowDataContent';
 
 function Education() {
-  const { isPending, isError, error, data } = useGetData('education');
-
-  return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'Education'}
-    >
-      <GeneralListUi
-        data={data?.filter((item) => item.language === 'en')}
-        render={(education) => (
-          <EducationCart key={education.id} data={education} />
-        )}
-      />
-    </PageUi>
-  );
-}
-
-function Education2() {
   const data = useGetData('education');
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary('education', getPageLanguageName());
+
   return (
     <PageControl>
-      <ShowDataContent
-        data={data}
-        fnRender={(item) => <AboutUi key={1} data={item} />}
-      />
+      <EducationUi data={data} dictionary={dictionary} />
     </PageControl>
   );
 }
 
-function EducationUi({ data }) {
-  const { getPageLanguageName } = usePageLanguage();
+function EducationUi({ data, dictionary }) {
   return (
     <>
       <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        {getPageDictionary('education', getPageLanguageName()).header}
+        {dictionary.header}
       </h1>
-      <div className="readable-background flex flex-col space-y-7 px-6 text-left text-lg leading-relaxed sm:text-justify sm:text-xl">
-        {data.coverLetter.map((el) => (
-          <p key={uuidv4()}>{el}</p>
-        ))}
-      </div>
 
-      <h2 className="ml-auto mr-12 mt-12 text-xl font-medium sm:mr-6 sm:text-2xl">
-        {data.name}
-      </h2>
+      <div className="content-data">
+        <ShowDataContent
+          data={data}
+          fnRender={(item) => <EducationCart key={item.id} data={item} />}
+        />
+      </div>
     </>
   );
 }
