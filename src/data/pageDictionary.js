@@ -65,6 +65,37 @@ const pageDictionary = [
       { header: 'Benim Örnek Projelerim', language: 'tr' },
     ],
   },
+  {
+    page: 'education',
+    text: [
+      { header: 'Education', language: 'en' },
+      { header: 'Eğitim', language: 'tr' },
+    ],
+  },
+  {
+    page: 'languageAndSkills',
+    text: [
+      {
+        header: 'Foreign Languages & Skills',
+        foreignLanguages: 'Foreign Languages',
+        skills: 'Skills',
+        language: 'en',
+      },
+      {
+        header: 'Yabancı Diller & Yetenekler',
+        foreignLanguages: 'Yabancı Diller',
+        skills: 'Yetenekler',
+        language: 'tr',
+      },
+    ],
+  },
+  {
+    page: 'achievements',
+    text: [
+      { header: 'Achievements', language: 'en' },
+      { header: 'Başarılar', language: 'tr' },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {

@@ -48,7 +48,6 @@ function WorkExperienceUi({ data }) {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('workExperience', getPageLanguageName());
 
-  console.log(dictionary);
   return (
     <>
       <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">

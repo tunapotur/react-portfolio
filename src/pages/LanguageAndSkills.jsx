@@ -5,6 +5,8 @@ import ShowDataContent from '../ui/ShowDataContent';
 import PageControl from '../ui/PageControl';
 
 import { BsCheckLg } from 'react-icons/bs';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import { getPageDictionary } from '../data/pageDictionary';
 
 function LanguageAndSkills() {
   const [skills, language] = useQueries({
@@ -34,14 +36,22 @@ function LanguageAndSkills() {
 }
 
 function LanguageAndSkillsUi({ props }) {
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary(
+    'languageAndSkills',
+    getPageLanguageName(),
+  );
+
   return (
     <>
       <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        Foreign Languages & Skills
+        {dictionary.header}
       </h1>
       <div className="content-narrow">
         <div className="mb-12 flex flex-col justify-center space-y-2">
-          <h2 className="text-xl font-semibold">Foreign Languages</h2>
+          <h2 className="text-xl font-semibold">
+            {dictionary.foreignLanguages}
+          </h2>
           <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
             <ShowDataContent
               data={props.language}
@@ -53,7 +63,7 @@ function LanguageAndSkillsUi({ props }) {
         </div>
 
         <div className="mb-12 flex flex-col justify-center space-y-2">
-          <h2 className="text-xl font-semibold">Skills</h2>
+          <h2 className="text-xl font-semibold">{dictionary.skills}</h2>
           <ul className="readable-background border-color flex flex-col space-y-3 border p-4">
             <ShowDataContent
               data={props.skills}
