@@ -96,6 +96,13 @@ const pageDictionary = [
       { header: 'Başarılar', language: 'tr' },
     ],
   },
+  {
+    page: 'certificates',
+    text: [
+      { header: 'Certificates', language: 'en' },
+      { header: 'Sertifikalar', language: 'tr' },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {
