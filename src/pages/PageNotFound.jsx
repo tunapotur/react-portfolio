@@ -2,10 +2,14 @@ import { useNavigate } from 'react-router-dom';
 
 import { BsArrowLeft } from 'react-icons/bs';
 import SpeechBubble from '../ui/SpeechBubble';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import { getPageDictionary } from '../data/pageDictionary';
 
 // TODO bu sayfanın da çevirisi yapılacak
 function PageNotFound() {
   const navigate = useNavigate();
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary('pageNotFound', getPageLanguageName());
   return (
     <div className="bg-heropattern flex h-screen w-screen items-center justify-center p-10">
       <div className="mt-[4rem] flex h-fit flex-col items-center sm:mt-[6rem]">

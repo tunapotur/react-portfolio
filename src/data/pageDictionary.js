@@ -140,6 +140,27 @@ const pageDictionary = [
       },
     ],
   },
+  {
+    page: 'pageNotFound',
+    text: [
+      {
+        speechBubble:
+          'Why did you wake me up? I need to sleep. Please click the go back button.',
+        opps: 'Oops!',
+        warning: 'The page you are looking for could not be found.',
+        button: 'Go Back',
+        language: 'en',
+      },
+      {
+        speechBubble:
+          'Why did you wake me up? I need to sleep. Please click the go back button.',
+        opps: 'Oops!',
+        warning: 'The page you are looking for could not be found.',
+        button: 'Go Back',
+        language: 'en',
+      },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {
