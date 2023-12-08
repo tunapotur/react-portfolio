@@ -2,7 +2,6 @@ import { v4 as uuidv4 } from 'uuid';
 import useGetData from '../hooks/useGetData';
 
 import ShowDataContent from '../ui/ShowDataContent';
-import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
 
@@ -10,12 +9,10 @@ function About() {
   const data = useGetData('personalInfo');
 
   return (
-    <PageControl>
-      <ShowDataContent
-        data={data}
-        fnRender={(item) => <AboutUi key={1} data={item} />}
-      />
-    </PageControl>
+    <ShowDataContent
+      data={data}
+      fnRender={(item) => <AboutUi key={1} data={item} />}
+    />
   );
 }
 

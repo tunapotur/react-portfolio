@@ -2,7 +2,6 @@ import { useQueries } from '@tanstack/react-query';
 import axios from 'axios';
 
 import ShowDataContent from '../ui/ShowDataContent';
-import PageControl from '../ui/PageControl';
 
 import { BsCheckLg } from 'react-icons/bs';
 import { usePageLanguage } from '../context/PageLanguageContext';
@@ -29,9 +28,7 @@ function LanguageAndSkills() {
   });
 
   return (
-    <PageControl>
-      <LanguageAndSkillsUi props={{ skills, language }}></LanguageAndSkillsUi>
-    </PageControl>
+    <LanguageAndSkillsUi props={{ skills, language }}></LanguageAndSkillsUi>
   );
 }
 

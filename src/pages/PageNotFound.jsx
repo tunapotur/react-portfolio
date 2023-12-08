@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 import SpeechBubble from '../ui/SpeechBubble';
 
+// TODO bu sayfanın da çevirisi yapılacak
 function PageNotFound() {
   const navigate = useNavigate();
   return (

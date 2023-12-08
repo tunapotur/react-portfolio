@@ -1,5 +1,4 @@
 import useGetData from '../hooks/useGetData';
-import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
 import ShowDataContent from '../ui/ShowDataContent';
@@ -12,12 +11,10 @@ function PersonelInfoAndContact() {
   const data = useGetData('personalInfo');
 
   return (
-    <PageControl>
-      <ShowDataContent
-        data={data}
-        fnRender={(item) => <PersonelInfoAndContactUi key={1} data={item} />}
-      />
-    </PageControl>
+    <ShowDataContent
+      data={data}
+      fnRender={(item) => <PersonelInfoAndContactUi key={1} data={item} />}
+    />
   );
 }
 

@@ -2,7 +2,6 @@ import { usePageLanguage } from '../context/PageLanguageContext';
 import { getPageDictionary } from '../data/pageDictionary';
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
-import PageControl from '../ui/PageControl';
 import ShowDataContent from '../ui/ShowDataContent';
 
 function Certificates() {
@@ -10,11 +9,7 @@ function Certificates() {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('certificates', getPageLanguageName());
 
-  return (
-    <PageControl>
-      <CertificatesUi data={data} dictionary={dictionary} />
-    </PageControl>
-  );
+  return <CertificatesUi data={data} dictionary={dictionary} />;
 }
 
 function CertificatesUi() {

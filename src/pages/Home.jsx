@@ -2,7 +2,6 @@ import { usePageLanguage } from '../context/PageLanguageContext';
 import useGetData from '../hooks/useGetData';
 
 import ShowDataContent from '../ui/ShowDataContent';
-import PageControl from '../ui/PageControl';
 
 import { getPageDictionary } from '../data/pageDictionary';
 
@@ -10,12 +9,10 @@ function Home() {
   const data = useGetData('personalInfo');
 
   return (
-    <PageControl>
-      <ShowDataContent
-        data={data}
-        fnRender={(item) => <HomeUi key={1} data={item} />}
-      />
-    </PageControl>
+    <ShowDataContent
+      data={data}
+      fnRender={(item) => <HomeUi key={1} data={item} />}
+    />
   );
 }
 

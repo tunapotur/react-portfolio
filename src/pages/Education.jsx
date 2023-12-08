@@ -1,5 +1,4 @@
 import useGetData from '../hooks/useGetData';
-import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
 import ShowDataContent from '../ui/ShowDataContent';
@@ -9,11 +8,7 @@ function Education() {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('education', getPageLanguageName());
 
-  return (
-    <PageControl>
-      <EducationUi data={data} dictionary={dictionary} />
-    </PageControl>
-  );
+  return <EducationUi data={data} dictionary={dictionary} />;
 }
 
 function EducationUi({ data, dictionary }) {

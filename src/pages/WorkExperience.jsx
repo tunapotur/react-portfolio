@@ -2,7 +2,6 @@ import { useQueries } from '@tanstack/react-query';
 import axios from 'axios';
 
 import ShowDataContent from '../ui/ShowDataContent';
-import PageControl from '../ui/PageControl';
 import { usePageLanguage } from '../context/PageLanguageContext';
 import { getPageDictionary } from '../data/pageDictionary';
 
@@ -36,11 +35,9 @@ function WorkExperience() {
   });
 
   return (
-    <PageControl>
-      <WorkExperienceUi
-        data={{ workExperience, internship, partTimeJobs }}
-      ></WorkExperienceUi>
-    </PageControl>
+    <WorkExperienceUi
+      data={{ workExperience, internship, partTimeJobs }}
+    ></WorkExperienceUi>
   );
 }
 

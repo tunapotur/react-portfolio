@@ -1,5 +1,4 @@
 import useGetData from '../hooks/useGetData';
-import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
 import ShowDataContent from '../ui/ShowDataContent';
@@ -9,11 +8,7 @@ function References() {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('references', getPageLanguageName());
 
-  return (
-    <PageControl>
-      <ReferencesUi data={data} dictionary={dictionary} />
-    </PageControl>
-  );
+  return <ReferencesUi data={data} dictionary={dictionary} />;
 }
 
 function ReferencesUi({ data, dictionary }) {

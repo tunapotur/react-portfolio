@@ -2,7 +2,6 @@ import { usePageLanguage } from '../context/PageLanguageContext';
 import { getPageDictionary } from '../data/pageDictionary';
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
-import PageControl from '../ui/PageControl';
 import ShowDataContent from '../ui/ShowDataContent';
 
 function UdemyCertificates() {
@@ -13,11 +12,7 @@ function UdemyCertificates() {
     getPageLanguageName(),
   );
 
-  return (
-    <PageControl>
-      <UdemyCertificatesUi data={data} dictionary={dictionary} />
-    </PageControl>
-  );
+  return <UdemyCertificatesUi data={data} dictionary={dictionary} />;
 }
 
 function UdemyCertificatesUi() {

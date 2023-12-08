@@ -2,7 +2,6 @@ import useGetData from '../hooks/useGetData';
 import { FaLink } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
 import { IoLibrary } from 'react-icons/io5';
-import PageControl from '../ui/PageControl';
 import { getPageDictionary } from '../data/pageDictionary';
 import { usePageLanguage } from '../context/PageLanguageContext';
 import ShowDataContent from '../ui/ShowDataContent';
@@ -15,11 +14,7 @@ function MySampleProjects() {
     getPageLanguageName(),
   );
 
-  return (
-    <PageControl>
-      <MySampleProjectsUi data={data} dictionary={dictionary} />
-    </PageControl>
-  );
+  return <MySampleProjectsUi data={data} dictionary={dictionary} />;
 }
 
 function MySampleProjectsUi({ data, dictionary }) {

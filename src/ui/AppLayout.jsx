@@ -4,6 +4,7 @@ import { useScreenBreakpoints } from '../context/ScreenBreakpointsContext';
 import Sidebar from './Sidebar';
 import Main from './Main';
 import SidebarMobilOpenOverlay from './SidebarMobilOpenOverlay';
+import PageControl from './PageControl';
 
 function AppLayout() {
   const { isLgScreen } = useScreenBreakpoints();
@@ -18,7 +19,9 @@ function AppLayout() {
         <Sidebar />
         <SidebarMobilOpenOverlay />
         <Main>
-          <Outlet />
+          <PageControl>
+            <Outlet />
+          </PageControl>
         </Main>
       </div>
     </div>
