@@ -1,31 +1,48 @@
+import { usePageLanguage } from '../context/PageLanguageContext';
+import { getPageDictionary } from '../data/pageDictionary';
 import useGetData from '../hooks/useGetData';
 import CertificateAchievementCart from '../ui/CertificateAchievementCart';
-import GeneralListUi from '../ui/GeneralListUi';
-
-import PageUi from '../ui/PageUi';
+import PageControl from '../ui/PageControl';
+import ShowDataContent from '../ui/ShowDataContent';
 
 function UdemyCertificates() {
-  const { isPending, isError, error, data } = useGetData('udemyCertificates');
-
-  data?.sort((a, b) => a.priority - b.priority);
+  const data = useGetData('udemyCertificates');
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary(
+    'udemyCertificates',
+    getPageLanguageName(),
+  );
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'Udemy Certificates'}
-    >
-      <GeneralListUi
-        data={data?.filter((item) => item.language === 'en')}
-        render={(udemyCertificate) => (
-          <CertificateAchievementCart
-            key={udemyCertificate.id}
-            data={udemyCertificate}
-          />
-        )}
-      />
-    </PageUi>
+    <PageControl>
+      <UdemyCertificatesUi data={data} dictionary={dictionary} />
+    </PageControl>
+  );
+}
+
+function UdemyCertificatesUi() {
+  const data = useGetData('udemyCertificates');
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary(
+    'udemyCertificates',
+    getPageLanguageName(),
+  );
+
+  return (
+    <>
+      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+        {dictionary.header}
+      </h1>
+
+      <div className="content-data">
+        <ShowDataContent
+          data={data}
+          fnRender={(item) => (
+            <CertificateAchievementCart key={item.id} data={item} />
+          )}
+        />
+      </div>
+    </>
   );
 }
 

@@ -1,24 +1,35 @@
 import useGetData from '../hooks/useGetData';
-import PageUi from '../ui/PageUi';
-import GeneralListUi from '../ui/GeneralListUi';
+import PageControl from '../ui/PageControl';
+import { getPageDictionary } from '../data/pageDictionary';
+import { usePageLanguage } from '../context/PageLanguageContext';
+import ShowDataContent from '../ui/ShowDataContent';
 
 function References() {
-  const { isPending, isError, error, data } = useGetData('references');
+  const data = useGetData('references');
+  const { getPageLanguageName } = usePageLanguage();
+  const dictionary = getPageDictionary('references', getPageLanguageName());
 
   return (
-    <PageUi
-      isPending={isPending}
-      isError={isError}
-      error={error}
-      pageHeader={'References'}
-    >
-      <GeneralListUi
-        data={data?.filter((item) => item.language === 'en')}
-        render={(reference) => (
-          <ReferencesCart key={reference.id} data={reference} />
-        )}
-      />
-    </PageUi>
+    <PageControl>
+      <ReferencesUi data={data} dictionary={dictionary} />
+    </PageControl>
+  );
+}
+
+function ReferencesUi({ data, dictionary }) {
+  return (
+    <>
+      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+        {dictionary.header}
+      </h1>
+
+      <div className="content-data">
+        <ShowDataContent
+          data={data}
+          fnRender={(item) => <ReferencesCart key={item.id} data={item} />}
+        />
+      </div>
+    </>
   );
 }
 

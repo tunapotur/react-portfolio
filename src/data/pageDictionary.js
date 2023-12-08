@@ -103,6 +103,20 @@ const pageDictionary = [
       { header: 'Sertifikalar', language: 'tr' },
     ],
   },
+  {
+    page: 'udemyCertificates',
+    text: [
+      { header: 'Udemy Certificates', language: 'en' },
+      { header: 'Udemy Sertifikalar', language: 'tr' },
+    ],
+  },
+  {
+    page: 'references',
+    text: [
+      { header: 'References', language: 'en' },
+      { header: 'Referanslar', language: 'tr' },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {
