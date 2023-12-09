@@ -22,6 +22,8 @@ function PersonelInfoAndContactUi({ data }) {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('personalInfo', getPageLanguageName());
 
+  //TODO iki sütunlu bir tablo yap web sitesinde güzel görünmüyor
+  //TODO email eklenecek
   return (
     <div className="content-data">
       <div className="readable-background border-color flex w-full flex-col space-y-1 border p-4">

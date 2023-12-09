@@ -20,7 +20,6 @@ import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 
-// TODO Eng Tr geçişi yapılacak.
 // TODO Gesture kodu sadeleştirilecek geresiz kısımlar silinecek.
 // TODO Gesture Mümkünse biraz daha yavaş bir geçiş yapılacak. Hakeretle hemen geçiyor
 // TODO türkçe indirilecek cv hazırlanacak.

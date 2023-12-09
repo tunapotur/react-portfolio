@@ -135,7 +135,7 @@ function SidebarContent() {
           {filteredData ? (
             <>
               <p>{filteredData.name}</p>
-              <p>{filteredData.email}</p>
+              <a href={`mailto:${filteredData.email}`}>{filteredData.email}</a>
             </>
           ) : (
             getSidebarUserInfo()
