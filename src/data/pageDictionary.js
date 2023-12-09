@@ -153,11 +153,11 @@ const pageDictionary = [
       },
       {
         speechBubble:
-          'Why did you wake me up? I need to sleep. Please click the go back button.',
+          'Beni neden uyandırdın? Uyumam lazım. Lütfen geri dön butonuna bas.',
         opps: 'Oops!',
-        warning: 'The page you are looking for could not be found.',
-        button: 'Go Back',
-        language: 'en',
+        warning: 'Aradığınız sayfa bulunamadı.',
+        button: 'Geri Dön',
+        language: 'tr',
       },
     ],
   },
