@@ -27,6 +27,10 @@
     @apply border-slate-400 dark:border-slate-700;
   }
 
+  .page-header {
+    @apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl;
+  }
+
   .error-loader {
     @apply flex h-[50%] w-full flex-col items-center justify-center;
   }

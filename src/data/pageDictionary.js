@@ -127,6 +127,7 @@ const pageDictionary = [
         gender: 'Gender',
         driveLicense: 'Drive License',
         socialMediaAddress: 'Social Media Address',
+        email: 'E-Mail',
         language: 'en',
       },
       {
@@ -136,6 +137,7 @@ const pageDictionary = [
         gender: 'Cinsiyet',
         driveLicense: 'Sürücü Ehliyeti',
         socialMediaAddress: 'Sosyal Medya Adresleri',
+        email: 'E-Mail',
         language: 'tr',
       },
     ],

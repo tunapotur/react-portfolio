@@ -20,7 +20,7 @@ function AboutUi({ data }) {
   const { getPageLanguageName } = usePageLanguage();
   return (
     <>
-      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+      <h1 className="page-header">
         {getPageDictionary('about', getPageLanguageName()).header}
       </h1>
       <div className="readable-background flex flex-col space-y-7 px-6 text-left text-lg leading-relaxed sm:text-justify sm:text-xl">

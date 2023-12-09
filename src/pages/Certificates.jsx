@@ -19,9 +19,7 @@ function CertificatesUi() {
 
   return (
     <>
-      <h1 className="mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        {dictionary.header}
-      </h1>
+      <h1 className="page-header">{dictionary.header}</h1>
 
       <div className="content-data">
         <ShowDataContent

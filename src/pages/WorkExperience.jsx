@@ -47,7 +47,7 @@ function WorkExperienceUi({ data }) {
 
   return (
     <>
-      <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
+      <h1 className="page-header">
         {dictionary.workExperience}
       </h1>
       <div className="content-data">

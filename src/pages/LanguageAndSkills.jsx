@@ -41,9 +41,7 @@ function LanguageAndSkillsUi({ props }) {
 
   return (
     <>
-      <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-        {dictionary.header}
-      </h1>
+      <h1 className="page-header">{dictionary.header}</h1>
       <div className="content-narrow">
         <div className="mb-12 flex flex-col justify-center space-y-2">
           <h2 className="text-xl font-semibold">

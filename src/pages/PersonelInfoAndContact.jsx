@@ -22,48 +22,55 @@ function PersonelInfoAndContactUi({ data }) {
   const { getPageLanguageName } = usePageLanguage();
   const dictionary = getPageDictionary('personalInfo', getPageLanguageName());
 
-  //TODO iki sütunlu bir tablo yap web sitesinde güzel görünmüyor
-  //TODO email eklenecek
   return (
-    <div className="content-data">
-      <div className="readable-background border-color flex w-full flex-col space-y-1 border p-4">
-        <div className="mb-2 flex flex-col space-y-3">
-          <Info header={dictionary.address} data={data.address} />
-          <Info header={dictionary.dateOfBirth} data={data.dateOfBirth} />
-          <Info header={dictionary.gender} data={data.gender} />
-          <Info header={dictionary.driveLicense} data={data.driverLicense} />
-        </div>
+    <>
+      <h1 className="page-header">
+        {dictionary.header}
+      </h1>
 
-        <div className="flex flex-col space-y-2">
-          <div className="mb-4 font-semibold underline decoration-slate-800">
-            {dictionary.socialMediaAddress}
+      <div className="content-data">
+        <div className="readable-background border-color flex w-full flex-col space-y-1 border p-4">
+          <div className="mb-2 flex flex-col sm:flex-row sm:flex-wrap sm:content-start sm:gap-[0.25rem]">
+            <Info header={dictionary.address} data={data.address} />
+            <Info header={dictionary.dateOfBirth} data={data.dateOfBirth} />
+            <Info header={dictionary.gender} data={data.gender} />
+            <Info header={dictionary.driveLicense} data={data.driverLicense} />
+            <Info header={dictionary.email} data={data.email} />
           </div>
 
-          <div className="flex flex-row flex-wrap items-center justify-around gap-3">
-            <SocialMediaLink link={data.gitHub}>
-              <SiGithub />
-            </SocialMediaLink>
-            <SocialMediaLink link={data.stackoverflow}>
-              <SiStackoverflow />
-            </SocialMediaLink>
-            <SocialMediaLink link={data.linkedin}>
-              <SiLinkedin />
-            </SocialMediaLink>
-            <SocialMediaLink link={data.twitter}>
-              <FaXTwitter />
-            </SocialMediaLink>
+          <div className="flex flex-col space-y-2 pt-[3rem]">
+            <div className="mb-[1.5rem] font-semibold underline decoration-slate-500 sm:text-center">
+              {dictionary.socialMediaAddress}
+            </div>
+
+            <div className="flex flex-row flex-wrap items-center justify-around gap-3">
+              <SocialMediaLink link={data.gitHub}>
+                <SiGithub />
+              </SocialMediaLink>
+              <SocialMediaLink link={data.stackoverflow}>
+                <SiStackoverflow />
+              </SocialMediaLink>
+              <SocialMediaLink link={data.linkedin}>
+                <SiLinkedin />
+              </SocialMediaLink>
+              <SocialMediaLink link={data.twitter}>
+                <FaXTwitter />
+              </SocialMediaLink>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
 function Info({ header, data }) {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="font-semibold">{header}</div>
+      <div className="mt-[1rem] flex flex-col space-y-1 sm:mr-[1rem] sm:w-[12rem] sm:text-center">
+        <div className="font-semibold underline decoration-slate-500">
+          {header}
+        </div>
         <div className="leading-5">{data}</div>
       </div>
     </>

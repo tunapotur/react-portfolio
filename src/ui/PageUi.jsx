@@ -61,11 +61,7 @@ function PageUi({ isPending, isError, error, pageHeader, children }) {
         onTouchMove={handleTouchMove}
         className="flex h-full w-full flex-col items-center px-4 pt-6 sm:px-12 md:w-[48rem]"
       >
-        {pageHeader && (
-          <h1 className="@apply mb-6 text-xl font-semibold sm:mb-10 sm:text-2xl">
-            {pageHeader}
-          </h1>
-        )}
+        {pageHeader && <h1 className="page-header">{pageHeader}</h1>}
 
         {isPending && (
           <div className={'error-loader'}>
