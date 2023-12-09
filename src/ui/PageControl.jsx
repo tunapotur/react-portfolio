@@ -6,7 +6,7 @@ import PaginationAuto from './PaginationAuto';
 function PageControl({ children }) {
   // https://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android
   const [xDown, setXDown] = useState(null);
-  const [yDown, setYDown] = useState(null);
+
   const navigate = useNavigate();
   const { beforeRoot: leftMove, nextRoot: rightMove } = useRootInfo();
 
@@ -17,39 +17,28 @@ function PageControl({ children }) {
 
   function handleTouchStart(e) {
     setXDown(e.touches[0].clientX);
-    setYDown(e.touches[0].clientY);
   }
 
   function handleTouchMove(e) {
-    if (!xDown || !yDown) return;
+    if (!xDown) return;
 
     const xUp = e.touches[0].clientX;
-    const yUp = e.touches[0].clientY;
-
     const xDiff = xDown - xUp;
-    const yDiff = yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      /*most significant*/
-      if (xDiff > 0) {
-        /* right swipe */
-        // console.log('right swipe: ', xDiff);
-        navRoot(rightMove.pathName);
-      } else {
-        /* left swipe */
-        // console.log('left swipe: ', xDiff);
-        navRoot(leftMove.pathName);
-      }
-    } else {
-      if (yDiff > 0) {
-        /* down swipe */
-      } else {
-        /* up swipe */
-      }
+    if (xDiff > 15) {
+      /* right swipe */
+      console.log('right swipe: ', xDiff);
+      navRoot(rightMove.pathName);
     }
+
+    if (xDiff < -15) {
+      /* left swipe */
+      console.log('left swipe: ', xDiff);
+      navRoot(leftMove.pathName);
+    }
+
     /* reset values */
     setXDown(null);
-    setYDown(null);
   }
 
   return (

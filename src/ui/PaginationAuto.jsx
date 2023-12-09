@@ -3,13 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import useRootInfo from '../hooks/useRootInfo';
 import { useKey } from '../hooks/useKey';
-// import { useQueryClient } from '@tanstack/react-query';
-// import axios from 'axios';
 
 function Pagination() {
   const { beforeRoot: leftMove, nextRoot: rightMove } = useRootInfo();
-
-  // const queryClient = useQueryClient();
   const navigate = useNavigate();
 
   const iconStyle =
@@ -22,16 +18,6 @@ function Pagination() {
 
   useKey('ArrowLeft', () => keyNav(leftMove.pathName));
   useKey('ArrowRight', () => keyNav(rightMove.pathName));
-
-  // *PRE-FETCHING SAMPLE
-  /* if (rightMove)
-    queryClient.prefetchQuery({
-      queryKey: [rightMove.sourceName],
-      queryFn: () =>
-        axios
-          .get(`${import.meta.env.VITE_DB}/${rightMove.sourceName}`)
-          .then((res) => res.data),
-    }); */
 
   return (
     <div className="mt-auto flex w-full pb-5 pt-10">
