@@ -25,11 +25,13 @@ function PageControl({ children }) {
     const xUp = e.touches[0].clientX;
     const xDiff = xDown - xUp;
 
-    if (xDiff > 0) {
+    if (xDiff > 5) {
       /* right swipe */
       console.log('right swipe: ', xDiff);
       navRoot(rightMove.pathName);
-    } else {
+    }
+
+    if (xDiff < -5) {
       /* left swipe */
       console.log('left swipe: ', xDiff);
       navRoot(leftMove.pathName);
