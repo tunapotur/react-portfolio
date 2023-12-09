@@ -20,13 +20,10 @@ import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 
-// TODO Gesture kodu sadeleştirilecek geresiz kısımlar silinecek.
-// TODO Gesture Mümkünse biraz daha yavaş bir geçiş yapılacak. Hakeretle hemen geçiyor
 // TODO türkçe indirilecek cv hazırlanacak.
 // TODO indirilen cv'lere örnek proje linkleri konacak qr olabilir
 // TODO readme dosyasına projenin nasıl çalıştırılacağı ve nasıl özelliştirileceği anlatılarca
 // TODO GeneralListUi'da bulunan daha fazla göster özelliği sonra yine kullanılacak
-// TODO PageUi gereksizleşecek silinebilir
 
 const queryClient = new QueryClient({
   defaultOptions: {

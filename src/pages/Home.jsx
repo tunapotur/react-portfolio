@@ -42,7 +42,7 @@ function HomeUi({ data }) {
         {dictionary.definition}
       </p>
 
-      <p className="mt-[3rem] hidden text-justify text-sm font-thin italic leading-tight text-slate-500 dark:text-slate-400 sm:block">
+      <p className="mt-[1.5rem] text-justify text-sm font-thin italic leading-tight text-slate-500 dark:text-slate-400">
         {dictionary.pageUsage}
       </p>
     </div>

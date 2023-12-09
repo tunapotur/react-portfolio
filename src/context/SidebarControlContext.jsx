@@ -3,7 +3,6 @@ import { useScreenBreakpoints } from './ScreenBreakpointsContext';
 
 const SidebarControlContext = createContext();
 
-// TODO ayni DarkMode gibi Mobil dışında LocalStorage sidebar ayarları yazılsın her açılışta kullanıcı ayarına göre sidebar açılsın.
 function SidebarControlProvider({ children }) {
   const { isLgScreen } = useScreenBreakpoints();
   const [isSidebarOpen, setIsSidebarOpen] = useState(isLgScreen);
