@@ -27,13 +27,13 @@ function PageControl({ children }) {
 
     if (xDiff > 12) {
       /* right swipe */
-      console.log('right swipe: ', xDiff);
+      // console.log('right swipe: ', xDiff);
       navRoot(rightMove.pathName);
     }
 
     if (xDiff < -12) {
       /* left swipe */
-      console.log('left swipe: ', xDiff);
+      // console.log('left swipe: ', xDiff);
       navRoot(leftMove.pathName);
     }
 

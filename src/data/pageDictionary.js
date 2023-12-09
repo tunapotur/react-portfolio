@@ -62,7 +62,7 @@ const pageDictionary = [
     page: 'mySampleProjects',
     text: [
       { header: 'My Sample Projects', language: 'en' },
-      { header: 'Benim Örnek Projelerim', language: 'tr' },
+      { header: 'Örnek Projelerim', language: 'tr' },
     ],
   },
   {
