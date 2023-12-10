@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PAGE_SIZE } from '../data/constants';
 
+// TODO silinecek
 function GeneralListUi({ data, render }) {
   const itemCount = data.length;
   const [page, setPage] = useState(1);

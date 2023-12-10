@@ -163,6 +163,21 @@ const pageDictionary = [
       },
     ],
   },
+  {
+    page: 'showDataContent',
+    text: [
+      {
+        rest: 'Rest',
+        show: 'Show',
+        language: 'en',
+      },
+      {
+        rest: 'Kalan',
+        show: 'Göster',
+        language: 'tr',
+      },
+    ],
+  },
 ];
 
 function getPageDictionary(page, language = 'en') {
