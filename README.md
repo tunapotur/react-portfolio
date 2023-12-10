@@ -10,6 +10,8 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 # [tuna-react-portfolio.vercel.app](https://tuna-react-portfolio.vercel.app)
 
+### Dark Mode & Mobile Friendly
+
 </br></br>
 
 <p align="center">
