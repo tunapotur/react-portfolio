@@ -82,7 +82,7 @@ function LanguageSkillCart({ data }) {
       <div className="min-w-5 min-h-5 mr-1">
         <BsCheckLg />
       </div>
-      <div>{data.explanation}</div>
+      <div className="mr-5">{data.explanation}</div>
       {data.level && <span className="ml-auto">{data.level}</span>}
     </li>
   );

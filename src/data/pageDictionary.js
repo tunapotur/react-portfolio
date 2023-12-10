@@ -82,9 +82,9 @@ const pageDictionary = [
         language: 'en',
       },
       {
-        header: 'Yabancı Diller & Yetenekler',
+        header: 'Yabancı Diller & Beceriler',
         foreignLanguages: 'Yabancı Diller',
-        skills: 'Yetenekler',
+        skills: 'Beceriler',
         language: 'tr',
       },
     ],

@@ -20,9 +20,6 @@ import PersonelInfoAndContact from './pages/PersonelInfoAndContact';
 import PageNotFound from './pages/PageNotFound';
 import { ScreenBreakpointsProvider } from './context/ScreenBreakpointsContext';
 
-// TODO türkçe indirilecek cv hazırlanacak.
-// TODO indirilen cv'lere örnek proje linkleri konacak qr olabilir
-
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

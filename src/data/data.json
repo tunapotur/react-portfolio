@@ -167,10 +167,10 @@
     {
       "id": "61307429",
       "header": "Yazılım Geliştirme ve Eğitim Uzmanı",
-      "company": "ENKA İnşaat ve Sanayi A.Ş.",
+      "company": "ENKA İnşaat ve Sanayi A.Ş. İstanbul",
       "explanation": "ENKA birçok ülkede faaliyet gösteren bir inşaat firmasıdır. Bu firma kendi bünyesinde hazırlanan insan kaynakları yazılımı kullanılıyor. Bu yazılım; çalışanların kayıtlarını tutma, performans, sağlık ve iş güvenliği takibini, maaş hesabı ve saatlik işçi maliyet hesabı gibi işlemleri yapıyordu. Bu yazılımdan sorumlu ekibin içinde benim görevim; yazılım ile ilgili taleplerin değerlendirilmesi, taleplerin kodlaması ve testi, işletmenin bulunduğu ülkenin yasaları hakkında gerekli bilgilerin tespiti ve yazılıma entegrasyonu, programı kullanacak personelin seçimi, kullanıcı eğitimi ve yönetim tarafından talep edilen konsolide raporların hazırlanmasıydı.",
       "startDate": "2006 Mart",
-      "endDate": "Şub.11",
+      "endDate": "2011 Şubat",
       "language": "tr",
       "fk_userId": "1"
     },
