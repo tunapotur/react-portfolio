@@ -21,7 +21,7 @@ This is the source code of my portfolio web page. I developed this site to host 
 
 </br></br>
 
-### [Multiple Language](https://tuna-react-portfolio.vercel.app)
+### Multiple Language
 
 <p align="center">
 <img alt="Multiple Language" style="width:auto;height:750px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/MultipleLanguage.gif"></img>
