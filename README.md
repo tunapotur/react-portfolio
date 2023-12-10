@@ -25,6 +25,40 @@ This is the source code of my portfolio web page. I developed this site to host 
 <img alt="404" style="width:auto;height:500px;border-radius: 5px;" src="https://github.com/tunapotur/react-portfolio/blob/main/public/404.png"></img>
 </p>
 
+## How to use
+
+- First create `.env` file in to project folder
+
+- If you want to works project localy please write below the code on your `.env` file
+
+  `VITE_DB=http://localhost:9000`
+
+- You could change the data.js file and files under the public folder.
+
+  `/src/data/data.json`
+
+  `/public/*.*`
+
+- If you want to deploy your project please write below the code on your `.env` file
+
+  `VITE_DB=[your json file link]`
+
+  example of mine
+
+  `VITE_DB=https://tuna-portfolio-json.vercel.app`
+
+- I used JSON-server on vercel for deploying my JSON file. For deploying you could use typicode/JSON-server like me.
+
+  <a href="https://github.com/typicode/json-server">
+  github.com/typicode/json-server
+  </a>
+
+- I deployed my project on Vercel.
+
+  <a href="https://vercel.com">
+  vercel.com
+  </a>
+
 ## Technologies:
 
 - <a href="https://github.com/facebook/react">

@@ -42,10 +42,10 @@ function ShowDataContent({ data, fnRender }) {
   return (
     <>
       <>{filteredData.slice(0, PAGE_SIZE * page).map(fnRender)}</>
-      <>
+      <div className="w-full">
         {PAGE_SIZE * page < maxPageCount && (
           <button
-            className="link mt-16"
+            className="mt-[2rem] h-[3rem] w-full rounded border border-slate-400/75 bg-stone-100/30 text-lg transition-colors hover:bg-slate-200/25  dark:border-slate-700/75 dark:bg-zinc-800/30 hover:dark:bg-zinc-600/30"
             onClick={() => setPage((p) => (p = p + 1))}
           >
             {`${dictionary.rest} ${hiddenItemsCount}. ${dictionary.show} ${
@@ -53,7 +53,7 @@ function ShowDataContent({ data, fnRender }) {
             }.`}
           </button>
         )}
-      </>
+      </div>
     </>
   );
 }
