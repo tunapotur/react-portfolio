@@ -53,9 +53,6 @@ function PersonelInfoAndContactUi({ data }) {
               <SocialMediaLink link={data.linkedin}>
                 <SiLinkedin />
               </SocialMediaLink>
-              <SocialMediaLink link={data.twitter}>
-                <FaXTwitter />
-              </SocialMediaLink>
             </div>
           </div>
         </div>
